@@ -1,6 +1,8 @@
 # Artificial Intelligence Cyber Shield
 
-Artificial Intelligence Cyber Shield is a public knowledge repository for AI security, AI governance, AI red teaming, AI assurance, and cyber defense in the age of intelligent systems.
+Artificial Intelligence Cyber Shield is a public knowledge base for AI security, AI governance, AI red teaming, AI assurance, AI agent security, and cyber defense in the age of intelligent systems.
+
+The repository connects leading AI security frameworks, threat models, red team methods, assurance practices, incident repositories, and secure AI engineering controls into a practical reference for defenders, researchers, policymakers, and security leaders.
 
 The project is part of the broader GAIA Cybersecurity decision-making concept and is intended to support structured thinking about secure AI adoption, AI-enabled cyber defense, AI risk management, and AI system protection.
 
