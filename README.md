@@ -1,50 +1,21 @@
 # Artificial Intelligence Cyber Shield
 
-Artificial Intelligence Cyber Shield is a public knowledge base for AI security, AI governance, AI red teaming, AI assurance, AI agent security, and cyber defense in the age of intelligent systems.
+Artificial Intelligence Cyber Shield is a public knowledge base for AI security, AI governance, AI safety, AI red teaming, AI assurance, AI agent security, and cyber defense in the age of intelligent systems.
 
-The repository connects leading AI security frameworks, threat models, red team methods, assurance practices, incident repositories, and secure AI engineering controls into a practical reference for defenders, researchers, policymakers, and security leaders.
+The repository connects leading AI security frameworks, threat models, red team methods, assurance practices, incident repositories, secure AI engineering controls, and AI safety guidance into a practical reference for defenders, researchers, policymakers, and security leaders.
 
 The project is part of the broader GAIA Cybersecurity decision-making concept and is intended to support structured thinking about secure AI adoption, AI-enabled cyber defense, AI risk management, and AI system protection.
-
-## Purpose
-
-This repository helps security leaders, researchers, engineers, architects, red teams, blue teams, governance teams, and national-security practitioners organize AI security knowledge in a structured and defensible way.
-
-The main goal is to connect AI governance, threat modeling, red teaming, assurance, model security, agent security, and cyber defense into one practical knowledge base.
-
-## Scope
-
-| Area | Focus |
-| --- | --- |
-| AI security governance | Policies, controls, accountability, risk ownership, and oversight |
-| AI risk management | AI RMF, assurance methods, lifecycle controls, and risk documentation |
-| AI red teaming | Testing AI systems for misuse, abuse, prompt injection, jailbreaks, data leakage, and unsafe behavior |
-| AI threat modeling | Structured analysis of threats against models, agents, data pipelines, APIs, plugins, and integrations |
-| AI agent security | Tool use, autonomy, memory, identity, permissions, delegation, and high-risk capability control |
-| Secure AI engineering | Secure design, secure deployment, guardrails, monitoring, evaluation, and logging |
-| AI for cyber defense | Detection, triage, vulnerability prioritization, SOC assistance, and defensive automation |
-| Cybersecurity for AI | Protection of AI infrastructure, training data, model artifacts, inference endpoints, and supply chains |
-| AI assurance | Evaluation, validation, independent review, transparency, traceability, and safety cases |
 
 ## Core framework pages
 
 | Page | Focus |
 | --- | --- |
-| [AI Security Frameworks](Frameworks/AI-Security-Frameworks.md) | NIST, OWASP, MITRE ATLAS, CSA, Google SAIF, ISO, ENISA, ETSI, CISA/NCSC, OECD, and EU AI Act references |
-| [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming methods, benchmarks, tooling, and frontier model evaluation resources |
-| [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
-| [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
-| [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
-
-## Repository roadmap
-
-1. Expand AI security and governance frameworks.
-2. Expand AI red teaming frameworks and methodologies.
-3. Expand AI threat modeling frameworks, including AI STRIDE and agentic AI threat models.
-4. Expand agent security principles, control patterns, and maturity models.
-5. Add references in APA 7 style.
-6. Add diagrams and decision-support tables.
-7. Publish the content as a readable GitHub Pages knowledge base.
+| [AI Security Frameworks](Frameworks/AI-Security-Frameworks.md) | AI security frameworks |
+| [AI Safety vs AI Security](Frameworks/AI-Safety-vs-AI-Security.md) | Comparison of AI safety and AI security, key principles, risks, and frameworks |
+| [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming |
+| [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | Threat modeling |
+| [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent security |
+| [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | Governance and assurance |
 
 ## Suggested structure
 
@@ -53,41 +24,9 @@ The main goal is to connect AI governance, threat modeling, red teaming, assuran
 ├── README.md
 ├── Frameworks/
 │   ├── AI-Security-Frameworks.md
+│   ├── AI-Safety-vs-AI-Security.md
 │   ├── AI-Red-Team-Frameworks.md
 │   ├── AI-Threat-Modeling-Frameworks.md
 │   ├── AI-Agent-Security.md
 │   └── AI-Governance-and-Assurance.md
-├── References/
-│   └── APA7-References.md
-├── Images/
-└── ROADMAP.md
-```
-
-## Initial framework categories
-
-| Category | Examples |
-| --- | --- |
-| AI governance | NIST AI RMF, ISO/IEC 42001, OECD AI Principles, EU AI Act, ENISA guidance |
-| AI security | OWASP Top 10 for LLM Applications, MITRE ATLAS, CSA AI Controls Matrix, Google SAIF, ETSI SAI |
-| AI red teaming | Microsoft AI Red Team, PyRIT, garak, OpenAI Preparedness, Anthropic evaluations, NIST GenAI testing guidance |
-| AI assurance | model evaluations, safety cases, audit evidence, independent testing, lifecycle validation |
-| AI agent security | tool-use governance, identity, permission boundaries, memory control, sandboxing, monitoring |
-
-## How to use this repository
-
-Use this repository as a working knowledge base for:
-
-1. Building AI security programs.
-2. Comparing AI security frameworks.
-3. Preparing AI red team exercises.
-4. Designing secure AI agents and AI-enabled systems.
-5. Supporting executive, CISO, board, and national-security discussions.
-6. Mapping AI risks to technical and governance controls.
-
-## Citation
-
-Sinay, Y. (2026). *Artificial Intelligence Cyber Shield*. GitHub. https://github.com/yuval14/Artificial-Intelligence-Cyber-Shield
-
-## License
-
-Original repository content is authored by Yuval Sinay and licensed under CC BY 4.0 unless a specific file states otherwise.
+``
