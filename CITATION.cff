@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: Artificial Intelligence Cyber Shield
+message: If you use this repository, please cite it as below.
+type: dataset
+authors:
+  - family-names: Sinay
+    given-names: Yuval
+year: 2026
+repository-code: https://github.com/yuval14/Artificial-Intelligence-Cyber-Shield
+url: https://github.com/yuval14/Artificial-Intelligence-Cyber-Shield
+license: CC-BY-4.0
+keywords:
+  - AI security
+  - AI red teaming
+  - AI governance
+  - AI assurance
+  - cybersecurity
+  - national security
