@@ -35,6 +35,7 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 27 | ETSI | ETSI TS 103 701 | Conformity assessment specification for ETSI EN 303 645 | 2021 | Yes | IoT and edge-AI security testing |
 | 28 | ETSI | ETSI TR 103 621 | Implementation guidance for consumer IoT cybersecurity | 2019 | Yes | Secure implementation guidance |
 | 29 | ETSI | ETSI 304 223 | AI cybersecurity, safety, and responsibility related guidance | Verification pending | Yes / public if published | Responsible, safe, and secure AI alignment |
+| 30 | AIDEFEND Framework Initiative | AIDEFEND, AI Security Defense Framework | Structured AI security defense knowledge base of countermeasures for AI and ML systems, mapped to major AI security frameworks | 2026 | Yes, CC BY 4.0 | AI defense architecture, control mapping, detection, containment, incident response, and recovery |
 
 ## ETSI AI cybersecurity standards family
 
@@ -56,13 +57,25 @@ ETSI material should be treated as a standards family rather than a single check
 | ETSI TR 103 621 | Implementation guidance for consumer IoT cybersecurity controls |
 | ETSI 304 223 | Candidate mapping for AI cybersecurity, safety, and responsibility; confirm exact ETSI designation before formal citation |
 
+## AIDEFEND AI defense mapping
+
+AIDEFEND is useful as a defensive complement to threat-oriented AI security resources. It organizes countermeasures across the AI security lifecycle, including threat modeling, preventive hardening, runtime detection, containment, incident response, and recovery. Its stated mappings include MITRE ATLAS, MITRE D3FEND, MITRE ATT&CK, MAESTRO, OWASP LLM Top 10, OWASP ML Security Top 10, OWASP Agentic AI Top 10, NIST Adversarial Machine Learning, Cisco Integrated AI Security and Safety Framework, Google Secure AI Framework, and Databricks AI Security Framework.
+
+| AIDEFEND use case | Suggested mapping in this repository |
+| --- | --- |
+| Defensive technique catalog | Translate AI threats into practical safeguards and controls |
+| Threat-to-defense mapping | Link MITRE ATLAS and OWASP risks to mitigation, detection, and recovery actions |
+| AI security architecture | Support layered controls for AI applications, ML systems, and AI agents |
+| Detection and containment | Identify runtime controls and response actions for AI-specific abuse |
+| Assurance and gap assessment | Compare existing controls against multiple AI security frameworks |
+
 ## Practical use
 
 Use these frameworks together rather than as substitutes:
 
 1. Use NIST AI RMF and ISO/IEC 23894 for risk governance.
-2. Use OWASP, MITRE ATLAS, ETSI SAI, and Google SAIF for technical security engineering.
-3. Use CSA AI Controls Matrix, ETSI TS 103 732, and ISO/IEC 42001 for control evidence and assurance.
+2. Use OWASP, MITRE ATLAS, ETSI SAI, Google SAIF, and AIDEFEND for technical security engineering.
+3. Use CSA AI Controls Matrix, ETSI TS 103 732, AIDEFEND, and ISO/IEC 42001 for control evidence and assurance.
 4. Use ETSI GR SAI 007, the EU AI Act, and OECD AI Principles for transparency, responsibility, and public-interest alignment.
 5. Use CISA, NCSC, and ETSI secure lifecycle guidance for secure implementation.
 
@@ -84,6 +97,8 @@ Use these frameworks together rather than as substitutes:
 | Assurance | Red teaming, independent evaluation, safety cases, audit evidence, continuous review |
 
 ## APA 7 references
+
+AIDEFEND Framework Initiative. (2026). *AIDEFEND: AI security defense framework*. https://aidefend.net/
 
 Cloud Security Alliance. (2024). *AI controls matrix*. https://cloudsecurityalliance.org/
 
