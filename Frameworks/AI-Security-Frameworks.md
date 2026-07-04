@@ -1,6 +1,6 @@
 # AI Security Frameworks
 
-This page lists major AI security frameworks, taxonomies, standards, and control catalogs that help organizations protect AI systems, models, agents, data pipelines, and AI-enabled cyber defense capabilities.
+This page lists major AI security frameworks, taxonomies, standards, and control catalogs that help organizations protect AI systems, models, agents, data pipelines, AI-enabled services, connected products, and AI-enabled cyber defense capabilities.
 
 ## Framework comparison
 
@@ -21,16 +21,50 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 13 | CISA, NSA, FBI, UK NCSC, and partners | Guidelines for Secure AI System Development | Secure design, development, deployment, and operation of AI systems | 2023 | Yes | Secure AI lifecycle guidance |
 | 14 | OECD | AI Principles and OECD AI Policy Observatory | Human-centered, trustworthy AI policy principles and implementation resources | 2019 onwards | Yes | Policy and governance alignment |
 | 15 | European Union | EU AI Act | Risk-based legal framework for AI systems in the EU | 2024 | Yes | Legal and regulatory compliance |
+| 16 | ETSI | ETSI ISG SAI standards and reports | Standardization work for securing AI and using AI for security | 2019 onwards | Yes | AI cybersecurity standardization |
+| 17 | ETSI | ETSI GR SAI 004, Problem Statement | Defines the AI cybersecurity problem space and standardization needs | 2020 | Yes | Threat framing and gap analysis |
+| 18 | ETSI | ETSI GR SAI 005, Mitigation Strategy Report | Describes mitigation strategies for threats against AI systems | 2021 | Yes | AI security control planning |
+| 19 | ETSI | ETSI GR SAI 006, Role of Hardware in Security of AI | Explains hardware roots of trust, trusted execution, and platform security for AI | 2021 | Yes | AI platform and hardware security |
+| 20 | ETSI | ETSI GR SAI 007, Explicability and Transparency of AI Processing | Addresses explainability, transparency, and traceability of AI processing | 2022 | Yes | Assurance, explainability, and accountability |
+| 21 | ETSI | ETSI GR SAI 008, Privacy Aspects of AI / ML Systems | Addresses privacy risks and privacy protection for AI and ML systems | 2022 | Yes | Privacy-preserving AI security |
+| 22 | ETSI | ETSI GR SAI 009, AI Computing Platform Security Framework | Provides a security framework for AI computing platforms | 2023 | Yes | AI platform and infrastructure security |
+| 23 | ETSI | ETSI GR SAI 010, AI-Based Security and Security of AI Ecosystem | Addresses AI used for cybersecurity and security of AI ecosystems | 2023 | Yes | AI ecosystem security architecture |
+| 24 | ETSI | ETSI GR SAI 011, Multi-Party Coordinated Vulnerability Disclosure for AI | Applies coordinated vulnerability disclosure practices to AI systems | 2024 | Yes | AI vulnerability disclosure and PSIRT workflow |
+| 25 | ETSI | ETSI TS 103 732, Security Baseline for AI Models and Systems | Establishes baseline security requirements for AI models and systems | 2024 | Yes | Technical AI security baseline |
+| 26 | ETSI | ETSI EN 303 645 | Baseline cybersecurity provisions for consumer IoT devices, relevant to edge AI and AI-enabled connected products | 2020, updated later | Yes | Consumer IoT and edge-AI security |
+| 27 | ETSI | ETSI TS 103 701 | Conformity assessment specification for ETSI EN 303 645 | 2021 | Yes | IoT and edge-AI security testing |
+| 28 | ETSI | ETSI TR 103 621 | Implementation guidance for consumer IoT cybersecurity | 2019 | Yes | Secure implementation guidance |
+| 29 | ETSI | ETSI 304 223 | AI cybersecurity, safety, and responsibility related guidance | Verification pending | Yes / public if published | Responsible, safe, and secure AI alignment |
+
+## ETSI AI cybersecurity standards family
+
+ETSI material should be treated as a standards family rather than a single checklist. It is useful for linking AI cybersecurity with hardware trust, platform security, privacy, transparency, vulnerability disclosure, IoT, and assurance.
+
+| ETSI item | Suggested mapping in this repository |
+| --- | --- |
+| ETSI GR SAI 004 | AI cybersecurity problem definition, threat framing, and gap analysis |
+| ETSI GR SAI 005 | Mitigation planning for attacks against AI systems |
+| ETSI GR SAI 006 | Hardware roots of trust, secure execution, and AI platform protection |
+| ETSI GR SAI 007 | Explainability, traceability, transparency, and accountability evidence |
+| ETSI GR SAI 008 | Privacy risks, privacy controls, and privacy-preserving AI techniques |
+| ETSI GR SAI 009 | AI computing platform security and secure infrastructure architecture |
+| ETSI GR SAI 010 | Security architecture for AI-enabled security and AI ecosystem protection |
+| ETSI GR SAI 011 | AI vulnerability disclosure, multi-party coordination, and PSIRT integration |
+| ETSI TS 103 732 | Baseline security requirements for AI models and AI systems |
+| ETSI EN 303 645 | Security baseline for consumer IoT and edge-AI devices |
+| ETSI TS 103 701 | Conformity assessment for consumer IoT cybersecurity controls |
+| ETSI TR 103 621 | Implementation guidance for consumer IoT cybersecurity controls |
+| ETSI 304 223 | Candidate mapping for AI cybersecurity, safety, and responsibility; confirm exact ETSI designation before formal citation |
 
 ## Practical use
 
 Use these frameworks together rather than as substitutes:
 
 1. Use NIST AI RMF and ISO/IEC 23894 for risk governance.
-2. Use OWASP, MITRE ATLAS, and Google SAIF for technical security engineering.
-3. Use CSA AI Controls Matrix and ISO/IEC 42001 for control evidence and assurance.
-4. Use the EU AI Act and OECD AI Principles for legal, policy, and public-interest alignment.
-5. Use CISA and NCSC secure AI guidance for secure lifecycle implementation.
+2. Use OWASP, MITRE ATLAS, ETSI SAI, and Google SAIF for technical security engineering.
+3. Use CSA AI Controls Matrix, ETSI TS 103 732, and ISO/IEC 42001 for control evidence and assurance.
+4. Use ETSI GR SAI 007, the EU AI Act, and OECD AI Principles for transparency, responsibility, and public-interest alignment.
+5. Use CISA, NCSC, and ETSI secure lifecycle guidance for secure implementation.
 
 ## Suggested control domains
 
@@ -41,8 +75,12 @@ Use these frameworks together rather than as substitutes:
 | Model security | Model artifact protection, model integrity checks, evaluation gates, rollback plans |
 | Prompt and context security | Prompt injection defenses, retrieval filtering, instruction hierarchy, output validation |
 | Agent security | Tool permissions, identity boundaries, memory control, sandboxing, human approval gates |
+| Platform and hardware security | Trusted execution, secure boot, attestation, model artifact integrity, hardware root of trust |
+| Privacy | Data minimization, privacy-preserving ML, sensitive data controls, privacy risk assessment |
+| Transparency | Explainability evidence, traceability, model cards, decision logs, audit trails |
 | Monitoring | Abuse detection, drift monitoring, jailbreak telemetry, model behavior logging |
 | Incident response | AI incident taxonomy, playbooks, evidence capture, escalation paths |
+| Vulnerability disclosure | AI vulnerability intake, coordinated disclosure, supplier coordination, PSIRT workflow |
 | Assurance | Red teaming, independent evaluation, safety cases, audit evidence, continuous review |
 
 ## APA 7 references
@@ -50,6 +88,30 @@ Use these frameworks together rather than as substitutes:
 Cloud Security Alliance. (2024). *AI controls matrix*. https://cloudsecurityalliance.org/
 
 Cybersecurity and Infrastructure Security Agency, National Security Agency, Federal Bureau of Investigation, National Cyber Security Centre, and international partners. (2023). *Guidelines for secure AI system development*. https://www.cisa.gov/
+
+European Telecommunications Standards Institute. (2019). *ETSI TR 103 621: Cyber security for consumer Internet of Things: Guide to implementing ETSI EN 303 645*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2020). *ETSI EN 303 645: Cyber security for consumer Internet of Things: Baseline requirements*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2020). *ETSI GR SAI 004: Securing artificial intelligence: Problem statement*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2021). *ETSI GR SAI 005: Securing artificial intelligence: Mitigation strategy report*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2021). *ETSI GR SAI 006: Securing artificial intelligence: The role of hardware in security of AI*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2021). *ETSI TS 103 701: Cyber security assessment for consumer Internet of Things*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2022). *ETSI GR SAI 007: Securing artificial intelligence: Explicability and transparency of AI processing*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2022). *ETSI GR SAI 008: Securing artificial intelligence: Privacy aspects of AI / ML systems*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2023). *ETSI GR SAI 009: Securing artificial intelligence: AI computing platform security framework*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2023). *ETSI GR SAI 010: Securing artificial intelligence: AI-based security and security of AI ecosystem*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2024). *ETSI GR SAI 011: Securing artificial intelligence: Multi-party coordinated vulnerability disclosure for AI*. https://www.etsi.org/
+
+European Telecommunications Standards Institute. (2024). *ETSI TS 103 732: Securing artificial intelligence: Security baseline for AI models and systems*. https://www.etsi.org/
 
 European Union. (2024). *Artificial Intelligence Act*. https://artificialintelligenceact.eu/
 
