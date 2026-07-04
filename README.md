@@ -26,12 +26,22 @@ The main goal is to connect AI governance, threat modeling, red teaming, assuran
 | Cybersecurity for AI | Protection of AI infrastructure, training data, model artifacts, inference endpoints, and supply chains |
 | AI assurance | Evaluation, validation, independent review, transparency, traceability, and safety cases |
 
+## Core framework pages
+
+| Page | Focus |
+| --- | --- |
+| [AI Security Frameworks](Frameworks/AI-Security-Frameworks.md) | NIST, OWASP, MITRE ATLAS, CSA, Google SAIF, ISO, ENISA, ETSI, CISA/NCSC, OECD, and EU AI Act references |
+| [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming methods, benchmarks, tooling, and frontier model evaluation resources |
+| [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
+| [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
+| [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
+
 ## Repository roadmap
 
-1. Add AI security and governance frameworks.
-2. Add AI red teaming frameworks and methodologies.
-3. Add AI threat modeling frameworks.
-4. Add agent security principles and control patterns.
+1. Expand AI security and governance frameworks.
+2. Expand AI red teaming frameworks and methodologies.
+3. Expand AI threat modeling frameworks, including AI STRIDE and agentic AI threat models.
+4. Expand agent security principles, control patterns, and maturity models.
 5. Add references in APA 7 style.
 6. Add diagrams and decision-support tables.
 7. Publish the content as a readable GitHub Pages knowledge base.
@@ -58,8 +68,8 @@ The main goal is to connect AI governance, threat modeling, red teaming, assuran
 | Category | Examples |
 | --- | --- |
 | AI governance | NIST AI RMF, ISO/IEC 42001, OECD AI Principles, EU AI Act, ENISA guidance |
-| AI security | OWASP Top 10 for LLM Applications, MITRE ATLAS, CSA AI Controls Matrix, Google SAIF |
-| AI red teaming | Microsoft AI Red Team, OpenAI Preparedness, Anthropic evaluations, NIST GenAI testing guidance |
+| AI security | OWASP Top 10 for LLM Applications, MITRE ATLAS, CSA AI Controls Matrix, Google SAIF, ETSI SAI |
+| AI red teaming | Microsoft AI Red Team, PyRIT, garak, OpenAI Preparedness, Anthropic evaluations, NIST GenAI testing guidance |
 | AI assurance | model evaluations, safety cases, audit evidence, independent testing, lifecycle validation |
 | AI agent security | tool-use governance, identity, permission boundaries, memory control, sandboxing, monitoring |
 
