@@ -36,6 +36,13 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 28 | ETSI | ETSI TR 103 621 | Implementation guidance for consumer IoT cybersecurity | 2019 | Yes | Secure implementation guidance |
 | 29 | ETSI | ETSI 304 223 | AI cybersecurity, safety, and responsibility related guidance | Verification pending | Yes / public if published | Responsible, safe, and secure AI alignment |
 | 30 | AIDEFEND Framework Initiative | AIDEFEND, AI Security Defense Framework | Structured AI security defense knowledge base of countermeasures for AI and ML systems, mapped to major AI security frameworks | 2026 | Yes, CC BY 4.0 | AI defense architecture, control mapping, detection, containment, incident response, and recovery |
+| 31 | IBM | Adversarial Robustness Toolbox | Open source library for adversarial ML attacks, defenses, robustness testing, certification, and runtime detection | 2018 | Yes, MIT License | AI security testing, adversarial robustness, red teaming, and model hardening |
+| 32 | IBM | AI Fairness 360 | Open source toolkit for detecting, explaining, and mitigating unwanted algorithmic bias in datasets and ML models | 2018 | Yes, Apache 2.0 | Fairness testing, bias mitigation, and responsible AI assurance |
+| 33 | IBM | AI Explainability 360 | Open source toolkit and taxonomy for explaining AI model decisions using multiple explanation methods | 2019 | Yes, Apache 2.0 | Explainability, transparency, auditability, and model assurance |
+| 34 | IBM | AI FactSheets 360 | Research framework and toolkit for documenting AI services through supplier-style declarations of conformity | 2018 | Yes | AI transparency, provenance, accountability, and governance evidence |
+| 35 | IBM | Uncertainty Quantification 360 | Open source toolkit for quantifying, evaluating, improving, and communicating AI uncertainty | 2021 | Yes, Apache 2.0 | Reliability assessment, uncertainty communication, and trustworthy AI engineering |
+| 36 | IBM | AI Risk Atlas and Risk Atlas Nexus | Taxonomy and tooling for navigating AI risks, resources, benchmarks, datasets, mitigations, and governance mappings | 2025 | Yes | AI risk taxonomy, governance mapping, compliance workflows, and mitigation planning |
+| 37 | IBM | watsonx.governance | Enterprise AI governance platform for lifecycle governance, risk management, compliance, monitoring, and model oversight | 2023 | Public / commercial platform | Operational AI governance, regulatory compliance, model monitoring, and audit evidence |
 
 ## ETSI AI cybersecurity standards family
 
@@ -69,15 +76,29 @@ AIDEFEND is useful as a defensive complement to threat-oriented AI security reso
 | Detection and containment | Identify runtime controls and response actions for AI-specific abuse |
 | Assurance and gap assessment | Compare existing controls against multiple AI security frameworks |
 
+## IBM AI security, governance, and trustworthy AI resources
+
+IBM's AI security and trustworthy AI resources are useful because they cover both technical AI security testing and governance evidence. ART supports adversarial robustness testing and defenses. AIF360, AIX360, AI FactSheets 360, and UQ360 support fairness, explainability, transparency, provenance, and uncertainty management. AI Risk Atlas and watsonx.governance support enterprise risk taxonomy, governance workflows, compliance monitoring, and operational oversight.
+
+| IBM resource | Suggested mapping in this repository |
+| --- | --- |
+| Adversarial Robustness Toolbox | Map to AI red teaming, adversarial ML testing, model hardening, runtime detection, and robustness assurance |
+| AI Fairness 360 | Map to fairness testing, bias detection, bias mitigation, responsible AI evidence, and model validation |
+| AI Explainability 360 | Map to explainability controls, model transparency, decision auditability, and stakeholder assurance |
+| AI FactSheets 360 | Map to AI documentation, supplier declarations, provenance, audit trails, accountability, and governance evidence |
+| Uncertainty Quantification 360 | Map to model reliability, confidence communication, uncertainty-aware decisions, and safety cases |
+| AI Risk Atlas and Risk Atlas Nexus | Map to AI risk taxonomy, governance mappings, compliance workflows, risk resources, and mitigation planning |
+| watsonx.governance | Map to operational AI lifecycle governance, regulatory compliance, model monitoring, and enterprise audit evidence |
+
 ## Practical use
 
 Use these frameworks together rather than as substitutes:
 
-1. Use NIST AI RMF and ISO/IEC 23894 for risk governance.
-2. Use OWASP, MITRE ATLAS, ETSI SAI, Google SAIF, and AIDEFEND for technical security engineering.
-3. Use CSA AI Controls Matrix, ETSI TS 103 732, AIDEFEND, and ISO/IEC 42001 for control evidence and assurance.
-4. Use ETSI GR SAI 007, the EU AI Act, and OECD AI Principles for transparency, responsibility, and public-interest alignment.
-5. Use CISA, NCSC, and ETSI secure lifecycle guidance for secure implementation.
+1. Use NIST AI RMF, IBM AI Risk Atlas, and ISO/IEC 23894 for risk governance.
+2. Use OWASP, MITRE ATLAS, ETSI SAI, Google SAIF, AIDEFEND, and IBM ART for technical security engineering.
+3. Use CSA AI Controls Matrix, ETSI TS 103 732, AIDEFEND, IBM AI FactSheets 360, IBM watsonx.governance, and ISO/IEC 42001 for control evidence and assurance.
+4. Use IBM AIF360, IBM AIX360, ETSI GR SAI 007, the EU AI Act, and OECD AI Principles for transparency, fairness, responsibility, and public-interest alignment.
+5. Use CISA, NCSC, ETSI secure lifecycle guidance, and IBM governance tooling for secure implementation and ongoing oversight.
 
 ## Suggested control domains
 
@@ -99,6 +120,10 @@ Use these frameworks together rather than as substitutes:
 ## APA 7 references
 
 AIDEFEND Framework Initiative. (2026). *AIDEFEND: AI security defense framework*. https://aidefend.net/
+
+Bagehorn, F., Brimijoin, K., Daly, E. M., He, J., Hind, M., Garces-Erice, L., Giblin, C., Giurgiu, I., Martino, J., Nair, R., Piorkowski, D., Rawat, A., Richards, J., Rooney, S., Salwala, D., Tirupathi, S., Urbanetz, P., Varshney, K. R., Vejsbjerg, I., & Wolf-Bauwens, M. L. (2025). *AI Risk Atlas: Taxonomy and tooling for navigating AI risks and resources*. arXiv. https://arxiv.org/abs/2503.05780
+
+Bellamy, R. K. E., Dey, K., Hind, M., Hoffman, S. C., Houde, S., Kannan, K., Lohia, P., Martino, J., Mehta, S., Mojsilovic, A., Nagar, S., Ramamurthy, K. N., Richards, J., Saha, D., Sattigeri, P., Singh, M., Varshney, K. R., & Zhang, Y. (2018). *AI Fairness 360: An extensible toolkit for detecting, understanding, and mitigating unwanted algorithmic bias*. arXiv. https://arxiv.org/abs/1810.01943
 
 Cloud Security Alliance. (2024). *AI controls matrix*. https://cloudsecurityalliance.org/
 
@@ -130,7 +155,11 @@ European Telecommunications Standards Institute. (2024). *ETSI TS 103 732: Secur
 
 European Union. (2024). *Artificial Intelligence Act*. https://artificialintelligenceact.eu/
 
+Ghosh, S., Liao, Q. V., Ramamurthy, K. N., Navratil, J., Sattigeri, P., Varshney, K. R., & Zhang, Y. (2021). *Uncertainty Quantification 360: A holistic toolkit for quantifying and communicating the uncertainty of AI*. arXiv. https://arxiv.org/abs/2106.01410
+
 Google. (2023). *Secure AI framework*. https://saif.google/
+
+IBM. (2023). *watsonx.governance*. https://www.ibm.com/products/watsonx-governance
 
 International Organization for Standardization. (2023). *ISO/IEC 23894:2023 Artificial intelligence: Guidance on risk management*. https://www.iso.org/
 
@@ -142,8 +171,14 @@ National Institute of Standards and Technology. (2023). *Artificial intelligence
 
 National Institute of Standards and Technology. (2024). *Artificial intelligence risk management framework: Generative artificial intelligence profile*. https://www.nist.gov/itl/ai-risk-management-framework
 
+Nicolae, M.-I., Sinn, M., Tran, M. N., Buesser, B., Rawat, A., Wistuba, M., Zantedeschi, V., Baracaldo, N., Chen, B., Ludwig, H., Molloy, I. M., & Edwards, B. (2018). *Adversarial Robustness Toolbox v1.0.0*. arXiv. https://arxiv.org/abs/1807.01069
+
 Organisation for Economic Co-operation and Development. (2019). *OECD principles on artificial intelligence*. https://oecd.ai/
 
 OWASP Foundation. (2025). *OWASP top 10 for large language model applications*. https://owasp.org/www-project-top-10-for-large-language-model-applications/
 
 OWASP Foundation. (2023). *Machine learning security top 10*. https://owasp.org/
+
+Richards, J., Piorkowski, D., Hind, M., Houde, S., Mojsilovic, A., & Varshney, K. R. (2020). *AI FactSheets 360*. IBM Research. https://aifs360.res.ibm.com/
+
+Vijay Arya, R., Bellamy, K. E., Chen, P.-Y., Dhurandhar, A., Hind, M., Hoffman, S. C., Houde, S., Liao, Q. V., Luss, R., Mojsilovic, A., Mourad, S., Pedemonte, P., Raghavendra, R., Richards, J., Sattigeri, P., Shanmugam, K., Singh, M., Varshney, K. R., Wei, D., & Zhang, Y. (2019). *One explanation does not fit all: A toolkit and taxonomy of AI explainability techniques*. arXiv. https://arxiv.org/abs/1909.03012
