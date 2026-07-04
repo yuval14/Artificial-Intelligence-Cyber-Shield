@@ -43,6 +43,7 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 35 | IBM | Uncertainty Quantification 360 | Open source toolkit for quantifying, evaluating, improving, and communicating AI uncertainty | 2021 | Yes, Apache 2.0 | Reliability assessment, uncertainty communication, and trustworthy AI engineering |
 | 36 | IBM | AI Risk Atlas and Risk Atlas Nexus | Taxonomy and tooling for navigating AI risks, resources, benchmarks, datasets, mitigations, and governance mappings | 2025 | Yes | AI risk taxonomy, governance mapping, compliance workflows, and mitigation planning |
 | 37 | IBM | watsonx.governance | Enterprise AI governance platform for lifecycle governance, risk management, compliance, monitoring, and model oversight | 2023 | Public / commercial platform | Operational AI governance, regulatory compliance, model monitoring, and audit evidence |
+| 38 | Andrey Pautov | [AdversaryGraph](https://github.com/anpa1200/adversarygraph) | Self-hosted AI-assisted CTI platform: maps analyst reports, logs, and PCAP files to MITRE ATT&CK techniques, scores adversary group similarity using Jaccard overlap, exports STIX 2.1 bundles for OpenCTI import, and forwards detections to SIEM | 2024 | Yes, MIT License | CTI-to-detection workflow, ATT&CK threat modeling, adversary profiling, and AI-assisted threat intelligence |
 
 ## ETSI AI cybersecurity standards family
 
