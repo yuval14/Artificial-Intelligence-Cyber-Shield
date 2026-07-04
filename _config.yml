@@ -1,0 +1,6 @@
+title: Artificial Intelligence Cyber Shield
+description: AI security, AI governance, AI red teaming, AI assurance, and cyber defense knowledge base.
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
