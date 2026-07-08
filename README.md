@@ -33,7 +33,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 
 | Page | Focus |
 | --- | --- |
-| [AI Security Frameworks](Frameworks/AI-Security-Frameworks.md) | NIST, OWASP, MITRE ATLAS, CSA, Google SAIF, ISO, ENISA, ETSI, CISA/NCSC, OECD, and EU AI Act references |
+| [AI Security Frameworks](Frameworks/AI-Security-Frameworks.md) | NIST, OWASP, MITRE ATLAS, CSA, Google SAIF, Pillar Security SAIL, ISO, ENISA, ETSI, CISA/NCSC, OECD, and EU AI Act references |
 | [AI Safety vs AI Security](Frameworks/AI-Safety-vs-AI-Security.md) | Comparison of AI safety and AI security, including objectives, risks, controls, and complementary roles |
 | [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming methods, benchmarks, tooling, and frontier model evaluation resources |
 | [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
@@ -58,6 +58,7 @@ Coverage includes standards, guidance, and research from:
 | OECD | AI Principles and AI incident monitoring |
 | European Union | EU AI Act, GPAI Code of Practice, and digital regulation context |
 | CISA and NCSC | Secure AI deployment, secure development, and operational resilience guidance |
+| Pillar Security | SAIL Secure AI Lifecycle Framework for lifecycle-oriented AI and agentic AI security |
 | Google, Microsoft, Anthropic, and OpenAI | Frontier AI safety, red teaming, secure AI development, and preparedness practices |
 
 ### AI security frameworks
@@ -71,9 +72,10 @@ Examples include:
 5. OWASP Top 10 for LLM Applications.
 6. OWASP Agentic AI guidance.
 7. Cloud Security Alliance AI Controls Matrix.
-8. ETSI AI security standards and guidance.
-9. ISO/IEC 42001.
-10. ISO/IEC 23894.
+8. Pillar Security SAIL Secure AI Lifecycle Framework.
+9. ETSI AI security standards and guidance.
+10. ISO/IEC 42001.
+11. ISO/IEC 23894.
 
 ### AI safety
 
@@ -138,7 +140,7 @@ Including:
 5. Expand agent security principles, control patterns, and maturity models.
 6. Add AI supply chain security guidance.
 7. Add AI incident repositories and case studies.
-8. Expand ETSI, ISO/IEC, ENISA, OWASP, MITRE, CSA, and NIST standards mapping.
+8. Expand ETSI, ISO/IEC, ENISA, OWASP, MITRE, CSA, Pillar Security, and NIST standards mapping.
 9. Add references in APA 7 style.
 10. Add diagrams and decision-support tables.
 11. Publish the content as a readable GitHub Pages knowledge base.
@@ -167,7 +169,7 @@ Including:
 | --- | --- |
 | AI governance | NIST AI RMF, ISO/IEC 42001, OECD AI Principles, EU AI Act, ENISA guidance |
 | AI safety | alignment, robustness, reliability, frontier safety frameworks, safety cases, human oversight, responsible scaling |
-| AI security | OWASP Top 10 for LLM Applications, MITRE ATLAS, CSA AI Controls Matrix, Google SAIF, ETSI SAI |
+| AI security | OWASP Top 10 for LLM Applications, MITRE ATLAS, CSA AI Controls Matrix, Google SAIF, Pillar Security SAIL, ETSI SAI |
 | AI red teaming | Microsoft AI Red Team, PyRIT, garak, OpenAI Preparedness, Anthropic evaluations, NIST GenAI testing guidance |
 | AI assurance | model evaluations, safety cases, audit evidence, independent testing, lifecycle validation |
 | AI agent security | tool-use governance, identity, permission boundaries, memory control, sandboxing, monitoring |
