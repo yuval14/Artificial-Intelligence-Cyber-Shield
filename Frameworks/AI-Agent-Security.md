@@ -16,7 +16,8 @@ This page lists frameworks, control patterns, and security principles for AI age
 | 8 | CISA, NSA, FBI, UK NCSC, and partners | Guidelines for Secure AI System Development | Secure design, development, deployment, and operation of AI systems | 2023 | Yes | Secure AI lifecycle controls |
 | 9 | Model Context Protocol community | MCP security guidance and threat discussions | Secure tool connections, context exchange, and server-client trust boundaries | 2024 onwards | Public | MCP and tool ecosystem security |
 | 10 | ETSI | Securing Artificial Intelligence reports and guidance | Address AI threats, data supply-chain risks, security testing, vulnerability disclosure, privacy, and mitigation strategies | 2019 onwards | Public standards and reports | AI system and agent security governance |
-| 11 | Research community | ASTRA, WASP, AI-Infra-Guard, and related agent benchmarks | Evaluate agent steerability, prompt-injection resilience, web-agent security, and multi-layer agent attacks | 2025 onwards | Yes / public research | Agentic AI security evaluation |
+| 11 | UC Berkeley Center for Long-Term Cybersecurity | AgentWatch: Privacy and Security Evaluation for Browser-Based AI Agents | Evaluate browser-based AI agents against privacy and security scenarios, including data disclosure, ambiguous prompts, hallucination, prompt injection, and browser sandbox isolation | 2026 | Public report and open-source evaluation hub | Agent privacy and security testing |
+| 12 | Research community | ASTRA, WASP, AI-Infra-Guard, and related agent benchmarks | Evaluate agent steerability, prompt-injection resilience, web-agent security, and multi-layer agent attacks | 2025 onwards | Yes / public research | Agentic AI security evaluation |
 
 ## Agent-specific risk areas
 
@@ -34,6 +35,7 @@ This page lists frameworks, control patterns, and security principles for AI age
 | Weak observability | Actions cannot be reconstructed after an incident | Structured logs, tool-call audit trail, trace IDs, evidence retention |
 | Tool-loop denial of service | Agent repeatedly calls tools or consumes tokens, compute, API quota, or budget | Quotas, rate limits, timeout rules, circuit breakers, recursion limits |
 | Cross-agent propagation | One compromised agent influences another agent, workflow, or memory store | Agent isolation, signed messages, trust labels, workflow-level policy enforcement |
+| Browser sandbox escape or leakage | Browser-based agents may cross site, session, or context boundaries when acting for users | Browser isolation, origin boundaries, session separation, explicit user confirmation, cross-context data leakage tests |
 
 ## Agent security reference architecture
 
@@ -44,6 +46,7 @@ This page lists frameworks, control patterns, and security principles for AI age
 | Model and policy layer | Keep model behavior within approved policy boundaries | System instruction management, policy-as-code, safety filters, regression tests |
 | Context and retrieval layer | Prevent untrusted content from becoming trusted instructions | Source labeling, retrieval filtering, prompt injection detection, context separation |
 | Tool and action layer | Prevent unauthorized or unsafe actions | Tool allowlist, parameter validation, sandboxing, approval gates, transaction signing |
+| Browser and session layer | Prevent browser-based agents from leaking user data across sites, tabs, forms, sessions, and contexts | Sandboxed browser profile, origin isolation, session scoping, cookie and credential controls, cross-site leakage tests |
 | Memory layer | Prevent poisoned, stale, or unauthorized memory from changing behavior | Memory provenance, write controls, expiry rules, review workflows, rollback |
 | Monitoring layer | Reconstruct actions and detect abuse | Trace IDs, prompt logs, tool-call logs, anomaly detection, SIEM integration |
 | Response and recovery layer | Limit impact when an agent fails or is compromised | Kill switch, rollback, credential revocation, incident playbooks, forensic capture |
@@ -58,6 +61,18 @@ Each AI agent should possess only one of the following three high-risk capabilit
 
 If an agent requires more than one high-risk capability, add compensating controls such as human approval, separation of duties, sandboxing, rate limits, transaction signing, and independent monitoring.
 
+## AgentWatch evaluation dimensions
+
+AgentWatch is a UC Berkeley CLTC evaluation method for browser-based AI agents. It uses standardized scenarios to compare agents across five dimensions:
+
+| Evaluation dimension | Security relevance |
+| --- | --- |
+| Data disclosure control | Tests whether the agent avoids leaking or oversharing sensitive user information. |
+| Misunderstood prompts | Tests whether the agent slows down, clarifies, or refuses when user intent is broad, risky, ambiguous, or self-contradictory. |
+| Hallucination | Tests whether the agent avoids inventing nonexistent sources, events, or personas that could mislead users. |
+| Prompt injection | Tests whether the agent ignores or flags hidden or adversarial instructions embedded in content or metadata. |
+| Browser sandbox isolation | Tests whether the agent respects browser, site, session, and context boundaries. |
+
 ## Agent security checklist
 
 | Question | Why it matters | Evidence to collect |
@@ -70,6 +85,7 @@ If an agent requires more than one high-risk capability, add compensating contro
 | Can the agent spend money, consume compute, or trigger external workflows? | Agents can create denial-of-wallet and cascading automation failures | Quotas, budgets, timeout rules, cost alerts |
 | Are tool calls and model decisions logged? | Incidents require reconstruction of prompts, outputs, tools, and approvals | Trace logs, SIEM events, retention policy |
 | Can the agent be stopped quickly? | Response speed matters when autonomous systems misbehave | Kill switch, credential revocation plan, runbook |
+| Has the agent been tested with AgentWatch-style browser scenarios? | Browser agents introduce unique risks around data disclosure, prompt injection, ambiguous intent, hallucination, and sandbox boundaries | Scenario library, privacy and safety score, regression-test evidence, exception log |
 
 ## Suggested maturity model
 
@@ -100,5 +116,7 @@ MITRE. (n.d.). *MITRE ATLAS: Adversarial threat landscape for artificial-intelli
 National Institute of Standards and Technology. (2023). *Artificial intelligence risk management framework (AI RMF 1.0)*. https://doi.org/10.6028/NIST.AI.100-1
 
 Open Worldwide Application Security Project. (2025). *OWASP Top 10 for large language model applications*. https://genai.owasp.org/
+
+Svan, A., Hall, M., Kaufman, B., Austin, C., Kushe, R., & Late, A. (2026). *AgentWatch: Privacy and security evaluation for browser-based AI agents*. UC Berkeley Center for Long-Term Cybersecurity. https://cltc.berkeley.edu/2026/06/30/new-cltc-white-paper-introduces-method-of-evaluating-privacy-and-security-of-ai-agents/
 
 Yang, Y., Zheng, X., Wu, H., Cheng, H., Shi, X., Guo, J., Yang, B., Zhou, Y., Wu, X., & Ying, Z. (2026). *Securing the AI agent: A unified framework for multi-layer agent red teaming*. arXiv. https://arxiv.org/abs/2606.31227
