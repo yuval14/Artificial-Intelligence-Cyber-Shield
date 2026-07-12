@@ -40,7 +40,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
 | [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
 | [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
-| [AI Security and AI Safety Certifications](Certifications/AI-Security-and-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, and ISO/IEC 42001 professional credentials |
+| [AI Security and AI Safety Certifications](Professional-Certifications/AI-Security-and-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, and ISO/IEC 42001 professional credentials |
 
 ## Additional knowledge areas
 
@@ -126,7 +126,7 @@ Coverage includes:
 
 ### Professional certifications
 
-The [AI Security and AI Safety Certifications](Certifications/AI-Security-and-Safety-Certifications.md) page compares credentials for:
+The [AI Security and AI Safety Certifications](Professional-Certifications/AI-Security-and-Safety-Certifications.md) page compares credentials for:
 
 1. Enterprise AI security leadership.
 2. AI safety and cloud security.
@@ -174,7 +174,7 @@ Including:
 │   ├── AI-Threat-Modeling-Frameworks.md
 │   ├── AI-Agent-Security.md
 │   └── AI-Governance-and-Assurance.md
-├── Certifications/
+├── Professional-Certifications/
 │   └── AI-Security-and-Safety-Certifications.md
 ├── References/
 │   └── APA7-References.md
