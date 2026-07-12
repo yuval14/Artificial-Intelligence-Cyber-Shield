@@ -1,4 +1,4 @@
-# AI Security and AI Safety Certifications
+# Professional AI Security and AI Safety Certifications
 
 This page compares professional credentials and structured professional-education programs focused on **AI security**, **AI safety**, **AI governance**, **AI risk**, **AI assurance**, **AI auditing**, and **adversarial AI testing**.
 
