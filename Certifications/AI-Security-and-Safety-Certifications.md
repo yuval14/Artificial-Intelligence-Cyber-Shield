@@ -1,8 +1,8 @@
 # AI Security and AI Safety Certifications
 
-This page compares professional credentials focused on **AI security**, **AI safety**, **AI governance**, **AI risk**, **AI assurance**, **AI auditing**, and **adversarial AI testing**.
+This page compares professional credentials and structured professional-education programs focused on **AI security**, **AI safety**, **AI governance**, **AI risk**, **AI assurance**, **AI auditing**, and **adversarial AI testing**.
 
-> **Status:** Reviewed on July 13, 2026. Credential names, eligibility rules, exam formats, fees, and availability may change. Candidates should confirm current requirements directly with the issuing organization before registration.
+> **Status:** Reviewed on July 13, 2026. Credential names, eligibility rules, exam formats, fees, cohort dates, and availability may change. Candidates should confirm current requirements directly with the issuing organization before registration.
 
 ## Executive summary
 
@@ -18,12 +18,13 @@ There is no single credential that covers the entire AI security and safety fiel
 - **AI audit and assurance:** ISACA AAIA or ISO/IEC 42001 Lead Auditor
 - **AI-enabled security automation:** GIAC GASAE
 - **AI-enabled offensive operations:** GIAC GOAA
+- **Applied organizational AI security education:** Bar-Ilan University AI Security course
 
 ## Comprehensive comparison table
 
 The priority and technical-depth ratings below are analytical assessments, not official ratings issued by the credential providers.
 
-| Priority | Credential | Issuing organization | Credential type | Main specialization | Technical depth | Assessment | Formal prerequisites | Best suited for |
+| Priority | Credential or program | Issuing organization | Credential type | Main specialization | Technical depth | Assessment | Formal prerequisites | Best suited for |
 |---:|---|---|---|---|---|---|---|---|
 | **1** | [Advanced in AI Security Management, AAISM](https://www.isaca.org/credentialing/aaism) | ISACA | Certification | Enterprise AI security, governance, risk management, AI technologies, architecture, and controls | Medium–High | Proctored certification examination | Active CISM or CISSP | CISOs, AI security leaders, security architects, senior consultants, and security managers |
 | **2** | [Trusted AI Safety Expert, TAISE](https://cloudsecurityalliance.org/education/taise) | Cloud Security Alliance and Northeastern University | Certificate | AI safety, AI security, responsible AI, governance, privacy, cloud security, and lifecycle risk | Medium | Mandatory 10-module course and final examination | None; familiarity with AI, cloud, and security is recommended | AI safety leaders, architects, governance professionals, cloud-security professionals, and program managers |
@@ -37,10 +38,29 @@ The priority and technical-depth ratings below are analytical assessments, not o
 | **10** | [GIAC AI Security Automation Engineer, GASAE](https://www.giac.org/certifications/ai-security-automation-engineer-gasae) | GIAC | Practitioner certification | AI-driven and automated security operations across SOC, cloud, offensive, defensive, and purple-team workflows | Very High | CyberLive hands-on assessment | No formal prerequisite stated; scripting, cloud, and security-operations experience is recommended | Detection engineers, incident responders, automation engineers, threat hunters, and security architects |
 | **11** | [GIAC Offensive AI Analyst, GOAA](https://www.giac.org/certifications/offensive-ai-analyst-goaa) | GIAC | Practitioner certification | Use of AI for reconnaissance, adversary emulation, vulnerability research, attack simulation, and offensive operations | Very High | CyberLive hands-on assessment | No formal prerequisite stated; offensive-security experience is recommended | Red teamers, penetration testers, threat researchers, and adversary-emulation professionals |
 | **12** | [ISO/IEC 42001 Foundation](https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-foundation) | PECB or another recognized personnel-certification provider | Foundation certificate | Fundamentals of AI management systems, governance, risk, controls, and continual improvement | Low | Introductory training and examination | None or minimal prior knowledge | Entry-level practitioners, managers, and professionals supporting an AIMS program |
+| **13** | [AI Security for Information Security Professionals](https://hitech-school.biu.ac.il/course/ai-security) | Bar-Ilan University, School of High-Tech and Cyber | University professional-course certificate | Establishing and leading an organizational AI security program; GenAI, LLM and agent security; governance; risk; production controls; and GRC integration | Medium–High | Four-session, 20-academic-hour hybrid professional course; completion requirements apply | More than two years of information-security experience | Information-security managers, cybersecurity professionals, GRC specialists, regulators, risk managers, and organizational AI security program leaders |
+
+## Bar-Ilan University AI Security course
+
+The **AI Security for Information Security Professionals** course is a structured professional program designed to help experienced cybersecurity and information-security practitioners establish and manage organizational AI security programs.
+
+| Item | Published details reviewed on July 13, 2026 |
+|---|---|
+| Provider | Bar-Ilan University, School of High-Tech and Cyber |
+| Credential | Bar-Ilan University certificate for participants who meet the program requirements |
+| Duration | 20 academic hours across four sessions |
+| Delivery | Hybrid learning at the Ramat Gan campus and through Zoom; recorded lessons are available |
+| Published opening date | September 16, 2026 |
+| Recommended experience | More than two years of information-security experience |
+| Primary audience | Information-security managers, cybersecurity professionals, GRC specialists, regulatory professionals, and risk managers |
+| Core technical topics | GenAI security, LLM and AI-agent security, RAG, prompts, plugins, production security, logging, monitoring, security gates, access controls, capability controls, fail-safe design, human-in-the-loop, and incident reconstruction |
+| Governance and risk topics | AI risk classification, AI lifecycle controls, ISO/IEC 42001, NIST AI RMF, OWASP guidance, third-party risk, auditability, regulation, ethics, and integration with existing GRC processes |
+
+This is a **university professional-course certificate**, not an independent personnel certification comparable to AAISM, GAIPS, OSAI, or AIGP. Its principal value is applied education for building and leading an organizational AI security program.
 
 ## Coverage matrix
 
-| Credential | AI security | AI safety | Governance | Risk | Audit and assurance | Cloud | Hands-on labs | Offensive testing |
+| Credential or program | AI security | AI safety | Governance | Risk | Audit and assurance | Cloud | Hands-on labs or exercises | Offensive testing |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **AAISM** | High | Medium | High | High | Medium | Medium | No | No |
 | **TAISE** | High | High | High | High | Medium | High | Limited | Limited |
@@ -54,12 +74,14 @@ The priority and technical-depth ratings below are analytical assessments, not o
 | **GASAE** | High | Low | Low | Medium | Low | Very High | Yes | High |
 | **GOAA** | High | Low | Low | Medium | Low | Medium | Yes | Very High |
 | **ISO/IEC 42001 Foundation** | Low | Medium | Medium | Medium | Low | Low | No | No |
+| **Bar-Ilan AI Security course** | High | Medium | High | High | Medium | Medium | Course exercises | Low–Medium |
 
 ## Recommended combinations by role
 
 | Target role | Recommended credential pathway |
 |---|---|
 | **AI Security Architect** | AAISM + GAIPS + ISO/IEC 42001 Lead Implementer |
+| **Organizational AI Security Program Leader** | Bar-Ilan AI Security course + AAISM + ISO/IEC 42001 Lead Implementer |
 | **AI Safety and Governance Leader** | TAISE + AIGP + ISO/IEC 42001 Lead Implementer |
 | **AI Red Team Lead** | OSAI/OSAI+ + GAIPS + GOAA |
 | **AI Risk Leader** | AAIR + TAISE + AIGP |
@@ -76,6 +98,7 @@ The priority and technical-depth ratings below are analytical assessments, not o
 4. **ISO/IEC 42001 Lead Implementer** for formal AI management-system implementation.
 5. **OSAI/OSAI+** for practical adversarial assessment and AI red teaming.
 6. **AAIR** for enterprise and strategic AI-risk leadership.
+7. **Bar-Ilan University AI Security course** for applied development of an organizational AI security program, especially for practitioners working in Israel or seeking hybrid university-based instruction.
 
 ### Strongest balanced combination
 
@@ -93,9 +116,11 @@ This combination covers three complementary capability layers:
 
 A **certification** generally represents an independently assessed professional credential and may include eligibility, experience, ethics, or continuing-education requirements. A **certificate** commonly demonstrates successful completion of a defined learning and assessment program. Both can be valuable, but they should not be treated as identical credential types.
 
+The Bar-Ilan University AI Security course belongs to the professional-course certificate category. It should be evaluated according to its curriculum, faculty, practical relevance, instructional depth, and university recognition rather than treated as equivalent to an independent industry personnel certification.
+
 ### Securing AI versus using AI for cybersecurity
 
-- **GAIPS and OSAI/OSAI+** focus primarily on assessing or protecting AI-enabled systems.
+- **GAIPS, OSAI/OSAI+, and the Bar-Ilan University AI Security course** focus primarily on assessing, governing, or protecting AI-enabled systems.
 - **GASAE and GOAA** focus more heavily on applying AI and automation within cybersecurity operations.
 - **AAISM, AAIR, AAIA, TAISE, AIGP, and ISO/IEC 42001 credentials** focus on management, risk, governance, assurance, safety, or audit.
 
@@ -105,18 +130,21 @@ The Cloud Security Alliance **STAR for AI** program is an organizational assuran
 
 ## Selection criteria
 
-Before choosing a credential, assess:
+Before choosing a credential or professional course, assess:
 
 1. The target role: technical engineering, red teaming, leadership, governance, risk, audit, or assurance.
-2. The assessment method: knowledge examination, scenario-based examination, or practical laboratory testing.
-3. Eligibility requirements and required prerequisite credentials.
-4. Whether the credential focuses on securing AI or using AI for cybersecurity.
+2. The assessment method: knowledge examination, scenario-based examination, practical laboratory testing, or course-completion assessment.
+3. Eligibility requirements and required prerequisite credentials or professional experience.
+4. Whether the program focuses on securing AI or using AI for cybersecurity.
 5. Recognition within the intended industry, country, employer, or regulatory environment.
 6. Continuing-education, renewal, and maintenance requirements.
 7. Training and examination costs.
 8. Alignment with frameworks such as NIST AI RMF, ISO/IEC 42001, CSA AICM, MITRE ATLAS, and OWASP guidance.
+9. Delivery format, course duration, faculty, exercises, and applicability to current organizational responsibilities.
 
 ## References
+
+Bar-Ilan University, School of High-Tech and Cyber. (2026). *AI Security for information security professionals*. https://hitech-school.biu.ac.il/course/ai-security
 
 Cloud Security Alliance. (2026). *Trusted AI Safety Expert certificate*. https://cloudsecurityalliance.org/education/taise
 
