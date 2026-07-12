@@ -2,7 +2,7 @@
 
 Artificial Intelligence Cyber Shield is a comprehensive public knowledge base dedicated to **AI Security**, **AI Safety**, **AI Governance**, **AI Assurance**, **AI Agent Security**, **AI Red Teaming**, and **Cyber Defense** in the age of intelligent systems.
 
-The repository brings together leading international frameworks, standards, threat models, security controls, red team methodologies, incident repositories, governance guidance, and engineering best practices into a single reference for researchers, security professionals, policymakers, architects, CISOs, and national security practitioners.
+The repository brings together leading international frameworks, standards, threat models, security controls, red team methodologies, incident repositories, governance guidance, professional certifications, and engineering best practices into a single reference for researchers, security professionals, policymakers, architects, CISOs, and national security practitioners.
 
 The project is part of the broader **GAIA Cybersecurity** decision-support concept and supports structured, evidence-based adoption of trustworthy and secure AI.
 
@@ -10,7 +10,7 @@ The project is part of the broader **GAIA Cybersecurity** decision-support conce
 
 This repository helps security leaders, researchers, engineers, architects, red teams, blue teams, governance teams, and national-security practitioners organize AI security, AI safety, and AI governance knowledge in a structured and defensible way.
 
-The main goal is to connect AI governance, AI safety, AI threat modeling, red teaming, assurance, model security, agent security, and cyber defense into one practical knowledge base.
+The main goal is to connect AI governance, AI safety, AI threat modeling, red teaming, assurance, model security, agent security, professional development, and cyber defense into one practical knowledge base.
 
 ## Scope
 
@@ -28,6 +28,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | AI assurance | Evaluation, validation, independent review, transparency, traceability, and safety cases |
 | AI supply chain security | Model provenance, datasets, dependencies, SBOM/AIBOM, integrity verification, and model distribution |
 | AI incident management | AI incident repositories, lessons learned, disclosure practices, and response processes |
+| Professional certifications | AI security, AI safety, governance, risk, audit, assurance, and adversarial testing credentials |
 
 ## Core framework pages
 
@@ -39,6 +40,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
 | [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
 | [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
+| [AI Security and AI Safety Certifications](Certifications/AI-Security-and-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, and ISO/IEC 42001 professional credentials |
 
 ## Additional knowledge areas
 
@@ -122,6 +124,20 @@ Coverage includes:
 9. Jailbreak testing.
 10. Misuse and abuse testing.
 
+### Professional certifications
+
+The [AI Security and AI Safety Certifications](Certifications/AI-Security-and-Safety-Certifications.md) page compares credentials for:
+
+1. Enterprise AI security leadership.
+2. AI safety and cloud security.
+3. Defensive AI application security.
+4. AI red teaming and adversarial testing.
+5. AI governance and responsible AI.
+6. AI risk management.
+7. AI audit and assurance.
+8. ISO/IEC 42001 implementation and auditing.
+9. AI-enabled defensive and offensive security operations.
+
 ### AI incident repositories
 
 Including:
@@ -141,9 +157,10 @@ Including:
 6. Add AI supply chain security guidance.
 7. Add AI incident repositories and case studies.
 8. Expand ETSI, ISO/IEC, ENISA, OWASP, MITRE, CSA, Pillar Security, and NIST standards mapping.
-9. Add references in APA 7 style.
-10. Add diagrams and decision-support tables.
-11. Publish the content as a readable GitHub Pages knowledge base.
+9. Maintain and expand the professional certification comparison.
+10. Add references in APA 7 style.
+11. Add diagrams and decision-support tables.
+12. Publish the content as a readable GitHub Pages knowledge base.
 
 ## Suggested structure
 
@@ -157,6 +174,8 @@ Including:
 │   ├── AI-Threat-Modeling-Frameworks.md
 │   ├── AI-Agent-Security.md
 │   └── AI-Governance-and-Assurance.md
+├── Certifications/
+│   └── AI-Security-and-Safety-Certifications.md
 ├── References/
 │   └── APA7-References.md
 ├── Images/
@@ -175,6 +194,7 @@ Including:
 | AI agent security | tool-use governance, identity, permission boundaries, memory control, sandboxing, monitoring |
 | AI supply chain security | datasets, model provenance, dependencies, SBOM/AIBOM, model integrity, deployment pipelines |
 | AI incident management | AI Incident Database, OECD AI Incidents Monitor, incident response, post-incident learning |
+| Professional certifications | ISACA AAISM/AAIR/AAIA, CSA TAISE, GIAC GAIPS/GASAE/GOAA, OffSec OSAI, IAPP AIGP, ISO/IEC 42001 credentials |
 
 ## How to use this repository
 
@@ -187,7 +207,8 @@ Use this repository as a working knowledge base for:
 5. Supporting executive, CISO, board, and national-security discussions.
 6. Mapping AI risks to technical and governance controls.
 7. Implementing AI safety controls and assurance practices.
-8. Supporting academic research and national cybersecurity initiatives.
+8. Selecting professional AI security, safety, governance, risk, and assurance credentials.
+9. Supporting academic research and national cybersecurity initiatives.
 
 ## Citation
 
