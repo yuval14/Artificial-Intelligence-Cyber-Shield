@@ -42,7 +42,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
 | [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
 | [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
-| [Organizational AI Certifications and Assurance Programs](Organization-Certifications/AI-Organization-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
+| [Organizational AI Certifications and Assurance Programs](Organizational-Certifications/AI-Organizational-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
 
 ## Additional knowledge areas
 
@@ -143,7 +143,7 @@ The [Professional AI Security and AI Safety Certifications](Professional-Certifi
 
 ### Organizational certifications and assurance
 
-The [Organizational AI Certifications and Assurance Programs](Organization-Certifications/AI-Organization-Certifications.md) page covers:
+The [Organizational AI Certifications and Assurance Programs](Organizational-Certifications/AI-Organizational-Certifications.md) page covers:
 
 1. ISO/IEC 42001 Artificial Intelligence Management System certification.
 2. CSA STAR for AI Level 1, Valid-AI-ted, and Level 2 assurance pathways.
@@ -192,8 +192,8 @@ Including:
 │   └── AI-Governance-and-Assurance.md
 ├── Professional-Certifications/
 │   └── Professional-AI-Security-and-AI-Safety-Certifications.md
-├── Organization-Certifications/
-│   └── AI-Organization-Certifications.md
+├── Organizational-Certifications/
+│   └── AI-Organizational-Certifications.md
 ├── References/
 │   └── APA7-References.md
 ├── Images/
