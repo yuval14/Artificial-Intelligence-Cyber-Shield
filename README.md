@@ -41,7 +41,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
 | [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
 | [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
-| [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI%20Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
+| [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
 | [Organizational AI Certifications and Assurance Programs](Organization-Certifications/AI-Organization-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
 
 ## Additional knowledge areas
@@ -128,7 +128,7 @@ Coverage includes:
 
 ### Professional certifications
 
-The [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI%20Safety-Certifications.md) page compares credentials and professional programs for:
+The [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) page compares credentials and professional programs for:
 
 1. Enterprise AI security leadership.
 2. AI safety and cloud security.
@@ -191,7 +191,7 @@ Including:
 │   ├── AI-Agent-Security.md
 │   └── AI-Governance-and-Assurance.md
 ├── Professional-Certifications/
-│   └── Professional-AI-Security-and-AI Safety-Certifications.md
+│   └── Professional-AI-Security-and-AI-Safety-Certifications.md
 ├── Organization-Certifications/
 │   └── AI-Organization-Certifications.md
 ├── References/
