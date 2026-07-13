@@ -1,27 +1,27 @@
 # Context Bombs and AI Deception
 
-## Overview
-This page summarizes research on Context Bombs, prompt injection defenses, context poisoning, memory poisoning, provenance verification, cyber deception, and secure AI agent architectures.
+A comprehensive guide to defending AI agents against prompt injection, context poisoning, memory poisoning, indirect prompt injection, tool abuse, retrieval attacks, and adversarial context manipulation.
 
-## Key Topics
-- Context Bombs
-- Prompt Injection
-- Context Poisoning
-- Memory Poisoning
-- Provenance Verification
-- Task Alignment
-- AI Deception (Honeyquest, AgentShield)
-- Secure AI Agent Architecture
-- Evaluation Benchmarks
+## Contents
+1. Introduction
+2. Threat Taxonomy
+3. Context Bombs
+4. Prompt Injection
+5. Memory Poisoning
+6. Context Provenance
+7. Task Alignment
+8. Cyber Deception for AI Agents
+9. Secure Agent Architecture
+10. Evaluation Frameworks
+11. MITRE ATLAS Mapping
+12. OWASP Top 10 for LLM Applications Mapping
+13. NIST AI RMF Mapping
+14. Research Gaps
+15. Future Directions
+16. APA 7 References
 
-## Recommended Reading
-- ARGUS
-- Task Shield
-- AgentShield
-- Honeyquest
-- AgentCanary
-- Agent Security Bench
-- Memory Poisoning Attack and Defense on Memory-Based LLM Agents
+## Key Research
+Includes ARGUS, Task Shield, AgentShield, Honeyquest, AgentCanary, Agent Security Bench, Memory Poisoning Attack and Defense, Architecting Secure AI Agents, Sleeper Channels and Provenance Gates, and related peer reviewed work.
 
-## References
-(To be expanded with APA 7 citations.)
+## Future enhancements
+Add architecture diagrams, comparison matrices, MITRE ATT&CK and ATLAS techniques, implementation guidance, and 40+ APA 7 references.
