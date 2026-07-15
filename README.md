@@ -23,6 +23,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | AI threat modeling | Structured analysis of threats against models, agents, data pipelines, APIs, plugins, and integrations |
 | AI agent security | Tool use, autonomy, memory, identity, permissions, delegation, and high-risk capability control |
 | Secure AI engineering | Secure design, secure deployment, guardrails, monitoring, evaluation, and logging |
+| System hardening against AI threats | Mandatory access control, sandboxing, execution control, isolation, Zero Trust networking, and controlled egress |
 | AI for cyber defense | Detection, triage, vulnerability prioritization, SOC assistance, and defensive automation |
 | Cybersecurity for AI | Protection of AI infrastructure, training data, model artifacts, inference endpoints, and supply chains |
 | AI assurance | Evaluation, validation, independent review, transparency, traceability, and safety cases |
@@ -40,6 +41,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming methods, benchmarks, tooling, and frontier model evaluation resources |
 | [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
 | [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
+| [System Hardening Against AI and Agentic AI Threats](System-Hardening/System-Hardening-Against-AI-Threats.md) | SELinux, AppArmor, seccomp, Landlock, Windows controls, container isolation, controlled egress, and human approval |
 | [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
 | [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
 | [Organizational AI Certifications and Assurance Programs](Organizational-Certifications/AI-Organizational-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
@@ -126,6 +128,16 @@ Coverage includes:
 9. Jailbreak testing.
 10. Misuse and abuse testing.
 
+### System hardening against AI threats
+
+The [System Hardening Against AI and Agentic AI Threats](System-Hardening/System-Hardening-Against-AI-Threats.md) page covers:
+
+1. Threat-to-control mapping for prompt injection, generated code, credential theft, data exfiltration, privilege escalation, and lateral movement.
+2. SELinux, AppArmor, seccomp, Landlock, systemd sandboxing, namespaces, and cgroups.
+3. Windows Application Control, AppContainer, PowerShell restrictions, and least-privilege service identities.
+4. Container and Kubernetes security contexts, default-deny network policy, and stronger isolation for untrusted code.
+5. Controlled egress, tool gateways, scoped credentials, human approval, monitoring, response, and red-team validation.
+
 ### Professional certifications
 
 The [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) page compares credentials and professional programs for:
@@ -169,14 +181,15 @@ Including:
 3. Expand AI red teaming frameworks and methodologies.
 4. Expand AI threat modeling frameworks, including AI STRIDE and agentic AI threat models.
 5. Expand agent security principles, control patterns, and maturity models.
-6. Add AI supply chain security guidance.
-7. Add AI incident repositories and case studies.
-8. Expand ETSI, ISO/IEC, ENISA, OWASP, MITRE, CSA, Pillar Security, and NIST standards mapping.
-9. Maintain and expand the professional certification comparison.
-10. Maintain and expand organizational certification, accreditation, and assurance-program guidance.
-11. Add references in APA 7 style.
-12. Add diagrams and decision-support tables.
-13. Publish the content as a readable GitHub Pages knowledge base.
+6. Maintain system-hardening guidance for AI and agentic workloads across Linux, Windows, containers, and cloud environments.
+7. Add AI supply chain security guidance.
+8. Add AI incident repositories and case studies.
+9. Expand ETSI, ISO/IEC, ENISA, OWASP, MITRE, CSA, Pillar Security, and NIST standards mapping.
+10. Maintain and expand the professional certification comparison.
+11. Maintain and expand organizational certification, accreditation, and assurance-program guidance.
+12. Add references in APA 7 style.
+13. Add diagrams and decision-support tables.
+14. Publish the content as a readable GitHub Pages knowledge base.
 
 ## Suggested structure
 
@@ -190,6 +203,8 @@ Including:
 │   ├── AI-Threat-Modeling-Frameworks.md
 │   ├── AI-Agent-Security.md
 │   └── AI-Governance-and-Assurance.md
+├── System-Hardening/
+│   └── System-Hardening-Against-AI-Threats.md
 ├── Professional-Certifications/
 │   └── Professional-AI-Security-and-AI-Safety-Certifications.md
 ├── Organizational-Certifications/
@@ -210,6 +225,7 @@ Including:
 | AI red teaming | Microsoft AI Red Team, PyRIT, garak, OpenAI Preparedness, Anthropic evaluations, NIST GenAI testing guidance |
 | AI assurance | model evaluations, safety cases, audit evidence, independent testing, lifecycle validation |
 | AI agent security | tool-use governance, identity, permission boundaries, memory control, sandboxing, monitoring |
+| System hardening | SELinux, AppArmor, seccomp, Landlock, Application Control, AppContainer, isolation, controlled egress, Zero Trust networking |
 | AI supply chain security | datasets, model provenance, dependencies, SBOM/AIBOM, model integrity, deployment pipelines |
 | AI incident management | AI Incident Database, OECD AI Incidents Monitor, incident response, post-incident learning |
 | Professional certifications | ISACA AAISM/AAIR/AAIA, CSA TAISE, GIAC GAIPS/GASAE/GOAA, OffSec OSAI, IAPP AIGP, Bar-Ilan University, ISO/IEC 42001 credentials |
@@ -223,12 +239,13 @@ Use this repository as a working knowledge base for:
 2. Comparing AI security and AI safety frameworks.
 3. Preparing AI red team exercises.
 4. Designing secure AI agents and AI-enabled systems.
-5. Supporting executive, CISO, board, and national-security discussions.
-6. Mapping AI risks to technical and governance controls.
-7. Implementing AI safety controls and assurance practices.
-8. Selecting professional AI security, safety, governance, risk, and assurance credentials.
-9. Selecting and verifying organizational AI certifications and assurance designations.
-10. Supporting academic research and national cybersecurity initiatives.
+5. Hardening operating systems, containers, identities, execution environments, and networks against AI-driven threats.
+6. Supporting executive, CISO, board, and national-security discussions.
+7. Mapping AI risks to technical and governance controls.
+8. Implementing AI safety controls and assurance practices.
+9. Selecting professional AI security, safety, governance, risk, and assurance credentials.
+10. Selecting and verifying organizational AI certifications and assurance designations.
+11. Supporting academic research and national cybersecurity initiatives.
 
 ## Citation
 
