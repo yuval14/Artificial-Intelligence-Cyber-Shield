@@ -19,6 +19,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | AI security governance | Policies, controls, accountability, risk ownership, and oversight |
 | AI safety | Alignment, robustness, reliability, evaluation, human oversight, and prevention of unintended harm |
 | AI risk management | AI RMF, assurance methods, lifecycle controls, and risk documentation |
+| AI project failure and success | Root causes, anti-patterns, production readiness, lifecycle gates, value realization, and stop criteria |
 | AI red teaming | Testing AI systems for misuse, abuse, prompt injection, jailbreaks, data leakage, and unsafe behavior |
 | AI threat modeling | Structured analysis of threats against models, agents, data pipelines, APIs, plugins, and integrations |
 | AI agent security | Tool use, autonomy, memory, identity, permissions, delegation, and high-risk capability control |
@@ -43,6 +44,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, approval gates, and Agent Rule of One |
 | [System Hardening Against AI and Agentic AI Threats](System-Hardening/System-Hardening-Against-AI-Threats.md) | SELinux, AppArmor, seccomp, Landlock, Windows controls, container isolation, controlled egress, and human approval |
 | [AI Governance and Assurance](Frameworks/AI-Governance-and-Assurance.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, GPAI Code of Practice, ETSI, CSA, frontier safety frameworks, and assurance evidence |
+| [Why AI Projects Fail and How They Can Succeed](AI-Project-Failure-and-Success/Why-AI-Projects-Fail-and-How-They-Succeed.md) | RAND root causes, organizational anti-patterns, cybersecurity implications, lifecycle stage gates, metrics, and executive stop criteria |
 | [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
 | [Organizational AI Certifications and Assurance Programs](Organizational-Certifications/AI-Organizational-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
 
@@ -138,6 +140,18 @@ The [System Hardening Against AI and Agentic AI Threats](System-Hardening/System
 4. Container and Kubernetes security contexts, default-deny network policy, and stronger isolation for untrusted code.
 5. Controlled egress, tool gateways, scoped credentials, human approval, monitoring, response, and red-team validation.
 
+### AI project failure and success
+
+The [Why AI Projects Fail and How They Can Succeed](AI-Project-Failure-and-Success/Why-AI-Projects-Fail-and-How-They-Succeed.md) page covers:
+
+1. The RAND study by Ryseff, De Bruhl, and Newberry and its five leading root causes.
+2. The distinction between model performance, operational value, and project success.
+3. Leadership, data, technology-first, infrastructure, and technological-maturity anti-patterns.
+4. The role of cybersecurity, privacy, safety, governance, and assurance in production readiness.
+5. Stage gates from problem definition and data readiness through controlled deployment, operation, and retirement.
+6. Mapping to NIST AI RMF GOVERN, MAP, MEASURE, and MANAGE functions.
+7. Balanced success metrics, executive decision questions, early-warning indicators, and stop criteria.
+
 ### Professional certifications
 
 The [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) page compares credentials and professional programs for:
@@ -182,14 +196,15 @@ Including:
 4. Expand AI threat modeling frameworks, including AI STRIDE and agentic AI threat models.
 5. Expand agent security principles, control patterns, and maturity models.
 6. Maintain system-hardening guidance for AI and agentic workloads across Linux, Windows, containers, and cloud environments.
-7. Add AI supply chain security guidance.
-8. Add AI incident repositories and case studies.
-9. Expand ETSI, ISO/IEC, ENISA, OWASP, MITRE, CSA, Pillar Security, and NIST standards mapping.
-10. Maintain and expand the professional certification comparison.
-11. Maintain and expand organizational certification, accreditation, and assurance-program guidance.
-12. Add references in APA 7 style.
-13. Add diagrams and decision-support tables.
-14. Publish the content as a readable GitHub Pages knowledge base.
+7. Expand AI project failure, success, production-readiness, and benefit-realization guidance.
+8. Add AI supply chain security guidance.
+9. Add AI incident repositories and case studies.
+10. Expand ETSI, ISO/IEC, ENISA, OWASP, MITRE, CSA, Pillar Security, and NIST standards mapping.
+11. Maintain and expand the professional certification comparison.
+12. Maintain and expand organizational certification, accreditation, and assurance-program guidance.
+13. Add references in APA 7 style.
+14. Add diagrams and decision-support tables.
+15. Publish the content as a readable GitHub Pages knowledge base.
 
 ## Suggested structure
 
@@ -203,6 +218,8 @@ Including:
 │   ├── AI-Threat-Modeling-Frameworks.md
 │   ├── AI-Agent-Security.md
 │   └── AI-Governance-and-Assurance.md
+├── AI-Project-Failure-and-Success/
+│   └── Why-AI-Projects-Fail-and-How-They-Succeed.md
 ├── System-Hardening/
 │   └── System-Hardening-Against-AI-Threats.md
 ├── Professional-Certifications/
@@ -220,6 +237,7 @@ Including:
 | Category | Examples |
 | --- | --- |
 | AI governance | NIST AI RMF, ISO/IEC 42001, OECD AI Principles, EU AI Act, ENISA guidance |
+| AI project failure and success | RAND anti-patterns, value definition, data readiness, production gates, balanced metrics, stop criteria |
 | AI safety | alignment, robustness, reliability, frontier safety frameworks, safety cases, human oversight, responsible scaling |
 | AI security | OWASP Top 10 for LLM Applications, MITRE ATLAS, CSA AI Controls Matrix, Google SAIF, Pillar Security SAIL, ETSI SAI |
 | AI red teaming | Microsoft AI Red Team, PyRIT, garak, OpenAI Preparedness, Anthropic evaluations, NIST GenAI testing guidance |
@@ -243,9 +261,10 @@ Use this repository as a working knowledge base for:
 6. Supporting executive, CISO, board, and national-security discussions.
 7. Mapping AI risks to technical and governance controls.
 8. Implementing AI safety controls and assurance practices.
-9. Selecting professional AI security, safety, governance, risk, and assurance credentials.
-10. Selecting and verifying organizational AI certifications and assurance designations.
-11. Supporting academic research and national cybersecurity initiatives.
+9. Diagnosing why AI projects fail and establishing evidence-based production and termination gates.
+10. Selecting professional AI security, safety, governance, risk, and assurance credentials.
+11. Selecting and verifying organizational AI certifications and assurance designations.
+12. Supporting academic research and national cybersecurity initiatives.
 
 ## Citation
 
