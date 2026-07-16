@@ -18,6 +18,7 @@ This page lists frameworks, control patterns, and security principles for AI age
 | 10 | ETSI | Securing Artificial Intelligence reports and guidance | Address AI threats, data supply-chain risks, security testing, vulnerability disclosure, privacy, and mitigation strategies | 2019 onwards | Public standards and reports | AI system and agent security governance |
 | 11 | UC Berkeley Center for Long-Term Cybersecurity | AgentWatch: Privacy and Security Evaluation for Browser-Based AI Agents | Evaluate browser-based AI agents against privacy and security scenarios, including data disclosure, ambiguous prompts, hallucination, prompt injection, and browser sandbox isolation | 2026 | Public report and open-source evaluation hub | Agent privacy and security testing |
 | 12 | Research community | ASTRA, WASP, AI-Infra-Guard, and related agent benchmarks | Evaluate agent steerability, prompt-injection resilience, web-agent security, and multi-layer agent attacks | 2025 onwards | Yes / public research | Agentic AI security evaluation |
+| 13 | Kexin Chu | [Layered Attack Surface Model (LASM)](Layered-Attack-Surface-Model-LASM.md) | Map agent threats by seven architectural layers and four temporal classes | 2026 | Public preprint | Cross-layer threat modeling, control placement, ABOM, and long-horizon evaluation |
 
 ## Agent-specific risk areas
 
@@ -164,6 +165,8 @@ AgentWatch is a UC Berkeley CLTC evaluation method for browser-based AI agents. 
 Böckeler, B. (2026, April 2). *Harness engineering for coding agent users*. Martin Fowler. https://martinfowler.com/articles/harness-engineering.html
 
 Böckeler, B., & Ford, C. (2026, May 13). *Harness engineering and agent feedback: Exploring AI coding sensors*. Thoughtworks. https://www.thoughtworks.com/en-us/insights/blog/generative-ai/harness-engineering-agent-feedback-exploring-ai-coding-sensors
+
+Chu, K. (2026). *A systematic survey of security threats and defenses in LLM-based AI agents: A layered attack surface framework* [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2604.23338
 
 Cloud Security Alliance. (2025). *Agentic AI security guidance*. https://cloudsecurityalliance.org/
 
