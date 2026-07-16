@@ -51,6 +51,68 @@ This page lists frameworks, control patterns, and security principles for AI age
 | Monitoring layer | Reconstruct actions and detect abuse | Trace IDs, prompt logs, tool-call logs, anomaly detection, SIEM integration |
 | Response and recovery layer | Limit impact when an agent fails or is compromised | Kill switch, rollback, credential revocation, incident playbooks, forensic capture |
 
+## Harness Engineering for secure AI agents
+
+Harness Engineering is the design of the supporting system around an AI model: instructions, context, tools, identities, execution environments, orchestration, tests, policy gates, feedback loops, and observability. A useful shorthand is:
+
+> **AI agent = model + harness**
+
+The model generates proposals and decisions probabilistically. The harness determines what information the agent receives, which actions it may attempt, how those actions are validated, where they execute, and whether they are approved, blocked, corrected, or rolled back. Critical security requirements should therefore be enforced through architecture and deterministic controls rather than relying only on prompts.
+
+### Secure harness components
+
+| Harness component | Security purpose | Example controls |
+| --- | --- | --- |
+| Instructions and specifications | Define intended behavior, boundaries, and acceptance criteria | Version-controlled agent instructions, architecture rules, secure coding standards, prohibited-action policy |
+| Context, memory, and state | Limit what the agent knows, retrieves, and retains | Progressive disclosure, source labels, memory provenance, retention limits, trusted-context separation |
+| Tools and interfaces | Restrict the agent's operational capabilities | Tool allowlists, typed schemas, parameter validation, safe defaults, transaction limits |
+| Identities and permissions | Bound authority and establish accountability | Dedicated service identities, least privilege, short-lived credentials, separation of duties |
+| Sandbox and isolation | Contain failures and hostile content | Ephemeral workspaces, network restrictions, read-only mounts, resource quotas, no direct production access |
+| Orchestration | Control task decomposition, delegation, and handoffs | Explicit workflow states, bounded recursion, signed messages, trust labels, approved agent routes |
+| Guardrails and hooks | Apply policy before and after sensitive operations | Pre-action authorization, post-action validation, policy-as-code, approval checkpoints, blocking hooks |
+| Tests and feedback sensors | Detect defects and return actionable feedback to the agent | Unit and integration tests, SAST, dependency scanning, linters, type checks, mutation testing |
+| Observability | Make agent behavior reconstructable and measurable | Prompt and tool-call logs, traces, metrics, cost monitoring, decision records, audit evidence |
+| Response and recovery | Stop unsafe execution and restore a trusted state | Kill switch, rollback, credential revocation, forensic capture, incident playbooks |
+
+### Secure harness workflow
+
+```mermaid
+flowchart LR
+    A[Intent and specification] --> B[Scoped context and tools]
+    B --> C[AI agent model]
+    C --> D[Sandboxed action]
+    D --> E[Deterministic tests and sensors]
+    E --> F{Policy gate}
+    F -- Pass --> G[Human or automated approval]
+    F -- Fail --> H[Feedback and correction]
+    H --> C
+    G --> I[Commit or external action]
+    I --> J[Audit logs and continuous monitoring]
+```
+
+### Security principles for Harness Engineering
+
+1. **Model proposes, harness disposes.** The model may recommend an action, but enforceable architecture decides whether it can occur.
+2. **Enforce controls outside the prompt.** Prompts guide behavior; policy engines, schemas, sandboxes, identity controls, and CI gates enforce it.
+3. **Apply least privilege per agent, tool, and transaction.** Do not inherit the full permissions of the user, developer workstation, or automation platform.
+4. **Isolate execution by default.** Code, browser actions, files, and external content should be processed in bounded, disposable environments.
+5. **Prefer deterministic sensors for objective requirements.** Use compilers, tests, linters, scanners, structural rules, and policy-as-code when a requirement can be checked mechanically.
+6. **Require approval for irreversible or high-impact actions.** Production changes, financial transactions, credential operations, data deletion, and external communications require independent authorization.
+7. **Preserve complete evidence.** Record the initiating request, retrieved context, model output, tool parameters, approvals, execution result, and rollback activity.
+8. **Continuously improve the harness.** Convert recurring agent failures, review findings, incidents, and near misses into new guides, sensors, tests, and enforceable controls.
+
+### Minimum implementation evidence
+
+| Control question | Evidence |
+| --- | --- |
+| Are high-risk actions technically blocked without approval? | Policy configuration, approval matrix, negative test results |
+| Can the agent bypass tests, hooks, or branch protection? | CI configuration, protected-branch settings, bypass-permission review |
+| Are tool inputs validated independently of the model? | Tool schemas, validation code, malformed-input tests |
+| Is execution isolated from production and sensitive developer assets? | Sandbox configuration, network policy, filesystem mounts, access review |
+| Can every action be attributed to an agent identity and initiating user? | Identity mapping, delegated authorization record, trace and audit logs |
+| Does failure produce feedback without creating an uncontrolled loop? | Retry limits, recursion limits, circuit-breaker tests, escalation workflow |
+| Can the organization stop and recover the agent safely? | Kill-switch test, credential revocation procedure, rollback and incident exercise |
+
 ## Agent Rule of One
 
 Each AI agent should possess only one of the following three high-risk capabilities at a time:
@@ -99,6 +161,10 @@ AgentWatch is a UC Berkeley CLTC evaluation method for browser-based AI agents. 
 
 ## APA 7 references
 
+Böckeler, B. (2026, April 2). *Harness engineering for coding agent users*. Martin Fowler. https://martinfowler.com/articles/harness-engineering.html
+
+Böckeler, B., & Ford, C. (2026, May 13). *Harness engineering and agent feedback: Exploring AI coding sensors*. Thoughtworks. https://www.thoughtworks.com/en-us/insights/blog/generative-ai/harness-engineering-agent-feedback-exploring-ai-coding-sensors
+
 Cloud Security Alliance. (2025). *Agentic AI security guidance*. https://cloudsecurityalliance.org/
 
 Cybersecurity and Infrastructure Security Agency, National Security Agency, Federal Bureau of Investigation, National Cyber Security Centre, and international partners. (2023). *Guidelines for secure AI system development*. https://www.cisa.gov/
@@ -110,6 +176,8 @@ Evtimov, I., Zharmagambetov, A., Grattafiori, A., Guo, C., & Chaudhuri, K. (2025
 Google. (2026). *Secure AI framework: Secure agents*. https://saif.google/
 
 Hazan, I., Mathov, Y., Shtar, G., Bitton, R., & Mantin, I. (2025). *ASTRA: Agentic steerability and risk assessment framework*. arXiv. https://arxiv.org/abs/2511.18114
+
+Lopopolo, R. (2026, February 11). *Harness engineering: Leveraging Codex in an agent-first world*. OpenAI. https://openai.com/index/harness-engineering/
 
 MITRE. (n.d.). *MITRE ATLAS: Adversarial threat landscape for artificial-intelligence systems*. https://atlas.mitre.org/
 
