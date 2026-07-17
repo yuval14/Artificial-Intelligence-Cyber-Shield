@@ -1,6 +1,6 @@
 # AI Governance, Risk, Security, and Assurance Frameworks
 
-This page lists selected AI frameworks, standards, legal instruments, assurance schemes, and security guidance that can support responsible AI governance, risk management, assurance, compliance, and operational resilience.
+This page lists selected AI frameworks, standards, legal instruments, assurance schemes, quantitative risk approaches, and security guidance that can support responsible AI governance, risk management, assurance, compliance, and operational resilience.
 
 | # | Vendor / Organization | Framework / Standard Name | Goal / Function | Release Date | Open Source / Public | Category | Link |
 |---:|---|---|---|---|---|---|---|
@@ -51,6 +51,7 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 | 45 | Canada | Directive on Automated Decision-Making | Government directive and Algorithmic Impact Assessment for automated decision systems in federal institutions. | 2019; updated 2023 | Yes | Public-sector AI governance | [Canada ADM Directive](https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592) |
 | 46 | IEEE | Ethically Aligned Design | Framework for ethically aligned autonomous and intelligent systems. | First edition 2019 | Yes | AI ethics and system design | [IEEE Ethically Aligned Design](https://standards.ieee.org/industry-connections/ec/autonomous-systems/) |
 | 47 | IEEE | IEEE 7000 Series | Standards family for ethical, transparent, privacy-aware, bias-aware, and accountable autonomous and intelligent systems. | 2021 onward | Partially public metadata | AI ethics standards | [IEEE 7000 Series](https://standards.ieee.org/initiatives/autonomous-intelligence-systems/) |
+| 48 | FAIR Institute | FAIR-AIR Approach Playbook | FAIR-based five-stage approach for scoping and quantifying GenAI cyber loss exposure, identifying key risk drivers, prioritizing treatments, and supporting business investment decisions. | February 2024 | Yes | Quantitative AI cyber risk analysis | [FAIR-AIR Approach](FAIR-AIR-Approach.md) |
 
 ## Practical Mapping
 
@@ -58,6 +59,7 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 |---|---|
 | Enterprise AI governance | ISO/IEC 42001, NIST AI RMF, OECD AI Principles, Microsoft Responsible AI Standard |
 | AI risk management | NIST AI RMF, ISO/IEC 23894, CSA AI Controls Matrix |
+| Quantitative AI cyber risk analysis | FAIR-AIR, FAIR, FAIR-MAM, and FAIR-CAM, combined with a system-specific threat model and validated organizational data |
 | Generative AI security | NIST AI 600-1, OWASP Top 10 for LLM, CSA guidance, Google SAIF |
 | AI cybersecurity | ENISA AI cybersecurity publications, MITRE ATLAS, OWASP AI Security and Privacy Guide |
 | AI assurance and testing | AI Verify, Inspect, HELM, AILuminate, ART, AI Fairness 360, AI Explainability 360 |
@@ -68,7 +70,8 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 
 1. Some entries are standards rather than free documents. For ISO/IEC and IEEE standards, the table links to public metadata unless the full standard is openly available.
 2. Some entries are legal or policy instruments, not technical frameworks. They are included because they shape compliance, assurance, and operational AI governance.
-3. The release date reflects the first major public release or the date the instrument entered into force. Later updates should be tracked separately when material.
+3. FAIR-AIR is an analytical playbook rather than a control standard. It should be combined with technical threat modeling, controls, testing, governance, and assurance evidence.
+4. The release date reflects the first major public release or the date the instrument entered into force. Later updates should be tracked separately when material.
 
 ## APA 7 References
 
@@ -79,6 +82,8 @@ Council of Europe. (2024). *Framework convention on artificial intelligence and 
 European Commission. (2019). *Ethics guidelines for trustworthy AI*. https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
 
 European Parliament and Council of the European Union. (2024). *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence*. Official Journal of the European Union. https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+
+FAIR Institute. (2024). *FAIR-AIR approach playbook: Using a FAIR-based risk approach to expedite AI adoption at your organization*. https://www.fairinstitute.org/hubfs/FAIR-AIR%20Approach%20Playbook.pdf
 
 Google. (2023). *Secure AI framework*. https://saif.google/
 
