@@ -1,6 +1,6 @@
 # AI Governance and Assurance Frameworks
 
-This page maps AI governance, assurance, safety, cybersecurity, and responsibility frameworks that can help organizations design, deploy, evaluate, monitor, and audit AI systems.
+This page maps AI governance, assurance, safety, cybersecurity, responsibility, and quantitative risk frameworks that can help organizations design, deploy, evaluate, monitor, and audit AI systems.
 
 ## Framework comparison
 
@@ -26,6 +26,7 @@ This page maps AI governance, assurance, safety, cybersecurity, and responsibili
 | 18 | Google DeepMind | Frontier Safety Framework | Severe-risk identification and mitigation for frontier AI models | 2024, updated | Public document | Frontier safety assurance |
 | 19 | UK AI Security Institute | AI safety evaluations | Independent evaluation of advanced AI systems | 2023 onwards | Public | Frontier model evaluation |
 | 20 | MLCommons | AILuminate | AI safety benchmark and risk/reliability evaluation | 2024 onwards | Yes | Model behavior assurance |
+| 21 | FAIR Institute | [FAIR-AIR Approach](FAIR-AIR-Approach.md) | Five-stage FAIR-based approach for contextualizing, scoping, quantifying, prioritizing, treating, and communicating GenAI cyber risk in financial terms | February 2024 | Yes | Quantitative AI cyber risk analysis and investment prioritization |
 
 ## Governance domains
 
@@ -33,6 +34,7 @@ This page maps AI governance, assurance, safety, cybersecurity, and responsibili
 | --- | --- | --- |
 | Accountability | Clear ownership for AI system risk, approval, deployment, monitoring, and retirement | RACI, named risk owner, executive approval record |
 | Risk classification | Classification of system purpose, impact, autonomy, data sensitivity, and legal category | AI system risk register, EU AI Act classification, impact assessment |
+| Quantitative risk analysis | Scenario-based estimation of probable AI loss event frequency, magnitude, key risk drivers, and residual exposure | FAIR-AIR analysis, loss exposure distribution, assumptions register, treatment comparison |
 | Secure AI lifecycle | Security gates across design, data, training, fine-tuning, deployment, inference, and retirement | SDLC policy, secure design review, release gates |
 | Data governance | Provenance, consent, minimization, privacy, quality, and dataset integrity | Dataset cards, data lineage, DPIA, poisoning tests |
 | Model governance | Model selection, evaluation, versioning, rollback, monitoring, and retirement | Model card, evaluation report, version registry, rollback plan |
@@ -49,6 +51,7 @@ This page maps AI governance, assurance, safety, cybersecurity, and responsibili
 | --- | --- |
 | AI system card | Summarizes system purpose, users, data, models, tools, risks, limitations, and controls |
 | AI risk register | Tracks risks, owners, severity, mitigations, residual risk, and review dates |
+| Quantitative AI risk analysis | Documents the scoped loss event scenario, probability ranges, loss magnitude, key risk drivers, assumptions, uncertainty, and treatment economics |
 | Threat model | Maps threats across identity, prompt, context, model, data, tools, agents, infrastructure, and supply chain |
 | Evaluation report | Records safety, security, robustness, fairness, privacy, and performance test results |
 | Red team report | Documents adversarial testing, exploit paths, severity, and remediation |
@@ -63,18 +66,20 @@ This page maps AI governance, assurance, safety, cybersecurity, and responsibili
 1. Inventory AI systems, models, agents, datasets, tools, APIs, and third-party dependencies.
 2. Classify each system by risk, autonomy, data sensitivity, sector, and legal/regulatory category.
 3. Create a system-specific threat model using AI STRIDE, MITRE ATLAS, OWASP LLM Top 10, and agent-specific risks.
-4. Map controls to NIST AI RMF, ISO/IEC 42001, CSA AI Controls Matrix, ETSI, EU AI Act, and secure AI lifecycle guidance.
-5. Define assurance evidence before deployment, including evaluation, red teaming, model documentation, and incident response evidence.
-6. Establish continuous monitoring for drift, abuse, prompt injection, unsafe tool use, data leakage, cost anomalies, and policy violations.
-7. Reassess after model updates, new tools, new data sources, new jurisdictions, high-impact incidents, or material changes in autonomy.
+4. Translate material threats and control failures into precise loss event scenarios and use FAIR-AIR when financial quantification would improve the decision.
+5. Map controls to NIST AI RMF, ISO/IEC 42001, CSA AI Controls Matrix, ETSI, EU AI Act, and secure AI lifecycle guidance.
+6. Define assurance evidence before deployment, including evaluation, red teaming, model documentation, quantitative risk evidence, and incident response evidence.
+7. Establish continuous monitoring for drift, abuse, prompt injection, unsafe tool use, data leakage, cost anomalies, and policy violations.
+8. Reassess after model updates, new tools, new data sources, new jurisdictions, high-impact incidents, or material changes in autonomy.
 
 ## Relationship between governance and security
 
-AI governance is not only policy. It must produce enforceable technical and operational controls. For high-impact AI systems, governance should connect directly to secure architecture, runtime policy enforcement, logging, incident response, red teaming, and vulnerability disclosure.
+AI governance is not only policy. It must produce enforceable technical and operational controls. For high-impact AI systems, governance should connect directly to secure architecture, runtime policy enforcement, logging, incident response, red teaming, vulnerability disclosure, and quantified decision support.
 
 | Governance requirement | Security implementation |
 | --- | --- |
 | Accountability | Named system owner, security owner, model owner, data owner, and tool owner |
+| Risk-informed investment | FAIR-AIR scenario analysis, key risk drivers, control-effect estimates, treatment cost, and residual exposure |
 | Human oversight | Approval gates, override mechanisms, escalation rules, evidence capture |
 | Transparency | User notices, traceable outputs, model and system documentation |
 | Robustness | Evaluation suites, adversarial testing, drift monitoring, rollback |
@@ -95,6 +100,8 @@ European Commission. (2025). *General-purpose AI code of practice*. https://digi
 European Telecommunications Standards Institute. (n.d.). *Securing Artificial Intelligence*. https://www.etsi.org/technologies/securing-artificial-intelligence
 
 European Union. (2024). *Artificial Intelligence Act*. https://artificialintelligenceact.eu/
+
+FAIR Institute. (2024). *FAIR-AIR approach playbook: Using a FAIR-based risk approach to expedite AI adoption at your organization*. https://www.fairinstitute.org/hubfs/FAIR-AIR%20Approach%20Playbook.pdf
 
 Google. (2023). *Secure AI framework*. https://saif.google/
 
