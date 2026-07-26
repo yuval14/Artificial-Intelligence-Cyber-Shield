@@ -27,6 +27,30 @@ This page maps AI governance, assurance, safety, cybersecurity, responsibility, 
 | 19 | UK AI Security Institute | AI safety evaluations | Independent evaluation of advanced AI systems | 2023 onwards | Public | Frontier model evaluation |
 | 20 | MLCommons | AILuminate | AI safety benchmark and risk/reliability evaluation | 2024 onwards | Yes | Model behavior assurance |
 | 21 | FAIR Institute | [FAIR-AIR Approach](FAIR-AIR-Approach.md) | Five-stage FAIR-based approach for contextualizing, scoping, quantifying, prioritizing, treating, and communicating GenAI cyber risk in financial terms | February 2024 | Yes | Quantitative AI cyber risk analysis and investment prioritization |
+| 22 | Collins Mwange / AIAF Community | [AI Assurance Framework - AIAF Sentry](https://github.com/mbwika/AI-Assurance-Framework) | Open-source, evidence-driven platform for continuous assurance across models, RAG, agents, runtime, deployment, supply chain, and compliance | 2026 | Yes - Apache License 2.0 | Operational AI assurance, adoption triage, control validation, continuous monitoring, and evidence export |
+
+## AI Assurance Framework - AIAF Sentry
+
+[AIAF Sentry](https://github.com/mbwika/AI-Assurance-Framework) is an open-source operational assurance platform developed by Collins Mwange and the AIAF community. It should be treated as an implementation and evidence-generation layer rather than as a formal standard or independent certification scheme. It can complement NIST AI RMF, ISO/IEC 42001, OWASP, MITRE ATLAS, the EU AI Act, and secure development guidance by translating governance and security expectations into technical assessments, evidence records, runtime controls, and recurring assurance activities.
+
+### Key capabilities
+
+1. External-model intake, adoption triage, live behavioral probing, and uncertainty-aware risk assessment.
+2. AI red-team execution through garak and PyRIT, including prompt-injection, jailbreak, extraction, and misuse testing.
+3. Non-executing artifact serialization scanning for pickle, safetensors, and ONNX model artifacts.
+4. Model-card enrichment, model-signing verification, AI supply-chain provenance, CycloneDX ML-BOM import and export, and vulnerability-advisory matching.
+5. RAG security-posture assessment covering access control, tenant isolation, index freshness, embedding provenance, and untrusted-content handling.
+6. Agentic AI security validation, runtime tool authorization, per-tool invocation risk scoring, and agent containment actions such as suspension, quarantine, and tool blocking.
+7. Continuous assurance scheduling, anomaly and vulnerability scans, incident creation, historical metrics, governance reporting, and evidence packaging.
+8. Interoperability and evidence exports for SIEM, OSCAL, SARIF, compliance mappings, and assurance-report snapshots.
+
+### Recommended use within the AI Cyber Shield
+
+- Use AIAF Sentry as a reference implementation for converting governance requirements into testable controls and auditable evidence.
+- Evaluate it as a laboratory platform for model intake, RAG assurance, agent authorization, supply-chain checks, red teaming, and continuous monitoring.
+- Map its generated evidence to the repository's governance domains, assurance package, AI red-team guidance, agent-security controls, and system-hardening requirements.
+- Validate the platform's security architecture, configuration, deployment model, authentication, secret management, and integration boundaries before organizational adoption.
+- Do not treat successful execution of the platform as proof of regulatory compliance, certification, or complete system safety. Independent review and organization-specific risk acceptance remain necessary.
 
 ## Governance domains
 
@@ -114,6 +138,8 @@ International Organization for Standardization. (2023). *ISO/IEC 23894:2023 Arti
 International Organization for Standardization. (2023). *ISO/IEC 42001:2023 Artificial intelligence: Management system*. https://www.iso.org/
 
 Microsoft. (2022). *Responsible AI standard*. https://www.microsoft.com/ai/responsible-ai
+
+Mwange, C. (2026). *AI Assurance Framework (AIAF Sentry)* [Computer software]. GitHub. https://github.com/mbwika/AI-Assurance-Framework
 
 National Institute of Standards and Technology. (2023). *Artificial intelligence risk management framework (AI RMF 1.0)*. https://doi.org/10.6028/NIST.AI.100-1
 
