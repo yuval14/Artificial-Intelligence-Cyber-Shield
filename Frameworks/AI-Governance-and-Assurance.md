@@ -28,6 +28,19 @@ This page maps AI governance, assurance, safety, cybersecurity, responsibility, 
 | 20 | MLCommons | AILuminate | AI safety benchmark and risk/reliability evaluation | 2024 onwards | Yes | Model behavior assurance |
 | 21 | FAIR Institute | [FAIR-AIR Approach](FAIR-AIR-Approach.md) | Five-stage FAIR-based approach for contextualizing, scoping, quantifying, prioritizing, treating, and communicating GenAI cyber risk in financial terms | February 2024 | Yes | Quantitative AI cyber risk analysis and investment prioritization |
 | 22 | Collins Mwange / AIAF Community | [AI Assurance Framework - AIAF Sentry](https://github.com/mbwika/AI-Assurance-Framework) | Open-source, evidence-driven platform for continuous assurance across models, RAG, agents, runtime, deployment, supply chain, and compliance | 2026 | Yes - Apache License 2.0 | Operational AI assurance, adoption triage, control validation, continuous monitoring, and evidence export |
+| 23 | AIUC-1 Consortium | [AIUC-1](https://www.aiuc-1.com/) | Industry-developed security, safety, reliability, accountability, data and privacy assurance standard with certification requirements for enterprise AI agents | 2026, refreshed quarterly | Public requirements; certification and third-party audit model | AI-agent vendor assurance, procurement due diligence, control testing, and certification |
+
+## AIUC-1
+
+[AIUC-1](https://www.aiuc-1.com/) is an industry-developed assurance standard and certification scheme focused on enterprise AI agents. It organizes requirements across data and privacy, security, safety, reliability, accountability, and societal misuse. Its controls address issues such as adversarial robustness, unauthorized agent actions, access control, deployment security, unsafe tool calls, hallucinations, activity logging, incident planning, vendor due diligence, and independent testing.
+
+### Recommended use within the AI Cyber Shield
+
+- Use AIUC-1 as a practical vendor-assurance and procurement checklist for AI-agent products and services.
+- Map its agent-specific requirements to NIST AI RMF, ISO/IEC 42001, CSA AI Controls Matrix, MITRE ATLAS, OWASP guidance, and the repository's agent-security controls.
+- Require technical evidence for high-risk claims, including adversarial testing, authorization enforcement, tool-call restrictions, logging, incident response, and data-isolation testing.
+- Treat certification as one input to risk acceptance rather than as proof that an agent is secure, safe, legally compliant, or suitable for every deployment context.
+- Reassess certified systems after material changes to models, tools, permissions, data sources, deployment architecture, or autonomy.
 
 ## AI Assurance Framework - AIAF Sentry
 
@@ -91,7 +104,7 @@ This page maps AI governance, assurance, safety, cybersecurity, responsibility, 
 2. Classify each system by risk, autonomy, data sensitivity, sector, and legal/regulatory category.
 3. Create a system-specific threat model using AI STRIDE, MITRE ATLAS, OWASP LLM Top 10, and agent-specific risks.
 4. Translate material threats and control failures into precise loss event scenarios and use FAIR-AIR when financial quantification would improve the decision.
-5. Map controls to NIST AI RMF, ISO/IEC 42001, CSA AI Controls Matrix, ETSI, EU AI Act, and secure AI lifecycle guidance.
+5. Map controls to NIST AI RMF, ISO/IEC 42001, CSA AI Controls Matrix, ETSI, EU AI Act, AIUC-1, and secure AI lifecycle guidance.
 6. Define assurance evidence before deployment, including evaluation, red teaming, model documentation, quantitative risk evidence, and incident response evidence.
 7. Establish continuous monitoring for drift, abuse, prompt injection, unsafe tool use, data leakage, cost anomalies, and policy violations.
 8. Reassess after model updates, new tools, new data sources, new jurisdictions, high-impact incidents, or material changes in autonomy.
@@ -112,6 +125,8 @@ AI governance is not only policy. It must produce enforceable technical and oper
 | Incident handling | AI incident playbooks, coordinated vulnerability disclosure, post-incident review |
 
 ## APA 7 references
+
+AIUC-1 Consortium. (2026). *AIUC-1: The standard for AI agent security, safety and reliability*. https://www.aiuc-1.com/
 
 Anthropic. (2026). *Responsible scaling policy*. https://www.anthropic.com/responsible-scaling-policy
 
