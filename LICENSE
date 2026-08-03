@@ -1,0 +1,76 @@
+RESPONSIBLE CYBERSECURITY USE LICENSE
+Version 1.1, 4 August 2026
+
+Copyright (c) 2026 Yuval Sinay. All rights reserved.
+
+1. DEFINITIONS
+
+"Materials" means the files, documentation, frameworks, templates, diagrams, data, software, scripts, rules, and other materials made available in this repository, including modified or derived versions, except third-party materials governed by separate terms.
+
+"User" means any individual or legal entity that accesses, uses, copies, modifies, executes, or distributes the Materials.
+
+2. LIMITED LICENSE GRANT
+
+Subject to full compliance with this License, the copyright holder grants the User a worldwide, royalty-free, non-exclusive, revocable license to use, copy, adapt, modify, and distribute the Materials solely for lawful, ethical, authorized, defensive, educational, research, safety, resilience, and protective purposes.
+
+Permitted purposes include defensive cybersecurity, authorized security testing, laboratory research, security awareness, risk assessment, governance, compliance, audit, incident prevention, incident response, threat hunting, detection engineering, resilience, safety improvement, and protection of people, organizations, information, systems, and infrastructure.
+
+3. AUTHORIZATION AND LABORATORY USE
+
+The User must obtain all permissions, authorizations, consents, and legal bases required for the intended activity before use.
+
+Security testing, proof-of-concept activity, simulation, and experimentation must be performed in an isolated and controlled laboratory environment whenever reasonably possible. Testing against production systems, third-party systems, public infrastructure, safety-critical systems, or sensitive data requires explicit documented authorization and appropriate safeguards.
+
+4. LEGAL, ETHICAL, AND RESPONSIBLE USE
+
+The User must comply with all applicable laws, regulations, sanctions, export-control requirements, contractual obligations, professional duties, and organizational policies; respect privacy, confidentiality, intellectual property, human rights, safety, fairness, and due process; apply independent validation, professional judgment, human oversight, monitoring, rollback, and risk controls; and prevent unauthorized access, harmful propagation, uncontrolled execution, or exposure of sensitive information.
+
+5. PROHIBITED USES
+
+The Materials must not be used, directly or indirectly, to cause, enable, facilitate, encourage, or materially increase the risk of harm.
+
+Prohibited uses include unauthorized access, scanning, exploitation, interference, or disruption; malware, ransomware, destructive code, credential theft, phishing, fraud, impersonation, or malicious evasion; offensive cyber operations or testing without explicit lawful authority and documented authorization; unlawful surveillance, coercion, harassment, discrimination, manipulation, or infringement of rights; unsafe or reckless use; unlawful processing or disclosure of sensitive information; targeting safety-critical services without authorization and safeguards; or bypassing legal, ethical, safety, security, governance, or accountability controls for an unauthorized or harmful purpose.
+
+6. ATTRIBUTION AND NOTICE
+
+Any copy or distribution of the Materials, in whole or substantial part, must retain the copyright notice, this License, attribution to Yuval Sinay as the original author, and applicable third-party notices.
+
+Modified versions must be clearly identified as modified and must not be represented as approved, endorsed, or authored by the original author unless written permission has been granted.
+
+7. THIRD-PARTY MATERIALS
+
+Third-party materials remain governed by their respective licenses and terms. This License does not expand, replace, or override third-party rights or obligations.
+
+8. USER RESPONSIBILITY
+
+The User is solely responsible for evaluating whether the Materials are suitable for a particular context and for implementing appropriate safeguards. The Materials do not replace legal advice, regulatory analysis, professional security testing, risk assessment, safety engineering, vendor guidance, or management approval.
+
+9. NO ENDORSEMENT OR TRADEMARK LICENSE
+
+This License does not grant permission to use the name, trademarks, logos, identity, or organizational affiliation of the copyright holder to advertise, endorse, or promote products, services, modified works, or activities.
+
+10. TERMINATION
+
+Rights granted under this License terminate automatically upon breach. Upon termination, the User must cease using and distributing the Materials and delete or destroy copies under the User's control, except where retention is legally required.
+
+11. DISCLAIMER OF WARRANTIES
+
+THE MATERIALS ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, SECURITY, NON-INFRINGEMENT, ERROR-FREE OPERATION, OR SUITABILITY FOR PRODUCTION USE.
+
+NO WARRANTY IS GIVEN THAT THE MATERIALS WILL DETECT, PREVENT, MITIGATE, OR CORRECT ANY SECURITY THREAT, INCIDENT, VULNERABILITY, FAILURE, OR LOSS.
+
+12. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER AND CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY CLAIM, LOSS, DAMAGE, LIABILITY, COST, OR EXPENSE ARISING FROM OR RELATED TO THE MATERIALS OR THEIR ACCESS, USE, MISUSE, MODIFICATION, DISTRIBUTION, DEPLOYMENT, INABILITY TO USE, OR RELIANCE ON THEM.
+
+13. SEVERABILITY
+
+If any provision of this License is held unenforceable, the remaining provisions remain in effect to the maximum extent permitted by law.
+
+14. NATURE OF THIS LICENSE
+
+This is a custom source-available responsible-use license. It restricts use to lawful, ethical, authorized, defensive, and protective purposes and is not an Open Source Initiative approved open-source license.
+
+15. ACCEPTANCE
+
+By accessing, using, copying, modifying, executing, or distributing the Materials, the User agrees to the terms of this License.
