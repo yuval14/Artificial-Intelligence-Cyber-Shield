@@ -8,6 +8,7 @@
 | AI red teaming frameworks | Add vendor, academic, government, and open-source AI red teaming methodologies | Planned |
 | AI threat modeling | Add AI system, LLM, agent, data, model, and tool-use threat modeling methods | Planned |
 | AI agent security | Add agent autonomy, tool-use, identity, memory, sandboxing, and permission-control guidance | Planned |
+| AI threat landscape | Add research on covert AI-enabled offensive cyber operations, provider-reported incidents, detection implications, and executive actions | Initial page added |
 | References | Add APA 7 references for all major sources | Planned |
 | GitHub Pages | Publish the repository as a readable documentation site | Planned |
 | Diagrams | Add visual maps for AI security program design and AI red teaming workflows | Planned |
@@ -27,6 +28,8 @@
 11. Anthropic frontier model and cyber evaluation approaches.
 12. AI agent security principles.
 13. AI bill of materials, model cards, system cards, and assurance evidence.
+14. Covert AI-enabled offensive cyber operations and AI-assisted adversary tradecraft.
+15. Cross-repository links to AIDAF, detection engineering, Sigma rules, and operational workbooks.
 
 ## Design principle
 
