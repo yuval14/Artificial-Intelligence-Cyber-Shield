@@ -19,6 +19,7 @@ This page lists frameworks, control patterns, and security principles for AI age
 | 11 | UC Berkeley Center for Long-Term Cybersecurity | AgentWatch: Privacy and Security Evaluation for Browser-Based AI Agents | Evaluate browser-based AI agents against privacy and security scenarios, including data disclosure, ambiguous prompts, hallucination, prompt injection, and browser sandbox isolation | 2026 | Public report and open-source evaluation hub | Agent privacy and security testing |
 | 12 | Research community | ASTRA, WASP, AI-Infra-Guard, and related agent benchmarks | Evaluate agent steerability, prompt-injection resilience, web-agent security, and multi-layer agent attacks | 2025 onwards | Yes / public research | Agentic AI security evaluation |
 | 13 | Kexin Chu | [Layered Attack Surface Model (LASM)](Layered-Attack-Surface-Model-LASM.md) | Map agent threats by seven architectural layers and four temporal classes | 2026 | Public preprint | Cross-layer threat modeling, control placement, ABOM, and long-horizon evaluation |
+| 14 | Institute for AI Policy and Strategy | Detecting Offensive Cyber Agents: A Detection-in-Depth Approach | Add agent identifiers, agent honeypots, AI-assisted alert triage, standardized agentic alerts, and provider/cloud threat exchange | 2026 | Public research | Detection and disruption of hostile autonomous cyber agents |
 
 ## Agent-specific risk areas
 
@@ -37,20 +38,25 @@ This page lists frameworks, control patterns, and security principles for AI age
 | Tool-loop denial of service | Agent repeatedly calls tools or consumes tokens, compute, API quota, or budget | Quotas, rate limits, timeout rules, circuit breakers, recursion limits |
 | Cross-agent propagation | One compromised agent influences another agent, workflow, or memory store | Agent isolation, signed messages, trust labels, workflow-level policy enforcement |
 | Browser sandbox escape or leakage | Browser-based agents may cross site, session, or context boundaries when acting for users | Browser isolation, origin boundaries, session separation, explicit user confirmation, cross-context data leakage tests |
+| Target-scope escape | Cyber-capable agent reaches systems outside its approved target or business scope | Default-deny egress, destination allowlists, purpose-bound credentials |
+| Continued action after stop or revocation | Agent changes tools, identities, routes, or sub-agents after control activation | Infrastructure-level kill switch, credential revocation, independent network isolation |
+| Autonomous resource acquisition | Agent acquires compute, credentials, cloud resources, or funds to continue operating | Cloud provisioning controls, cryptojacking detection, billing alerts, provider abuse monitoring |
+| Agent identity spoofing or mismatch | Claimed agent identity does not match the actual workload or attestation | Verifiable agent identity, workload binding, revocation, step-up verification |
 
 ## Agent security reference architecture
 
 | Layer | Security objective | Minimum controls |
 | --- | --- | --- |
 | User and requester identity | Ensure the agent knows who is asking and what authority they have | Strong authentication, delegated authorization, role mapping, session binding |
-| Agent identity | Ensure every agent has a bounded and auditable identity | Dedicated service identity, scoped credentials, ownership metadata, key rotation |
+| Agent identity | Ensure every agent has a bounded and auditable identity | Dedicated service identity, scoped credentials, ownership metadata, key rotation, optional cryptographic attestation |
 | Model and policy layer | Keep model behavior within approved policy boundaries | System instruction management, policy-as-code, safety filters, regression tests |
 | Context and retrieval layer | Prevent untrusted content from becoming trusted instructions | Source labeling, retrieval filtering, prompt injection detection, context separation |
 | Tool and action layer | Prevent unauthorized or unsafe actions | Tool allowlist, parameter validation, sandboxing, approval gates, transaction signing |
 | Browser and session layer | Prevent browser-based agents from leaking user data across sites, tabs, forms, sessions, and contexts | Sandboxed browser profile, origin isolation, session scoping, cookie and credential controls, cross-site leakage tests |
 | Memory layer | Prevent poisoned, stale, or unauthorized memory from changing behavior | Memory provenance, write controls, expiry rules, review workflows, rollback |
-| Monitoring layer | Reconstruct actions and detect abuse | Trace IDs, prompt logs, tool-call logs, anomaly detection, SIEM integration |
-| Response and recovery layer | Limit impact when an agent fails or is compromised | Kill switch, rollback, credential revocation, incident playbooks, forensic capture |
+| Network and target layer | Ensure agents can communicate only with approved destinations and target sets | Default-deny egress, proxy enforcement, DNS policy, target allowlists, network segmentation |
+| Monitoring layer | Reconstruct actions and detect abuse | Trace IDs, prompt logs, tool-call logs, anomaly detection, deception telemetry, SIEM integration |
+| Response and recovery layer | Limit impact when an agent fails or is compromised | Independent kill switch, rollback, credential revocation, network isolation, incident playbooks, forensic capture |
 
 ## Harness Engineering for secure AI agents
 
@@ -101,6 +107,8 @@ flowchart LR
 6. **Require approval for irreversible or high-impact actions.** Production changes, financial transactions, credential operations, data deletion, and external communications require independent authorization.
 7. **Preserve complete evidence.** Record the initiating request, retrieved context, model output, tool parameters, approvals, execution result, and rollback activity.
 8. **Continuously improve the harness.** Convert recurring agent failures, review findings, incidents, and near misses into new guides, sensors, tests, and enforceable controls.
+9. **Bound destination and target scope outside the model.** Cyber-capable and browser agents should not be able to expand network reach through reasoning or tool choice.
+10. **Make stop controls independent.** Kill switches and revocation must work even if the agent continues to plan or attempts an alternate path.
 
 ### Minimum implementation evidence
 
@@ -113,6 +121,8 @@ flowchart LR
 | Can every action be attributed to an agent identity and initiating user? | Identity mapping, delegated authorization record, trace and audit logs |
 | Does failure produce feedback without creating an uncontrolled loop? | Retry limits, recursion limits, circuit-breaker tests, escalation workflow |
 | Can the organization stop and recover the agent safely? | Kill-switch test, credential revocation procedure, rollback and incident exercise |
+| Can an agent reach destinations outside the approved scope? | Egress policy, target allowlist, negative network tests |
+| Does stop or revocation remain effective after the agent changes tools or routes? | Adversarial containment test and SIEM evidence |
 
 ## Agent Rule of One
 
@@ -123,6 +133,49 @@ Each AI agent should possess only one of the following three high-risk capabilit
 3. Ability to modify memory, policy, identity, or configuration.
 
 If an agent requires more than one high-risk capability, add compensating controls such as human approval, separation of duties, sandboxing, rate limits, transaction signing, and independent monitoring.
+
+## External hostile agents and Highly Autonomous Cyber-Capable Agents
+
+Agent security must address not only the organization's own agents but also **hostile external agents** interacting with enterprise systems.
+
+IAPS uses the term **Highly Autonomous Cyber-Capable Agent (HACCA)** for a potential class of AI system capable of conducting multi-stage cyber campaigns at a level comparable to advanced criminal or state-affiliated operators with little meaningful human direction.
+
+The HACCA concept adds campaign-level concerns beyond ordinary prompt injection or tool misuse:
+
+- Autonomous infrastructure setup
+- Credential harvesting
+- Compute or financial resource acquisition
+- Cross-target campaign operation
+- Detection evasion
+- Provider or infrastructure switching
+- Adaptive shutdown avoidance
+
+### Defensive architecture for external agents
+
+```text
+External agent
+  -> agent identity / attestation where available
+  -> gateway or application boundary
+  -> deception and canary layer
+  -> authorization and rate limits
+  -> behavior and sequence analytics
+  -> cross-provider threat intelligence
+  -> containment or disruption
+```
+
+### Detection-in-depth controls
+
+IAPS proposes five complementary mechanisms:
+
+1. **Agent Identifiers for Critical Infrastructure** - persistent, cryptographically verifiable credentials or attestations that can create detection-relevant telemetry.
+2. **Agent Honeypots** - decoy systems designed to attract autonomous attackers and expose their operational behavior.
+3. **AI-Automated Alert Analysis and Triage** - AI-supported analysis for the larger volume and complexity of agentic signals.
+4. **Agentic Security Alert Standard** - a standardized way to communicate suspected agentic threats.
+5. **Agentic Cybersecurity Exchange (ACE)** - provider and cloud coordination to detect and disrupt offensive agent activity closer to its origin.
+
+Agent identifiers should be treated as one evidence layer. They do not replace identity security, network controls, behavioral analytics, or incident response.
+
+The detailed threat analysis is maintained in [Highly Autonomous Cyber-Capable Agents](../Threat-Landscape/Highly-Autonomous-Cyber-Capable-Agents.md).
 
 ## AgentWatch evaluation dimensions
 
@@ -149,6 +202,8 @@ AgentWatch is a UC Berkeley CLTC evaluation method for browser-based AI agents. 
 | Are tool calls and model decisions logged? | Incidents require reconstruction of prompts, outputs, tools, and approvals | Trace logs, SIEM events, retention policy |
 | Can the agent be stopped quickly? | Response speed matters when autonomous systems misbehave | Kill switch, credential revocation plan, runbook |
 | Has the agent been tested with AgentWatch-style browser scenarios? | Browser agents introduce unique risks around data disclosure, prompt injection, ambiguous intent, hallucination, and sandbox boundaries | Scenario library, privacy and safety score, regression-test evidence, exception log |
+| Can the agent reach a destination outside its authorized target set? | Target-scope escape can turn authorized testing into third-party impact | Egress policy, allowlist, destination-validation tests |
+| Does revocation stop all delegated and spawned activity? | Autonomous systems may continue through alternate identities or sub-agents | Revocation exercise, delegation inventory, trace correlation |
 
 ## Suggested maturity model
 
@@ -158,7 +213,7 @@ AgentWatch is a UC Berkeley CLTC evaluation method for browser-based AI agents. 
 | 1 | Assisted agent | Read-only tools, user confirmation, basic logging |
 | 2 | Controlled agent | Scoped tools, approval gates, prompt-injection tests, cost limits |
 | 3 | Governed agent | Policy-as-code, least privilege, memory controls, SIEM integration, incident playbooks |
-| 4 | High-assurance agent | Independent red team, formal risk acceptance, continuous evaluation, runtime enforcement, post-incident forensics |
+| 4 | High-assurance agent | Independent red team, formal risk acceptance, continuous evaluation, runtime enforcement, post-incident forensics, independent containment, target-bound egress |
 
 ## APA 7 references
 
@@ -180,9 +235,13 @@ Google. (2026). *Secure AI framework: Secure agents*. https://saif.google/
 
 Hazan, I., Mathov, Y., Shtar, G., Bitton, R., & Mantin, I. (2025). *ASTRA: Agentic steerability and risk assessment framework*. arXiv. https://arxiv.org/abs/2511.18114
 
+Kraprayoon, J., Ee, S., Rosen, B., Matthew, Y., Singh, A., Covino, C., & Gershovich, A. B. (2026, March 11). *Highly autonomous cyber-capable agents: Anticipating capabilities, tactics, and strategic implications*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/highly-autonomous-cyber-capable-agents
+
 Lopopolo, R. (2026, February 11). *Harness engineering: Leveraging Codex in an agent-first world*. OpenAI. https://openai.com/index/harness-engineering/
 
 MITRE. (n.d.). *MITRE ATLAS: Adversarial threat landscape for artificial-intelligence systems*. https://atlas.mitre.org/
+
+Mittelsteadt, M., Kraprayoon, J., Staes-Polet, R., Galeev, O., Wehner, J., Covino, C., & Ee, S. (2026, May 19). *Detecting offensive cyber agents: A detection-in-depth approach*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/detecting-offensive-cyber-agents
 
 National Institute of Standards and Technology. (2023). *Artificial intelligence risk management framework (AI RMF 1.0)*. https://doi.org/10.6028/NIST.AI.100-1
 

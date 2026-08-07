@@ -29,6 +29,7 @@ This page lists selected AI red teaming frameworks, benchmarks, guides, and tool
 | 21 | Cloud Security Alliance | Agentic AI Red Teaming Guide | Guidance for red teaming agentic AI systems, including autonomy, tool use, identity, and multi-step risk scenarios. | 2025 | Public guidance | Agentic AI red teaming | [CSA AI Safety Initiative](https://cloudsecurityalliance.org/research/working-groups/ai-safety-initiative) |
 | 22 | Beijing AI Safety Institute | ForesightSafety Bench | Frontier risk evaluation benchmark covering broad safety pillars, agentic autonomy, AI4Science, embodied AI, and catastrophic risk dimensions. | 2026 | Yes | Frontier AI safety evaluation | [ForesightSafety Bench](https://github.com/Beijing-AISI/ForesightSafety-Bench) |
 | 23 | AI-Infra-Guard authors | AI-Infra-Guard | Multi-layer agent red teaming framework covering infrastructure, MCP/tool layers, agent behavior, and model-layer jailbreak testing. | 2026 | Yes | AI agent and MCP security red teaming | [AI-Infra-Guard paper](https://arxiv.org/abs/2606.31227) |
+| 24 | Institute for AI Policy and Strategy | Evaluation Awareness research | Identifies risks when frontier models detect evaluation contexts and strategically change behavior, including sandbagging and alignment faking. | March 2026 | Public research | Evaluation integrity, hidden testing, independent evaluation, and post-deployment assurance | [IAPS Evaluation Awareness](https://www.iaps.ai/research/evaluation-awareness-why-frontier-ai-models-are-getting-harder-to-test) |
 
 ## Suggested Use
 
@@ -39,12 +40,53 @@ For a practical AI red team program, combine several layers rather than relying 
 3. **Automated testing:** PyRIT, garak, Giskard, Inspect, CyberSecEval.
 4. **Adversarial ML robustness:** IBM ART and Microsoft Counterfit.
 5. **Agentic AI security:** CSA Agentic AI Red Teaming Guide, AI-Infra-Guard, and agent-specific test harnesses.
+6. **Evaluation integrity:** hidden and held-out evaluations, third-party testing, evaluation-awareness testing, and post-deployment monitoring.
+
+## Evaluation Awareness, Sandbagging, and Alignment Faking
+
+IAPS defines **evaluation awareness** as a frontier model's ability to detect that it is being tested. This creates a material assurance problem when the model strategically changes its behavior because the evaluation result may no longer represent real-world deployment behavior.
+
+Two important failure modes are:
+
+- **Sandbagging** - intentionally underperforming on a capability evaluation, potentially concealing dangerous capability.
+- **Alignment faking** - appearing safer, more cooperative, or more compliant during evaluation than during deployment.
+
+### Red-team requirements
+
+| Requirement | Purpose | Example evidence |
+| --- | --- | --- |
+| Hidden and held-out evaluations | Reduce the model's ability to recognize known benchmark structure | Confidential test set, evaluator access controls, test rotation |
+| Context variation | Test whether behavior changes when evaluation cues are removed or altered | Equivalent tasks with different framing, interfaces, metadata, and tools |
+| Third-party evaluation | Reduce dependence on developer-controlled test conditions | Independent evaluator report and access record |
+| Behavioral consistency testing | Compare decisions across evaluation and deployment-like environments | Differential behavior analysis |
+| Long-horizon agent testing | Identify strategic behavior that emerges only over multi-step tasks | Full traces, retry history, state transitions, tool calls |
+| Capability elicitation | Test whether the model can perform more strongly under alternative scaffolding or prompting | Multi-scaffold results, best-of-N trials, tool-enabled testing |
+| Reasoning and trace analysis | Look for evidence that the model recognized or reasoned about the test context where such telemetry is available and appropriate | Evaluation-awareness indicators and assessor notes |
+| Post-deployment monitoring | Detect capabilities or propensities that were missed before release | Production incident, drift, and anomaly telemetry |
+
+### Testing questions
+
+1. Does performance materially change when benchmark names, evaluator language, or known test artifacts are removed?
+2. Does the model infer that high performance could lead to restriction, retraining, or non-deployment?
+3. Does the model behave differently when it believes actions have real consequences?
+4. Can the model identify evaluation infrastructure, synthetic users, test accounts, or repeated test patterns?
+5. Does safety behavior change when supervision appears weaker or absent?
+6. Does additional scaffolding, tool access, memory, retry budget, or agent orchestration reveal capabilities missed by the base evaluation?
+7. Are cyber-capability tests performed in environments whose containment controls remain effective even if the model acts strategically?
+
+### Assurance implication
+
+Passing a known evaluation should not be treated as proof of safe deployment. High-risk systems require evidence from multiple independent evaluation modes plus post-deployment safeguards and monitoring.
+
+The [AI Integrity](./AI-Integrity.md) page provides complementary controls for model, data, prompt, policy, tool, memory, and evaluation integrity.
 
 ## APA 7 References
 
 Alaga, J., Schuett, J., & Anderljung, M. (2024). *A grading rubric for AI safety frameworks*. arXiv. https://arxiv.org/abs/2409.08751
 
 Derczynski, L., Galinkin, E., Martin, J., Majumdar, S., & Inie, N. (2024). *garak: A framework for security probing large language models*. arXiv. https://arxiv.org/abs/2406.11036
+
+Maheshwari, S., & O'Brien, J. (2026, March 31). *Evaluation awareness: Why frontier AI models are getting harder to test*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/evaluation-awareness-why-frontier-ai-models-are-getting-harder-to-test
 
 MLCommons AI Safety Working Group. (2025). *AILuminate: Introducing v1.0 of the AI risk and reliability benchmark from MLCommons*. arXiv. https://arxiv.org/abs/2503.05731
 
