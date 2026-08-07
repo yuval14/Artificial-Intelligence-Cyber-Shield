@@ -234,7 +234,7 @@ Required controls should include:
 
 ## References
 
-Covino, C., Kraprayoon, J., & Mittelsteadt, M. (2026, April 30). *Advancing America's cyber strategy with differential access*. Institute for AI Policy and Strategy. https://www.iaps.ai/research
+Covino, C., Kraprayoon, J., & Mittelsteadt, M. (2026, April 30). *Advancing America's cyber strategy with differential access*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/advancing-americas-cyber-strategy-with-differential-access
 
 Mittelsteadt, M., Kraprayoon, J., Staes-Polet, R., Galeev, O., Wehner, J., Covino, C., & Ee, S. (2026, May 19). *Detecting offensive cyber agents: A detection-in-depth approach*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/detecting-offensive-cyber-agents
 
