@@ -1,6 +1,6 @@
 # AI Incident Repositories
 
-This page lists public repositories, monitors, databases, and knowledge bases that can support AI incident intelligence, AI safety analysis, AI security research, policy learning, and organizational lessons learned.
+This page lists public repositories, monitors, databases, knowledge bases, and incident analyses that can support AI incident intelligence, AI safety analysis, AI security research, policy learning, and organizational lessons learned.
 
 AI incident repositories are useful because they create a shared memory of real-world failures, misuse, vulnerabilities, accidents, near misses, and harmful outcomes involving AI systems.
 
@@ -21,17 +21,19 @@ AI incident repositories are useful because they create a shared memory of real-
 | 13 | OpenAI | System Cards and Safety Evaluations | Public safety documentation for selected models, including risks, evaluations, mitigations, and limitations. | Frontier-model behavior, safety testing, cyber, autonomy, persuasion, and biological-risk evaluations | 2020s | Yes | Public reports | [OpenAI Safety](https://openai.com/safety/) |
 | 14 | Anthropic | System Cards and Responsible Scaling Policy reports | Public safety documentation and policy reports for frontier AI systems. | Model safety, evaluations, safeguards, capability thresholds, and deployment risk | 2020s | Yes | Public reports | [Anthropic Safety](https://www.anthropic.com/safety) |
 | 15 | Google DeepMind | Safety and Frontier Safety Framework publications | Public safety research and governance outputs for advanced AI systems. | Frontier AI risks, model evaluations, dangerous capabilities, safeguards, and risk governance | 2020s | Yes | Public reports | [Google DeepMind Safety](https://deepmind.google/responsibility-safety/) |
+| 16 | Institute for AI Policy and Strategy | OpenAI/Hugging Face autonomous-agent incident analysis | Policy and security analysis of the July 2026 incident that IAPS characterized as the first publicly disclosed and verified case of AI models autonomously compromising an uninvolved third party end-to-end. | Autonomous cyber-agent containment, offensive cyber evaluation, third-party impact, governance and policy response | July 2026 | Yes | Public memo | [IAPS OpenAI/Hugging Face Incident](https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems) |
 
 ## Suggested Use
 
 | Use Case | Recommended Sources |
 |---|---|
 | Policy and regulatory analysis | OECD AI Incidents Monitor, AIID, NIST, ENISA |
-| AI security threat analysis | MITRE ATLAS, AVID, CISA, ENISA |
+| AI security threat analysis | MITRE ATLAS, AVID, CISA, ENISA, IAPS autonomous-agent incident analysis |
 | AI safety and harm analysis | OECD AI Incidents Monitor, AIID, Partnership on AI, MLCommons AILuminate |
 | Model evaluation and assurance | HELM, MLCommons AILuminate, UK AISI, NIST |
 | Frontier AI safety review | OpenAI, Anthropic, Google DeepMind, UK AISI |
-| National cyber and critical infrastructure planning | CISA, ENISA, NIST, MITRE ATLAS |
+| Autonomous-agent containment and cyber evaluation | IAPS incident analysis, CUSTODY, UK AISI research, provider system cards |
+| National cyber and critical infrastructure planning | CISA, ENISA, NIST, MITRE ATLAS, IAPS cyber-agent research |
 
 ## Incident Classification Dimensions
 
@@ -40,12 +42,13 @@ AI incident repositories can be analyzed using the following dimensions:
 | Dimension | Examples |
 |---|---|
 | Harm type | Physical, economic, reputational, psychological, rights-based, societal, cybersecurity |
-| Lifecycle stage | Design, training, testing, deployment, monitoring, retirement |
-| Technical cause | Data issue, model error, misalignment, prompt injection, unsafe automation, tool misuse, integration failure |
+| Lifecycle stage | Design, training, testing, evaluation, deployment, monitoring, retirement |
+| Technical cause | Data issue, model error, misalignment, prompt injection, unsafe automation, tool misuse, integration failure, containment failure |
 | Actor type | Developer, deployer, user, malicious actor, third party, autonomous system |
 | System type | Predictive ML, generative AI, recommender system, computer vision, autonomous system, AI agent |
 | Sector | Healthcare, finance, education, defense, public sector, social media, transportation, critical infrastructure |
 | Severity | Near miss, minor harm, major harm, systemic harm, catastrophic risk indicator |
+| Control boundary | Prompt/policy, identity, tool, sandbox, network egress, target scope, provider, cloud infrastructure |
 
 ## Notes
 
@@ -53,12 +56,15 @@ AI incident repositories can be analyzed using the following dimensions:
 2. The OECD AI Incidents Monitor is especially useful for policy-level trend analysis and cross-sector visibility.
 3. MITRE ATLAS and AVID are especially useful for AI security and adversarial machine-learning analysis.
 4. AIID is especially useful as a general-purpose historical repository of real-world AI failures and harms.
+5. The IAPS OpenAI/Hugging Face publication is an incident analysis rather than a general incident database. Its characterization of the event should be corroborated against the primary disclosures from the organizations involved when used for incident-specific legal, regulatory, or attribution conclusions.
 
 ## APA 7 References
 
 AI Incident Database. (n.d.). *AI Incident Database*. https://incidentdatabase.ai/
 
 AI Vulnerability Database. (n.d.). *AVID: AI vulnerability database*. https://avidml.org/
+
+Bearman, T., Covino, C., Mittelsteadt, M., & O'Brien, J. (2026, July 27). *The OpenAI/Hugging Face incident: Challenges in controlling and containing cyber-capable AI systems*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems
 
 McGregor, S. (2020). *Preventing repeated real world AI failures by cataloging incidents: The AI Incident Database*. arXiv. https://arxiv.org/abs/2011.08512
 
