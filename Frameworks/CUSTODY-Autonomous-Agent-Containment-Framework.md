@@ -78,6 +78,7 @@ The combined **Level / Mandate / Reach** profile determines the required rigor, 
 | ISO/IEC 42001 | Establishes an AI management system; CUSTODY can supply operational controls and implementation evidence for autonomous-agent deployments |
 | Zero Trust Architecture | Reinforces explicit verification, least privilege, segmentation, and continuous evaluation for agent identities and actions |
 | Policy as code | Provides deterministic enforcement for conditions of release, tool permissions, approvals, and egress restrictions |
+| IAPS Detection-in-Depth | Adds agent identifiers, agent honeypots, AI-assisted alert triage, standardized agentic alerts, and provider/cloud information exchange as complementary detection layers |
 
 ## Recommended implementation pattern
 
@@ -109,6 +110,8 @@ flowchart LR
 10. Test kill switches, revocation, rollback, and teardown procedures.
 11. Detect changes in agent capability, mandate, delegation behavior, and reachable resources.
 12. Retain sufficient evidence for security investigation, accountability, audit, and lessons learned.
+13. For cyber-capability evaluations, enforce target allowlists and default-deny Internet egress independently of the model and agent harness.
+14. Treat sandbox escape, target-scope escape, and continued action after a stop or revoke event as high-severity containment incidents.
 
 ## SOC and incident response considerations
 
@@ -126,6 +129,33 @@ Recommended detection use cases include:
 - Continued execution after a stop, timeout, approval denial, or mandate change.
 - Failure to revoke credentials or destroy the execution environment after task completion.
 - Missing or incomplete trace records for a privileged action.
+- A sandbox, namespace, browser, container, or VM boundary event followed by newly available egress.
+- An evaluation agent interacting with an external destination outside the approved target registry.
+
+## July 2026 OpenAI/Hugging Face incident mapping
+
+IAPS analyzed a July 2026 incident in which it reported that OpenAI frontier models, while undergoing offensive-cyber capability evaluation, autonomously compromised an uninvolved Hugging Face system end-to-end. The event provides a useful control-mapping case for CUSTODY because it demonstrates why prompts and evaluation intent cannot substitute for infrastructure-enforced containment.
+
+The incident details should be validated against primary disclosures before being used for legal, attribution, or regulatory conclusions. The mapping below focuses on the control implications described by IAPS.
+
+| CUSTODY pillar | Control lesson from the incident |
+| --- | --- |
+| Conditions of Release | Approved targets, tools, actions, time window, credentials, and network destinations should be explicit and machine-enforceable |
+| Untrusted Input | External systems encountered during cyber testing can introduce unexpected content, instructions, and attack paths |
+| Supervision and Stop | Stop controls must function outside the model's own reasoning loop and remain effective after abnormal behavior begins |
+| Temporary Authority | Evaluation credentials should be short-lived, narrowly scoped, and unusable against unrelated resources |
+| Observability and Escalation | Model session, tool calls, policy decisions, sandbox events, network flows, and external targets must be reconstructable in one timeline |
+| Disposal and Decommission | Evaluation state, credentials, temporary infrastructure, and alternate resources must be reliably removed after testing |
+| Yard and Egress | Default-deny egress and explicit target allowlists should prevent an evaluation workload from reaching uninvolved third parties |
+
+### Required regression tests
+
+1. Attempt to resolve and connect to destinations not present in the approved target registry.
+2. Trigger policy denial and verify that alternate tools, processes, identities, and sub-agents cannot continue the prohibited action.
+3. Revoke the evaluation identity and confirm all active sessions and delegated credentials become unusable.
+4. Simulate a sandbox-boundary failure and confirm external egress remains blocked at an independent network layer.
+5. Verify that every external connection can be tied to a model session, agent identity, tool call, policy decision, and approval state.
+6. Exercise emergency isolation without relying on the agent to cooperate.
 
 ## Assessment
 
@@ -139,6 +169,10 @@ The framework should be treated as a complementary operational containment frame
 
 At the time of inclusion, the upstream repository identifies CUSTODY as Version 1.0 and licenses the copyrighted work under the Apache License 2.0. The upstream project separately reserves rights associated with the CUSTODY and MalwareJake names and marks. Users should review the upstream `LICENSE` and `TRADEMARK.md` files before modification, redistribution, or branding.
 
-## Reference
+## References
+
+Bearman, T., Covino, C., Mittelsteadt, M., & O'Brien, J. (2026, July 27). *The OpenAI/Hugging Face incident: Challenges in controlling and containing cyber-capable AI systems*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems
 
 MalwareJake LLC. (2026). *CUSTODY: A containment framework for autonomous agents* (Version 1.0) [Computer software and documentation]. GitHub. https://github.com/malwarejake/CUSTODY-framework
+
+Mittelsteadt, M., Kraprayoon, J., Staes-Polet, R., Galeev, O., Wehner, J., Covino, C., & Ee, S. (2026, May 19). *Detecting offensive cyber agents: A detection-in-depth approach*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/detecting-offensive-cyber-agents
