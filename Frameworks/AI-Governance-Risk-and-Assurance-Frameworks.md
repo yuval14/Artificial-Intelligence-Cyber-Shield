@@ -18,7 +18,7 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 | 12 | Cloud Security Alliance | AI Organizational Responsibilities | Defines organizational security responsibilities for AI governance, engineering, procurement, and operations. | 2024 | Yes | AI security responsibility model | [CSA AI Safety Initiative](https://cloudsecurityalliance.org/research/working-groups/ai-safety-initiative) |
 | 13 | Cloud Security Alliance | Security Implications of ChatGPT and Generative AI | Guidance on security risks, controls, and organizational implications of generative AI adoption. | 2023 | Yes | Generative AI security guidance | [CSA Generative AI Security](https://cloudsecurityalliance.org/artifacts/security-implications-of-chatgpt) |
 | 14 | ENISA | Securing Machine Learning Algorithms | Cybersecurity guidance on machine-learning systems, threats, vulnerabilities, and mitigation measures. | December 2021 | Yes | ML cybersecurity | [ENISA Securing ML](https://www.enisa.europa.eu/publications/securing-machine-learning-algorithms) |
-| 15 | ENISA | Artificial Intelligence Cybersecurity Challenges | Analysis of AI cybersecurity challenges and security requirements across AI systems. | December 2020 | Yes | AI cybersecurity | [ENISA AI Cybersecurity Challenges](https://www.enisa.europa.eu/publications/artificial-intelligence-cybersecurity-challenges) |
+| 15 | ENISA | Artificial Intelligence Cybersecurity Challenges | Analysis of AI cybersecurity challenges and security requirements across AI systems. | December 2020 | Yes | ML and AI cybersecurity | [ENISA AI Cybersecurity Challenges](https://www.enisa.europa.eu/publications/artificial-intelligence-cybersecurity-challenges) |
 | 16 | ENISA | Cybersecurity of AI and Standardisation | Mapping of AI cybersecurity standardization needs and gaps. | 2023 | Yes | AI standards and assurance | [ENISA AI Standardisation](https://www.enisa.europa.eu/publications/cybersecurity-of-ai-and-standardisation) |
 | 17 | European Union | EU Artificial Intelligence Act (Regulation (EU) 2024/1689) | Risk-based legal framework for prohibited, high-risk, transparency, and general-purpose AI obligations. | Entered into force August 2024 | Public law | AI regulation and compliance | [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) |
 | 18 | European Commission High-Level Expert Group | Ethics Guidelines for Trustworthy AI | Human-centric AI principles covering lawful, ethical, and robust AI. | April 2019 | Yes | AI ethics and trustworthiness | [Trustworthy AI Guidelines](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai) |
@@ -26,13 +26,13 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 | 20 | OECD | OECD AI Principles | Intergovernmental principles for inclusive growth, human-centered values, transparency, robustness, accountability, and responsible stewardship. | May 2019; updated 2024 | Yes | AI policy principles | [OECD AI Principles](https://oecd.ai/en/ai-principles) |
 | 21 | UNESCO | Recommendation on the Ethics of Artificial Intelligence | Global normative framework for ethical AI governance, human rights, environment, inclusion, and accountability. | November 2021 | Yes | AI ethics governance | [UNESCO AI Ethics Recommendation](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics) |
 | 22 | G7 | Hiroshima Process International Code of Conduct for Advanced AI Systems | Voluntary code for developers of advanced AI systems, including risk identification, mitigation, transparency, security, and incident reporting. | October 2023 | Yes | Advanced AI governance | [G7 Hiroshima Process](https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-international-code-conduct-advanced-ai-systems) |
-| 23 | White House / U.S. Government | Blueprint for an AI Bill of Rights | Principles for safe and effective systems, algorithmic discrimination protections, data privacy, notice, explanation, and human alternatives. | October 2022 | Yes | Rights-based AI governance | [AI Bill of Rights](https://www.whitehouse.gov/ostp/ai-bill-of-rights/) |
-| 24 | U.S. Executive Office | Executive Order 14110 on Safe, Secure, and Trustworthy AI | Whole-of-government directive for AI safety, security, privacy, equity, innovation, and government AI use. | October 2023 | Public directive | National AI governance | [EO 14110](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence) |
+| 23 | White House / U.S. Government | Blueprint for an AI Bill of Rights | Historical U.S. policy principles for safe and effective systems, algorithmic discrimination protections, data privacy, notice, explanation, and human alternatives. | October 2022 | Public historical resource | Rights-based AI governance | [AI Bill of Rights](https://www.whitehouse.gov/ostp/ai-bill-of-rights/) |
+| 24 | U.S. Executive Office | Executive Order 14110 on Safe, Secure, and Trustworthy AI | Historical 2023 whole-of-government AI directive. **Revoked January 20, 2025 by Executive Order 14148.** Retained here for historical and comparative analysis only. | October 2023; revoked January 2025 | Public historical directive | Historical U.S. AI governance | [EO 14110](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence) |
 | 25 | CISA | Roadmap for Artificial Intelligence | U.S. cyber agency roadmap for responsible AI use, AI system protection, critical infrastructure, and interagency collaboration. | November 2023 | Yes | AI and critical infrastructure security | [CISA AI Roadmap](https://www.cisa.gov/resources-tools/resources/roadmap-artificial-intelligence) |
 | 26 | MITRE | MITRE ATLAS | Knowledge base of tactics, techniques, case studies, and mitigations for AI-enabled systems. | 2020 | Yes | AI security knowledge base | [MITRE ATLAS](https://atlas.mitre.org/) |
 | 27 | OWASP | OWASP Top 10 for LLM Applications | Risk taxonomy for large language model applications, including prompt injection, insecure output handling, data leakage, and agentic risks. | 2023; updated 2025 | Yes | LLM application security | [OWASP Top 10 for LLM](https://genai.owasp.org/) |
 | 28 | OWASP | OWASP AI Security and Privacy Guide | Practical guidance for AI security and privacy considerations across design, development, deployment, and operations. | 2023 / ongoing | Yes | AI application security | [OWASP AI Security and Privacy Guide](https://owasp.org/www-project-ai-security-and-privacy-guide/) |
-| 29 | Google | Secure AI Framework (SAIF) | Conceptual and practical framework for secure AI systems, including strong foundations, detection, response, and automated defenses. | June 2023 | Public guidance | Secure AI engineering | [Google SAIF](https://saif.google/) |
+| 29 | Google | Secure AI Framework (SAIF) | Conceptual and practical framework for secure AI systems, including strong foundations, detection, response, and supply-chain security. | June 2023 | Public guidance | Secure AI engineering | [Google SAIF](https://saif.google/) |
 | 30 | Microsoft | Responsible AI Standard | Internal governance standard published publicly to guide responsible AI product development and deployment. | June 2022; v2 | Public document | Responsible AI governance | [Microsoft Responsible AI Standard](https://www.microsoft.com/en-us/ai/responsible-ai-resources) |
 | 31 | OpenAI | Preparedness Framework | Frontier model risk governance framework for tracking and mitigating severe risks in cybersecurity, biology, persuasion, and autonomy. | December 2023; updated 2025 | Public document | Frontier AI safety governance | [OpenAI Preparedness](https://openai.com/safety/preparedness/) |
 | 32 | Anthropic | Responsible Scaling Policy | Capability-threshold and safeguard framework for managing frontier AI development risks. | September 2023; updated 2026 | Public document | Frontier AI safety governance | [Anthropic RSP](https://www.anthropic.com/responsible-scaling-policy) |
@@ -52,6 +52,8 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 | 46 | IEEE | Ethically Aligned Design | Framework for ethically aligned autonomous and intelligent systems. | First edition 2019 | Yes | AI ethics and system design | [IEEE Ethically Aligned Design](https://standards.ieee.org/industry-connections/ec/autonomous-systems/) |
 | 47 | IEEE | IEEE 7000 Series | Standards family for ethical, transparent, privacy-aware, bias-aware, and accountable autonomous and intelligent systems. | 2021 onward | Partially public metadata | AI ethics standards | [IEEE 7000 Series](https://standards.ieee.org/initiatives/autonomous-intelligence-systems/) |
 | 48 | FAIR Institute | FAIR-AIR Approach Playbook | FAIR-based five-stage approach for scoping and quantifying GenAI cyber loss exposure, identifying key risk drivers, prioritizing treatments, and supporting business investment decisions. | February 2024 | Yes | Quantitative AI cyber risk analysis | [FAIR-AIR Approach](FAIR-AIR-Approach.md) |
+| 49 | U.S. Executive Office | Executive Order 14409, Promoting Advanced Artificial Intelligence Innovation and Security | Current 2026 executive order addressing AI innovation and security, AI-enabled cybersecurity, protection of critical infrastructure and government systems, and enforcement against unlawful AI-enabled computer access. | June 2, 2026 | Public directive | Current U.S. AI and cybersecurity policy | [EO 14409](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/) |
+| 50 | Institute for AI Policy and Strategy | Risk Reporting for Developers' Internal AI Model Use | Harmonized reporting approach for risks created when frontier developers deploy their most capable models internally before public release, with relevance to SB 53, RAISE, and the EU GPAI Code of Practice. | April 29, 2026 | Public research | Internal frontier-model risk governance and assurance | [IAPS Internal Model Risk Reporting](https://www.iaps.ai/research/risk-reporting-for-developers-internal-ai-model-use) |
 
 ## Practical Mapping
 
@@ -64,7 +66,36 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 | AI cybersecurity | ENISA AI cybersecurity publications, MITRE ATLAS, OWASP AI Security and Privacy Guide |
 | AI assurance and testing | AI Verify, Inspect, HELM, AILuminate, ART, AI Fairness 360, AI Explainability 360 |
 | Frontier model safety | OpenAI Preparedness Framework, Anthropic Responsible Scaling Policy, Google DeepMind Frontier Safety Framework |
+| Internal frontier-model deployment | IAPS internal-use risk reporting, NIST AI RMF, ISO/IEC 42001, secure model-weight and internal-access controls |
+| Current U.S. federal AI/cyber policy | Executive Order 14409 and current agency implementation guidance; do not treat revoked EO 14110 as current policy |
 | Legal and regulatory alignment | EU AI Act, Council of Europe AI Convention, national AI directives, ISO/IEC 42001 |
+
+## 2026 U.S. policy update
+
+Executive Order 14110 is retained in this catalog only for historical comparison. Executive Order 14148 of January 20, 2025 explicitly revoked EO 14110.
+
+Executive Order 14409 of June 2, 2026 is a current U.S. executive action relevant to this repository. Among other provisions, it directs federal action around AI-enabled cybersecurity and prioritizes enforcement against unlawful computer access or damage involving AI, including use of AI agents to unlawfully access data or information.
+
+Organizations should distinguish binding legal or executive requirements from voluntary frameworks and from policy research. The applicability of a U.S. executive order to a specific organization depends on its legal status, government relationship, contractual obligations, sector, and implementing agency actions.
+
+## Internal AI model use risk reporting
+
+IAPS notes that frontier developers may operate their most capable models internally for weeks or months before public release. These systems may have materially different capabilities and risk profiles from public models.
+
+Recommended internal-use reporting should document:
+
+- Model and capability delta relative to the public frontier
+- Internal users and privileged access paths
+- Cyber, biological, autonomy, and other high-risk capabilities where relevant
+- Insider and external threat vectors
+- Model-weight and artifact protection
+- Tool, network, data, and production access
+- Evaluation results and unresolved risk
+- Safeguards and residual risk
+- Incident and near-miss evidence
+- Approval for continued internal deployment
+
+This is especially relevant to organizations developing or privately operating frontier models, but the underlying principle also applies to enterprises that deploy privileged internal agents with capabilities or access not available to ordinary users.
 
 ## Notes
 
@@ -72,6 +103,7 @@ This page lists selected AI frameworks, standards, legal instruments, assurance 
 2. Some entries are legal or policy instruments, not technical frameworks. They are included because they shape compliance, assurance, and operational AI governance.
 3. FAIR-AIR is an analytical playbook rather than a control standard. It should be combined with technical threat modeling, controls, testing, governance, and assurance evidence.
 4. The release date reflects the first major public release or the date the instrument entered into force. Later updates should be tracked separately when material.
+5. Historical policy instruments should not be presented as current requirements after revocation, repeal, replacement, expiration, or supersession.
 
 ## APA 7 References
 
@@ -79,9 +111,15 @@ Cloud Security Alliance. (2024). *AI controls matrix*. https://cloudsecurityalli
 
 Council of Europe. (2024). *Framework convention on artificial intelligence and human rights, democracy and the rule of law*. https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence
 
+Delaney, O., Maheshwari, S., O'Brien, J., Bearman, T., & Guest, O. (2026, April 29). *Risk reporting for developers' internal AI model use*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/risk-reporting-for-developers-internal-ai-model-use
+
 European Commission. (2019). *Ethics guidelines for trustworthy AI*. https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
 
 European Parliament and Council of the European Union. (2024). *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence*. Official Journal of the European Union. https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+
+Executive Office of the President. (2025, January 20). *Executive Order 14148: Initial rescissions of harmful executive orders and actions*. Federal Register. https://www.federalregister.gov/documents/2025/01/28/2025-01901/initial-rescissions-of-harmful-executive-orders-and-actions
+
+Executive Office of the President. (2026, June 2). *Executive Order 14409: Promoting advanced artificial intelligence innovation and security*. The White House. https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/
 
 FAIR Institute. (2024). *FAIR-AIR approach playbook: Using a FAIR-based risk approach to expedite AI adoption at your organization*. https://www.fairinstitute.org/hubfs/FAIR-AIR%20Approach%20Playbook.pdf
 
