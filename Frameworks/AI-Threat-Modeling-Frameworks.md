@@ -22,6 +22,45 @@ This page lists frameworks and methods for identifying, structuring, and priorit
 | 14 | DREAD | Damage, reproducibility, exploitability, affected users, discoverability scoring | Older Microsoft-origin method | Public | Risk scoring support |
 | 15 | PASTA | Process for Attack Simulation and Threat Analysis | Business-risk-driven threat modeling | 2012 | Public method | Risk-centric threat modeling |
 | 16 | LINDDUN | Privacy threat modeling | Model privacy threats such as linkability, identifiability, and disclosure | 2010 onwards | Yes | AI privacy threat analysis |
+| 17 | Vinaya Vasudevan | SAILORS | Emerging AI security / threat-modeling framework | 2026 | Publicly described | AI-specific structured threat analysis; detailed source mapping pending verification |
+| 18 | Shostack + Associates / Adam Shostack | PHANTOM-B | STRIDE-analogous mnemonic engineered specifically to elicit threats in LLM-enabled systems | July 2026 | Yes | Fast, engineering-oriented LLM threat elicitation |
+| 19 | Adrian Sroka | AGENTIC | Emerging agentic-AI threat-modeling method | July 2026 | Publicly described | Agentic AI threat identification; detailed source mapping pending verification |
+
+## Emerging 2026 AI threat-modeling methods
+
+### SAILORS
+
+**Author:** Vinaya Vasudevan  
+**Year:** 2026
+
+SAILORS is included as an emerging AI-focused security and threat-modeling method attributed to Vinaya Vasudevan. Public search confirms Vasudevan's work in AI security and threat modeling, but an authoritative primary publication defining the SAILORS mnemonic and its individual categories was not located during this update. The repository therefore records the framework without inventing or extrapolating its acronym expansion.
+
+**Repository treatment:** Track as an emerging framework and add the full category mapping once a primary source, paper, presentation, or author-maintained publication is available.
+
+### PHANTOM-B
+
+**Author:** Adam Shostack / Shostack + Associates  
+**Release:** July 16, 2026
+
+PHANTOM-B is a threat elicitation mnemonic designed specifically for systems that use large language models. Shostack describes it as analogous to STRIDE, but optimized for LLM-specific threats and for engineering teams that need a fast, memorable way to identify what can go wrong in a concrete system architecture. It is intended to complement, rather than replace, deeper resources such as MITRE ATLAS, NIST AI RMF, and vulnerability catalogs.
+
+**Primary use cases:**
+
+1. LLM product threat-modeling workshops.
+2. Fast threat elicitation during architecture and design reviews.
+3. Engineering-focused analysis of LLM-specific failure and abuse paths.
+4. Complementing vulnerability lists with system-specific threat discovery.
+
+**Primary source:** Shostack, A. (2026, July 16). *Why PHANTOM-B?* Shostack + Associates. https://shostack.org/blog/why-phantom-b/
+
+### AGENTIC
+
+**Author:** Adrian Sroka  
+**Release:** July 2026
+
+AGENTIC is included as an emerging threat-modeling method for agentic AI attributed to Adrian Sroka. Public sources verify Sroka's established work in threat modeling and his 2026 contribution of an Agentic AI threat-modeling suit to the OWASP Cornucopia ecosystem, with mappings to OWASP AI security resources, MITRE ATLAS, and STRIDE. However, an authoritative primary publication defining a separate AGENTIC mnemonic and each of its categories was not located during this update.
+
+**Repository treatment:** Track AGENTIC as an emerging agentic-AI threat-modeling method and add the precise mnemonic expansion and category definitions once the primary source is available.
 
 ## AI STRIDE Threat Model
 
@@ -78,7 +117,7 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 
 1. Define the AI system boundary, including users, models, tools, data stores, APIs, agents, and external services.
 2. Identify the AI lifecycle stage: design, data collection, training, fine-tuning, deployment, inference, monitoring, or retirement.
-3. Map threats using MITRE ATLAS, OWASP LLM Top 10, AI STRIDE, STRIDE, and AI RMF risk categories.
+3. Map threats using MITRE ATLAS, OWASP LLM Top 10, AI STRIDE, PHANTOM-B for LLM systems, and emerging agentic methods such as AGENTIC and SAILORS where applicable.
 4. Score risks using likelihood, exploitability, business impact, safety impact, legal impact, and control maturity.
 5. Map mitigations to controls, owners, evidence, and test cases.
 6. Validate controls through AI red teaming, security testing, abuse monitoring, and incident exercises.
@@ -117,4 +156,10 @@ Open Worldwide Application Security Project. (2025). *OWASP Top 10 for large lan
 
 Shostack, A. (2014). *Threat modeling: Designing for security*. Wiley.
 
+Shostack, A. (2026, July 16). *Why PHANTOM-B?* Shostack + Associates. https://shostack.org/blog/why-phantom-b/
+
 UcedaVelez, T., & Morana, M. M. (2015). *Risk centric threat modeling: Process for attack simulation and threat analysis*. Wiley.
+
+### Verification note
+
+As of August 9, 2026, PHANTOM-B could be verified from an author-controlled primary source. Public sources support the identities and AI/threat-modeling activity of Vinaya Vasudevan and Adrian Sroka, but authoritative primary definitions for the SAILORS and AGENTIC mnemonics were not located in the sources reviewed. Their acronym expansions and detailed category mappings are therefore intentionally not inferred.
