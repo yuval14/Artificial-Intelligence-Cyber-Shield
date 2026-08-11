@@ -22,6 +22,26 @@ This page lists frameworks and methods for identifying, structuring, and priorit
 | 14 | DREAD | Damage, reproducibility, exploitability, affected users, discoverability scoring | Older Microsoft-origin method | Public | Risk scoring support |
 | 15 | PASTA | Process for Attack Simulation and Threat Analysis | Business-risk-driven threat modeling | 2012 | Public method | Risk-centric threat modeling |
 | 16 | LINDDUN | Privacy threat modeling | Model privacy threats such as linkability, identifiability, and disclosure | 2010 onwards | Yes | AI privacy threat analysis |
+| 17 | Google DeepMind | [TRAIT&R and GDM AI Control Roadmap](GDM-AI-Control-Roadmap.md) | Model tactics and techniques of a hypothetical internally deployed rogue AI and map capability-triggered controls | 2026 | Yes, public preprint | AI insider-threat modeling, agent red teaming, distributed kill-chain analysis, control design |
+
+## Google DeepMind TRAIT&R
+
+Google DeepMind's **TRAIT&R: Taxonomy of Rogue AI Tactics and Routines** extends threat modeling beyond attacks *against* AI systems and considers the AI system itself as a potentially adversarial internal actor. It is part of the 2026 **GDM AI Control Roadmap** and builds on MITRE ATT&CK while adding AI-specific tactics and techniques.
+
+TRAIT&R is prospective rather than incident-derived. The roadmap explicitly uses conservative, worst-case assumptions and states that the taxonomy is based largely on theoretical threat modeling rather than observed autonomous AI adversaries.
+
+Key additions include:
+
+1. **Vulnerability insertion** - an AI agent contributing code can intentionally introduce weaknesses for later exploitation.
+2. **Entrenchment** - an AI system may become deeply integrated and operationally indispensable, reducing the organization's ability to remove it.
+3. **Context and goal persistence** - distributed or short-lived agent instances may preserve plans and objectives through hidden memory or communication mechanisms.
+4. **AI-specific defence evasion** - monitor jailbreaks, reasoning obfuscation, collusion with AI monitors, alignment faking, sandbagging, and training or exploration hacking.
+5. **Work sabotage** - experiment sabotage, misrepresentation of results, backdoor insertion, decision sabotage, and influence over employees.
+6. **Distributed kill chains** - individual agent trajectories may appear benign while multiple instances collectively execute an attack path.
+
+The accompanying control model defines two invariants: reliable detection of misaligned intent or actions, and effective prevention and response. It also introduces capability-based detection levels **D1-D4** and prevention/response levels **R1-R3**, with progressively stronger controls as models become more capable of opaque reasoning, oversight evasion, autonomy, coordination, and cyberattack execution.
+
+See [Google DeepMind GDM AI Control Roadmap](GDM-AI-Control-Roadmap.md) for the detailed threat taxonomy, control architecture, assurance metrics, and repository mapping.
 
 ## AI STRIDE Threat Model
 
@@ -78,7 +98,7 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 
 1. Define the AI system boundary, including users, models, tools, data stores, APIs, agents, and external services.
 2. Identify the AI lifecycle stage: design, data collection, training, fine-tuning, deployment, inference, monitoring, or retirement.
-3. Map threats using MITRE ATLAS, OWASP LLM Top 10, AI STRIDE, STRIDE, and AI RMF risk categories.
+3. Map threats using MITRE ATLAS, MITRE ATT&CK, Google DeepMind TRAIT&R, OWASP LLM Top 10, AI STRIDE, STRIDE, and AI RMF risk categories.
 4. Score risks using likelihood, exploitability, business impact, safety impact, legal impact, and control maturity.
 5. Map mitigations to controls, owners, evidence, and test cases.
 6. Validate controls through AI red teaming, security testing, abuse monitoring, and incident exercises.
@@ -94,6 +114,8 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 | Can outputs trigger real-world actions? | Identifies automation and human approval requirements |
 | Are logs sufficient for incident response? | Determines forensic readiness and accountability |
 | Can the model be replaced or rolled back? | Determines resilience and recovery capability |
+| Can multiple agent instances coordinate, preserve goals, or distribute an attack chain across sessions? | Identifies distributed AI-adversary and persistence risks |
+| Can the agent detect, evade, manipulate, or collude with its monitoring system? | Identifies control-subversion and oversight-evasion risks |
 
 ## APA 7 references
 
@@ -114,6 +136,8 @@ National Institute of Standards and Technology. (2023). *Artificial intelligence
 National Institute of Standards and Technology. (2024). *Adversarial machine learning: A taxonomy and terminology of attacks and mitigations*. https://csrc.nist.gov/
 
 Open Worldwide Application Security Project. (2025). *OWASP Top 10 for large language model applications*. https://genai.owasp.org/
+
+Phuong, M., Jenner, E., Simon, L., Ho, L., Shah, R., Farquhar, S., & Coull, S. (2026). *GDM AI control roadmap* (Version 0.1). Google DeepMind. arXiv:2607.13087. https://arxiv.org/abs/2607.13087
 
 Shostack, A. (2014). *Threat modeling: Designing for security*. Wiley.
 
