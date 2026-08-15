@@ -40,6 +40,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | Page | Focus |
 | --- | --- |
 | [AI Security Frameworks](Frameworks/AI-Security-Frameworks.md) | NIST, OWASP, MITRE ATLAS, CSA, Google SAIF, Pillar Security SAIL, ISO, ENISA, ETSI, CISA/NCSC, OECD, and EU AI Act references |
+| [AI Incident Response Standards and Frameworks](AI-Incident-Response/AI-Incident-Response-Standards-and-Frameworks.md) | Direct AI-specific incident reporting, incident information-sharing, and regulatory reporting frameworks from ETSI, CISA, OECD, and the EU AI Act |
 | [AI Safety vs AI Security](Frameworks/AI-Safety-vs-AI-Security.md) | Comparison of AI safety and AI security, including objectives, risks, controls, and complementary roles |
 | [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming methods, benchmarks, tooling, frontier-model evaluation resources, evaluation awareness, sandbagging, and alignment-faking tests |
 | [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
@@ -249,6 +250,8 @@ Including:
 ```text
 .
 ├── README.md
+├── AI-Incident-Response/
+│   └── AI-Incident-Response-Standards-and-Frameworks.md
 ├── Frameworks/
 │   ├── AI-Security-Frameworks.md
 │   ├── AI-Safety-vs-AI-Security.md
@@ -260,66 +263,4 @@ Including:
 │   ├── CUSTODY-Autonomous-Agent-Containment-Framework.md
 │   ├── AI-Governance-Risk-and-Assurance-Frameworks.md
 │   └── AI-Governance-and-Assurance.md
-├── Threat-Landscape/
-│   ├── README.md
-│   ├── Covert-Use-of-AI-in-Offensive-Cyber-Operations.md
-│   ├── Highly-Autonomous-Cyber-Capable-Agents.md
-│   └── OpenAI-Hugging-Face-Autonomous-Agent-Incident.md
-├── AI-Project-Failure-and-Success/
-│   └── Why-AI-Projects-Fail-and-How-They-Succeed.md
-├── System-Hardening/
-│   └── System-Hardening-Against-AI-Threats.md
-├── Professional-Certifications/
-│   └── Professional-AI-Security-and-AI-Safety-Certifications.md
-├── Organizational-Certifications/
-│   └── AI-Organizational-Certifications.md
-├── References/
-│   └── APA7-References.md
-├── Images/
-└── ROADMAP.md
 ```
-
-## Initial framework categories
-
-| Category | Examples |
-| --- | --- |
-| AI governance | NIST AI RMF, ISO/IEC 42001, OECD AI Principles, EU AI Act, current U.S. EO 14409, ENISA guidance |
-| AI project failure and success | RAND anti-patterns, value definition, data readiness, production gates, balanced metrics, stop criteria |
-| AI safety | alignment, robustness, reliability, frontier safety frameworks, evaluation awareness, safety cases, human oversight, responsible scaling |
-| AI security | OWASP Top 10 for LLM Applications, MITRE ATLAS, CSA AI Controls Matrix, Google SAIF, Pillar Security SAIL, ETSI SAI |
-| AI red teaming | Microsoft AI Red Team, PyRIT, garak, OpenAI Preparedness, Anthropic evaluations, NIST GenAI testing guidance, hidden evaluations |
-| AI assurance | model evaluations, safety cases, evaluation integrity, audit evidence, independent testing, lifecycle validation |
-| AI agent security | tool-use governance, identity, permission boundaries, memory control, sandboxing, target scope, monitoring, HACCAs |
-| AI integrity | model provenance, backdoor detection, prompt/policy integrity, harness integrity, behavioral verification, rollback |
-| System hardening | SELinux, AppArmor, seccomp, Landlock, Application Control, AppContainer, isolation, controlled egress, Zero Trust networking |
-| AI supply chain security | datasets, model provenance, dependencies, SBOM/AIBOM, model integrity, deployment pipelines |
-| AI incident management | AI Incident Database, OECD AI Incidents Monitor, agentic incident trackers, containment-failure analysis, post-incident learning |
-| Professional certifications | ISACA AAISM/AAIR/AAIA, CSA TAISE, GIAC GAIPS/GASAE/GOAA, OffSec OSAI, IAPP AIGP, Bar-Ilan University, ISO/IEC 42001 credentials |
-| Organizational certifications | ISO/IEC 42001 certification, CSA STAR for AI Level 1 and Level 2, AICM, AI-CAIQ, ISO/IEC 42006, accreditation, and supporting certifications |
-
-## How to use this repository
-
-Use this repository as a working knowledge base for:
-
-1. Building AI security programs.
-2. Comparing AI security and AI safety frameworks.
-3. Preparing AI red team exercises.
-4. Designing secure AI agents and AI-enabled systems.
-5. Hardening operating systems, containers, identities, execution environments, and networks against AI-driven threats.
-6. Supporting executive, CISO, board, and national-security discussions.
-7. Mapping AI risks to technical and governance controls.
-8. Implementing AI safety controls and assurance practices.
-9. Assessing AI integrity across models, data, prompts, tools, memory, and runtime configuration.
-10. Preparing for hostile autonomous cyber agents and loss-of-containment scenarios.
-11. Diagnosing why AI projects fail and establishing evidence-based production and termination gates.
-12. Selecting professional AI security, safety, governance, risk, and assurance credentials.
-13. Selecting and verifying organizational AI certifications and assurance designations.
-14. Supporting academic research and national cybersecurity initiatives.
-
-## Citation
-
-Sinay, Y. (2026). *Artificial Intelligence Cyber Shield*. GitHub. https://github.com/yuval14/Artificial-Intelligence-Cyber-Shield
-
-## License
-
-Original repository content is authored by Yuval Sinay and licensed under CC BY 4.0 unless a specific file states otherwise.
