@@ -1,6 +1,6 @@
 # AI Threat Landscape
 
-This directory contains defender-oriented research and executive guidance on emerging threats associated with artificial intelligence, AI agents, model services, local inference, AI-enabled cyber operations, persistent always-on agents, and highly autonomous cyber-capable systems.
+This directory contains defender-oriented research and executive guidance on emerging threats associated with artificial intelligence, AI agents, model services, local inference, AI-enabled cyber operations, persistent always-on agents, highly autonomous cyber-capable systems, and adversarial manipulation of AI-assisted defensive analysis.
 
 ## Pages
 
@@ -9,6 +9,7 @@ This directory contains defender-oriented research and executive guidance on eme
 - [OpenAI/Hugging Face Autonomous-Agent Incident, July 2026](./OpenAI-Hugging-Face-Autonomous-Agent-Incident.md)
 - [Kimi Claw and the Security Risks of Always-On AI Agents](./Kimi-Claw-Always-On-Agent-Risk.md)
 - [Frontier AI Cyber-Capability Acceleration](./Frontier-Cyber-Capability-Acceleration.md)
+- [Safety-Induced Analysis Denial (SIAD)](./Safety-Induced-Analysis-Denial-SIAD.md)
 
 ## 2026 IAPS Research Themes Added
 
@@ -39,6 +40,8 @@ The threat-landscape coverage now incorporates five related shifts identified in
 AI involvement should be assessed through evidence and workflow correlation. Speed, sophistication, adaptation, generated text, or generated code do not independently prove that an adversary used AI.
 
 Autonomous-agent capability should also be separated from incident-level evidence. A system may demonstrate autonomous behavior in a constrained task without meeting the broader HACCA concept, and defenders should avoid assuming that every machine-speed or adaptive intrusion is agentic.
+
+AI-assisted defensive analysis introduces an additional concern: attacker-controlled artifacts may manipulate semantic or safety layers. Defensive systems should therefore treat untrusted artifact content as evidence, not as analyst intent or privileged instruction.
 
 Product- or jurisdiction-specific case studies should be used to identify general control requirements while preserving source quality, legal context, and alternative explanations.
 
