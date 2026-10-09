@@ -30,6 +30,29 @@ This page maps AI governance, assurance, safety, cybersecurity, responsibility, 
 | 22 | Collins Mwange / AIAF Community | [AI Assurance Framework - AIAF Sentry](https://github.com/mbwika/AI-Assurance-Framework) | Open-source, evidence-driven platform for continuous assurance across models, RAG, agents, runtime, deployment, supply chain, and compliance | 2026 | Yes - Apache License 2.0 | Operational AI assurance, adoption triage, control validation, continuous monitoring, and evidence export |
 | 23 | AIUC-1 Consortium | [AIUC-1](https://www.aiuc-1.com/) | Industry-developed security, safety, reliability, accountability, data and privacy assurance standard with certification requirements for enterprise AI agents | 2026, refreshed quarterly | Public requirements; certification and third-party audit model | AI-agent vendor assurance, procurement due diligence, control testing, and certification |
 
+| 24 | Jan van Dijke | [AI Baseline Control Framework (AI BCF)](https://aibcf.org/) | Practical baseline of 20 AI governance controls mapped to NIST AI RMF, ISO/IEC 42001, and the EU AI Act | October 2, 2026 - v1.0 | Free, public framework - CC BY-SA 4.0 | AI governance baseline, system inventory, AI access control, and operational monitoring |
+
+## AI Baseline Control Framework (AI BCF)
+
+[AI BCF](https://aibcf.org/) is a practitioner-developed framework by Jan van Dijke. Version 1.0 provides 20 AI governance controls across five categories: Govern, Comply, Register, Access, and Track. The framework publishes mappings to NIST AI RMF, ISO/IEC 42001, and the EU AI Act.
+
+| Category | Focus |
+| --- | --- |
+| Govern | Policies, ownership, roles, training, and risk management |
+| Comply | Applicable legal obligations, transparency, and higher-risk use requirements |
+| Register | Inventory of deployed AI systems, their purposes, and proportionality |
+| Access | Access rights and credentials for AI systems, including autonomous systems |
+| Track | Effectiveness, feedback, errors, and operational metrics |
+
+Controls distinguish **Baseline** requirements applicable to organizations using AI, optional **Tier II** depth, and **Trigger** controls that apply when a stated condition is met.
+
+### Recommended use within the AI Cyber Shield
+
+- Use the [control catalog](https://aibcf.org/controls/) as a starting checklist for AI governance ownership, inventory, access discipline, and monitoring.
+- Assign control owners and collect organization-specific evidence alongside the repository's governance domains and assurance evidence package.
+- Complement the baseline with threat modeling, agent containment, technical security testing, and incident response controls.
+- Treat the published mappings as framework-provided crosswalks. Adoption alone does not establish certification or legal compliance.
+
 ## AIUC-1
 
 [AIUC-1](https://www.aiuc-1.com/) is an industry-developed assurance standard and certification scheme focused on enterprise AI agents. It organizes requirements across data and privacy, security, safety, reliability, accountability, and societal misuse. Its controls address issues such as adversarial robustness, unauthorized agent actions, access control, deployment security, unsafe tool calls, hallucinations, activity logging, incident planning, vendor due diligence, and independent testing.
@@ -165,3 +188,5 @@ OpenAI. (2024). *Preparedness framework*. https://openai.com/safety/preparedness
 Organisation for Economic Co-operation and Development. (2019). *OECD principles on artificial intelligence*. https://oecd.ai/
 
 UK AI Security Institute. (2024). *AI safety evaluations*. https://www.aisi.gov.uk/
+
+van Dijke, J. (2026, October 2). *AI Baseline Control Framework (AI BCF)* (Version 1.0). https://aibcf.org/
