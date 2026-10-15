@@ -24,6 +24,16 @@ This page lists frameworks and methods for identifying, structuring, and priorit
 | 16 | LINDDUN | Privacy threat modeling | Model privacy threats such as linkability, identifiability, and disclosure | 2010 onwards | Yes | AI privacy threat analysis |
 | 17 | Google DeepMind | [TRAIT&R and GDM AI Control Roadmap](GDM-AI-Control-Roadmap.md) | Model tactics and techniques of a hypothetical internally deployed rogue AI and map capability-triggered controls | 2026 | Yes, public preprint | AI insider-threat modeling, agent red teaming, distributed kill-chain analysis, control design |
 
+| 18 | Forscie, in partnership with Above Theory | [Synthetic Insider Threat Matrix](https://www.insiderthreatmatrix.org/synthetic) | Structure AI insider-threat investigation across directives, configuration, invocation, outcomes, and opacity | Not specified; reviewed 2026-10-16 | Public framework | AI agent investigation and control review |
+
+## Synthetic Insider Threat Matrix
+
+The [Synthetic Insider Threat Matrix](https://www.insiderthreatmatrix.org/synthetic), published by Forscie in partnership with Above Theory, structures investigations of AI systems acting within organizational environments.
+
+Its five categories are **Directive**, **Configuration**, **Invocation**, **Adverse Outcome**, and **Opacity**. Coverage includes agent identities and permissions, tool and memory access, MCP and indirect-content invocation, data exfiltration, destructive actions, evaluation-aware behavior, misleading self-reporting, and logging gaps.
+
+For repository users, it can support agent inventories, incident reconstruction, and detection and prevention reviews. These applications are repository recommendations, not validated effectiveness claims. Use it alongside the [AI Agent Threat Matrix](../AI-Agent-Security/AI-Agent-Threat-Matrix.md); inclusion does not establish malicious intent in an AI system or equivalence to an insider acting deliberately.
+
 ## Google DeepMind TRAIT&R
 
 Google DeepMind's **TRAIT&R: Taxonomy of Rogue AI Tactics and Routines** extends threat modeling beyond attacks *against* AI systems and considers the AI system itself as a potentially adversarial internal actor. It is part of the 2026 **GDM AI Control Roadmap** and builds on MITRE ATT&CK while adding AI-specific tactics and techniques.
@@ -118,6 +128,8 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 | Can the agent detect, evade, manipulate, or collude with its monitoring system? | Identifies control-subversion and oversight-evasion risks |
 
 ## APA 7 references
+
+Forscie. (n.d.). *Synthetic insider threat matrix*. Retrieved October 16, 2026, from https://www.insiderthreatmatrix.org/synthetic
 
 Cybersecurity and Infrastructure Security Agency, National Security Agency, Federal Bureau of Investigation, National Cyber Security Centre, and international partners. (2023). *Guidelines for secure AI system development*. https://www.cisa.gov/
 
