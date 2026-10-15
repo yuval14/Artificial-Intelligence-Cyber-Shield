@@ -22,6 +22,25 @@ This matrix connects common AI agent threats with defensive controls and governa
 | Denial of service and resource exhaustion | Recursive tasks, token flooding, tool loops | Cost and availability impact | Quotas, timeouts, recursion limits | Cost and loop monitoring | Terminate job and rate-limit source |
 | Agent-to-agent manipulation | Messages between agents | Delegation abuse and cascading compromise | Mutual authentication, scoped delegation, message provenance | Inter-agent trace analysis | Isolate compromised agent and invalidate delegation |
 | Deceptive or compromised tool output | API or connector response | Unsafe downstream action | Schema validation and trust boundaries | Output anomaly detection | Disable tool and revert action |
+| Coordinated distributed attack | Multiple agents act on shared resources | Joint harm hidden by locally innocuous actions | Scoped delegation, shared-resource authorization, independent action gates | Correlate task graphs and resource changes across agents | Suspend the campaign, revoke delegated identities, preserve shared state |
+| Monitoring disablement or coverage escape | Monitor settings, logging routes, or unmonitored child agents | Actions proceed without usable oversight | Protect monitor configuration; reconcile execution to monitor receipts | Missing receipts, configuration changes, orphan task IDs | Deny critical actions on coverage loss; restore trusted monitoring |
+| Trajectory tampering | Edited, omitted, or misleading monitor inputs | Reviewer sees an incomplete account | Preserve immutable originals outside agent write access | Compare source events to submitted transcripts | Preserve evidence, isolate affected path, investigate processing |
+| Human-review evasion | Benign-looking explanations around a flagged action | Delayed or incorrect dismissal | Independent evidence and explicit escalation criteria | Seeded review tests, disposition audits, response timing | Reopen case, contain action, correct review process |
+| Agent-monitor collusion | Agent and AI reviewer share a harmful objective | Intentional suppression of alerts | Separate trust domains and restrict shared state | Independent checks and held-out prohibited-action cases | Replace affected monitor and investigate correlated decisions |
+
+## Monitoring Threat Validation
+
+Added 2026-10-16. These scenarios are analytical extensions, not official MITRE or OWASP technique mappings. The [AISI multi-agent study](https://www.aisi.gov.uk/research/multi-agent-ai-control-distributed-attacks-hamper-per-instance-monitors) provides experimental motivation for distributed-attack testing. The [METR proposal](https://metr.org/blog/2026-10-14-control-assessment-proposal/) identifies assessment questions; it does not establish that every listed failure occurs in deployed systems.
+
+| Scenario | Test signal | Effectiveness check |
+|---|---|---|
+| Distributed attack | Linked tasks touch the same protected objective | Compare campaign-level detection and blocked impact with per-agent monitoring |
+| Coverage escape | A child task or tool action has no monitor receipt | Reconcile all test execution paths against an independent inventory |
+| Trajectory tampering | Source event and monitor input disagree | Verify preservation and comparison of original events |
+| Human-review evasion | Flagged harmful action is dismissed or reviewed late | Use labeled review cases and measure escalation and containment |
+| Possible collusion | Independent ground truth conflicts with reviewer disposition | Test held-out cases and alternative reviewers; disagreement alone does not prove collusion |
+
+Definitions, evidence requirements, limitations, and references are centralized in [Agent Monitoring and Control Evaluation](Agent-Monitoring-and-Control-Evaluation.md).
 
 ## Framework Mapping
 
@@ -56,12 +75,12 @@ This matrix connects common AI agent threats with defensive controls and governa
 
 | Factor | Scale | Example Question |
 |---|---|---|
-| Autonomy | 1–5 | How independently can the agent plan and act? |
-| Privilege | 1–5 | What systems, data, and tools can it access? |
-| Persistence | 1–5 | Can compromise survive across sessions through memory or state? |
-| Exposure | 1–5 | How much untrusted content does the agent process? |
-| Consequence | 1–5 | What is the maximum operational, financial, safety, or national-security impact? |
-| Detectability | 1–5 | How difficult is malicious behavior to detect? |
+| Autonomy | 1-5 | How independently can the agent plan and act? |
+| Privilege | 1-5 | What systems, data, and tools can it access? |
+| Persistence | 1-5 | Can compromise survive across sessions through memory or state? |
+| Exposure | 1-5 | How much untrusted content does the agent process? |
+| Consequence | 1-5 | What is the maximum operational, financial, safety, or national-security impact? |
+| Detectability | 1-5 | How difficult is malicious behavior to detect? |
 
 A simple prioritization score can be calculated as:
 

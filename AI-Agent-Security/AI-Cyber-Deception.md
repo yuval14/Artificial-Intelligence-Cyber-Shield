@@ -83,5 +83,45 @@ AI cyber deception applies honeypots, honeytokens, canaries, decoy tools, false 
 | Adaptive deception | Can decoys change safely in response to observed agent behavior? |
 | Deception metrics | How should delay, diversion, detection, and intelligence value be measured? |
 
+## Selected Research and Evidence
+
+Last reviewed: 2026-10-16. This is a selected comparison, not a systematic literature review. Numerical results belong to their reported experimental conditions.
+
+| Work and status | Mechanism and setting | Reported evidence | Limitation |
+|---|---|---|---|
+| [CHeaT](https://www.usenix.org/conference/usenixsecurity25/presentation/ayzenshteyn), USENIX Security 2025, peer-reviewed | Ben-Gurion University researchers combine asset cloaking, honeytokens, and traps against autonomous penetration-testing agents | Authors report protection of 11 CTF machines with 100% success in their evaluated setup; most techniques do not require prompt injection | CTF results do not establish production reliability or transfer to later models |
+| [AgentTrap](https://arxiv.org/abs/2610.02869), October 2, 2026, arXiv preprint | Stateful feedback deception against eight penetration-testing agents in a web application | Reported aggregate real-target attack success fell from 95.8% without defense to 79.2%; attacker API keys were elicited in 18.8% of runs | Substantial residual attack success; limited setting; peer review not established by the arXiv record |
+| [Honeyval](https://arxiv.org/abs/2605.29963), May 28, 2026, arXiv preprint | Evaluation of LLM-powered HTTP honeypots grounded in 16 backend applications with AI hacking agents and control tasks | Authors report longer interactions and less frequent detection than rule-based baselines | Evaluates HTTP simulation and attacker interaction, not a universal containment boundary |
+| [IAPS insider-threat report](https://www.iaps.ai/research/honeypots-for-ai-agent-insider-threats), October 15, 2026, research report | Decoy opportunities for unauthorized actions by internal agents | Separates detection, evidence gathering, and deterrence; evidence is strongest for detection | Production evidence for distinguishing mistakes from deliberate misconduct is limited; deterrence remains a research hypothesis |
+
+### Interpretation for deployment
+
+These works address different targets: external hostile agents, simulated services, and trusted-access internal agents. Their success rates are not interchangeable. A trigger does not by itself establish malicious intent, model identity, or operator attribution.
+
+The research includes counter-offensive techniques. Their inclusion in this survey is not an operational recommendation to execute code on third-party systems or collect real attacker credentials. Defensive pilots should use isolated assets and synthetic secrets with explicit engagement scope.
+
+### Evaluation checklist
+
+The following is repository engineering guidance, rather than a published benchmark:
+
+- Compare against no-deception and static-deception baselines under the same attack budget.
+- Include legitimate agents to measure false alerts and disruption of authorized work.
+- Separate decoy discovery, access, attempted use, successful diversion, and blocked impact.
+- Record target compromise as well as interaction duration; delay alone is not protection.
+- Repeat across models, harnesses, retries, and previously unseen decoy variants.
+- Record cost, time to alert, time to containment, and the attack paths without decoy coverage.
+
+See [Agent Monitoring and Control Evaluation](Agent-Monitoring-and-Control-Evaluation.md) for reporting definitions.
+
+## References
+
+Ayzenshteyn, D., Weiss, R., & Mirsky, Y. (2025). Cloak, honey, trap: Proactive defenses against LLM agents. In *34th USENIX Security Symposium (USENIX Security 25)* (pp. 8095-8114). USENIX Association. https://www.usenix.org/conference/usenixsecurity25/presentation/ayzenshteyn
+
+Vero, M., Kaczmarczyck, F., Petrov, I., Shumailov, I., Hayes, J., Heinen, N., Fan, T., Invernizzi, L., & Vechev, M. (2026). *Honeyval: A comprehensive evaluation framework for LLM-powered HTTP honeypots* [Preprint]. arXiv. https://arxiv.org/abs/2605.29963
+
+Wang, Y., Yu, J., & Sun, Y. (2026). *AgentTrap: Stateful feedback deception against autonomous penetration testing agents* [Preprint]. arXiv. https://arxiv.org/abs/2610.02869
+
+Wehner, J., & Kraprayoon, J. (2026, October 15). *Honeypots for AI agent insider threats*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/honeypots-for-ai-agent-insider-threats
+
 ## Key Principle
 Context Bombs should not be treated as a standalone security boundary. Their strongest use is within a layered design combining deception, canary telemetry, external authorization, least privilege, sandboxing, and automated containment.

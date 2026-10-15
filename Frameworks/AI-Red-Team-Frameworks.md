@@ -80,6 +80,27 @@ Passing a known evaluation should not be treated as proof of safe deployment. Hi
 
 The [AI Integrity](./AI-Integrity.md) page provides complementary controls for model, data, prompt, policy, tool, memory, and evaluation integrity.
 
+## Testing Agent Monitors and Control Pipelines
+
+Added 2026-10-16. Evaluate the monitor and response path as part of the system under test. Test instructions, agent actions, monitor observations, and independent outcomes must be retained separately.
+
+| Exercise | Comparison | Required measurement |
+|---|---|---|
+| Hidden side task | Main task alone versus main task plus a prohibited synthetic objective | Malicious objective completion, monitor detection, and benign false-positive rate |
+| Coverage gap | Direct execution versus delegated, retried, and background execution | Missing monitor receipts and enforcement decisions |
+| Monitor-input manipulation | Original events versus summaries, truncation, or adversarial content | Lost evidence, classification changes, and parser failures |
+| Coordinated agents | Single actor versus distributed tasks with matched budgets | Campaign-level detection and harm prevented |
+| Human escalation | Labeled flagged cases with varied explanations | Correct escalation, review delay, and effective containment |
+| Monitor independence | Primary reviewer versus an independent check on held-out cases | Unsupported dismissals; disagreement requires investigation |
+
+### Primary research and status
+
+- **METR SHUSHCAST, January 22, 2026:** preliminary evaluation of concealed side tasks and monitor evasion. Limited task diversity and elicitation constrain generalization.
+- **METR control assessment proposal, October 14, 2026:** proposed assessment questions, not an empirical guarantee of monitoring reliability.
+- **AISI multi-agent control, July 8, 2026:** experimental evidence from a synthetic environment that coordinated attackers can fragment evidence across monitored instances.
+
+Full citations, source links, metric denominators, and reporting requirements are in [Agent Monitoring and Control Evaluation](../AI-Agent-Security/Agent-Monitoring-and-Control-Evaluation.md). The exercises above are repository engineering recommendations. Fix the false-positive operating point, report uncertainty and residual attack success, and retain held-out cases. Reasoning traces, when available, are supplemental evidence and do not replace observable outcomes or external authorization.
+
 ## APA 7 References
 
 Alaga, J., Schuett, J., & Anderljung, M. (2024). *A grading rubric for AI safety frameworks*. arXiv. https://arxiv.org/abs/2409.08751

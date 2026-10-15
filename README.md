@@ -56,6 +56,18 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
 | [Organizational AI Certifications and Assurance Programs](Organizational-Certifications/AI-Organizational-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
 
+## Agent Deception and Monitoring Research
+
+Selected pages reviewed on 2026-10-16 distinguish peer-reviewed papers, preprints, preliminary experiments, and assessment proposals.
+
+| Page | Focus |
+| --- | --- |
+| [Context Bombs and AI Deception](AI-Agent-Security/Context-Bombs-and-AI-Deception.md) | Attack versus defensive-deception terminology, evidence scope, and related controls |
+| [AI Cyber Deception](AI-Agent-Security/AI-Cyber-Deception.md) | CHeaT, AgentTrap, Honeyval, and IAPS research with limitations |
+| [AI Agent Threat Matrix](AI-Agent-Security/AI-Agent-Threat-Matrix.md) | Distributed attacks, monitoring integrity, review evasion, and controls |
+| [Agent Monitoring and Control Evaluation](AI-Agent-Security/Agent-Monitoring-and-Control-Evaluation.md) | METR and AISI research, test records, metric definitions, and reporting guidance |
+| [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | Monitor and control-pipeline exercises alongside existing evaluation methods |
+
 ## Additional knowledge areas
 
 ### AI standards and guidance
