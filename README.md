@@ -56,6 +56,14 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
 | [Organizational AI Certifications and Assurance Programs](Organizational-Certifications/AI-Organizational-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
 
+## Behavioral Assurance and Independent Evaluation
+
+| Resource | Contribution and status |
+| --- | --- |
+| [CETaS Behavioural Assurance of Agentic AI](Frameworks/CETaS-Behavioural-Assurance-of-Agentic-AI.md) | Research model for deployment behavior, access, authority, trust, and organizational oversight |
+| [FAR.AI Persuasion Undermining Control](Frameworks/FAR-AI-Persuasion-Undermining-Control.md) | Research framework for influence on human control decisions; preliminary expert evidence |
+| [Apollo Embedded Evaluations](Frameworks/AI-Governance-and-Assurance.md#apollo-research-embedded-evaluations-for-scheming) | Proposal for claim-based independent assessment and explicit evidence-access limitations |
+
 ## Agent Deception and Monitoring Research
 
 Selected pages reviewed on 2026-10-16 distinguish peer-reviewed papers, preprints, preliminary experiments, and assessment proposals.

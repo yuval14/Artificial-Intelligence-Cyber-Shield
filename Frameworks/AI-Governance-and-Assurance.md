@@ -87,6 +87,29 @@ Controls distinguish **Baseline** requirements applicable to organizations using
 - Validate the platform's security architecture, configuration, deployment model, authentication, secret management, and integration boundaries before organizational adoption.
 - Do not treat successful execution of the platform as proof of regulatory compliance, certification, or complete system safety. Independent review and organization-specific risk acceptance remain necessary.
 
+## Apollo Research: Embedded Evaluations for Scheming
+
+Apollo Research's [September 30 principles](https://www.apolloresearch.ai/blog/principles-for-embedded-evaluations) and [October 1, 2026 proposal](https://www.apolloresearch.ai/blog/towards-embedded-evaluations-for-scheming-propensities) describe claim-based independent assessment, not a certification standard.
+
+The proposal asks whether training incentivizes concealed pursuit of unintended goals, whether evaluations reveal a propensity toward it, whether internal deployment contains such attempts, and whether relevant reasoning would be detectable. These are claims to investigate, not established properties of assessed systems. Missing detections are informative only with adequate coverage and detection capability.
+
+### Repository assessment record
+
+The following evidence template is an AI Cyber Shield recommendation.
+
+| Record | Required detail |
+| --- | --- |
+| Claim and scope | System version, activity, period, exclusions, and a falsifiable claim |
+| Evaluator access | Requested, granted, denied, or withdrawn access and resulting uncertainty |
+| Evidence | Configuration records, relevant trajectories, monitoring coverage, held-out exercises, and independent outcomes |
+| Review | Disposition of flagged cases, escalation, response, and unresolved contradictions |
+| Independence | Funding and publication constraints, redactions, and limitations on conclusions |
+| Reassessment | Trigger after a material change to training, architecture, tools, or deployment |
+
+Document an inconclusive result when evidence cannot support a claim. Retain traceability from conclusions to records. Treat reasoning traces as supplemental evidence and verify actions independently.
+
+See [CETaS Behavioural Assurance](CETaS-Behavioural-Assurance-of-Agentic-AI.md), [Persuasion Undermining Control](FAR-AI-Persuasion-Undermining-Control.md), and [Agent Monitoring and Control Evaluation](../AI-Agent-Security/Agent-Monitoring-and-Control-Evaluation.md).
+
 ## Governance domains
 
 | Domain | Description | Example evidence |
@@ -146,7 +169,11 @@ AI governance is not only policy. It must produce enforceable technical and oper
 | Privacy | Data minimization, access control, privacy testing, retention limits |
 | Incident handling | AI incident playbooks, coordinated vulnerability disclosure, post-incident review |
 
-## APA 7 references
+## References
+
+Apollo Research. (2026, September 30). *Principles for embedded evaluations*. https://www.apolloresearch.ai/blog/principles-for-embedded-evaluations
+
+Apollo Research. (2026, October 1). *Towards embedded evaluations for scheming propensities*. https://www.apolloresearch.ai/blog/towards-embedded-evaluations-for-scheming-propensities
 
 AIUC-1 Consortium. (2026). *AIUC-1: The standard for AI agent security, safety and reliability*. https://www.aiuc-1.com/
 
