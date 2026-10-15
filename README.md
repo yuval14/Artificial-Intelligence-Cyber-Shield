@@ -126,6 +126,10 @@ Topics include:
 12. Sandbagging and alignment faking.
 13. Post-deployment monitoring for evaluation-to-deployment behavior differences.
 
+### Synthetic insider threats
+
+The [Synthetic Insider Threat Matrix](https://www.insiderthreatmatrix.org/synthetic) provides an investigation framework for AI systems operating within organizations. See [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md#synthetic-insider-threat-matrix) for its five categories, scope, and suggested use alongside the repository's agent threat matrix.
+
 ### AI threat modeling
 
 Includes:
