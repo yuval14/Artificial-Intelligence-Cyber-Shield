@@ -23,7 +23,6 @@ This page lists frameworks and methods for identifying, structuring, and priorit
 | 15 | PASTA | Process for Attack Simulation and Threat Analysis | Business-risk-driven threat modeling | 2012 | Public method | Risk-centric threat modeling |
 | 16 | LINDDUN | Privacy threat modeling | Model privacy threats such as linkability, identifiability, and disclosure | 2010 onwards | Yes | AI privacy threat analysis |
 | 17 | Google DeepMind | [TRAIT&R and GDM AI Control Roadmap](GDM-AI-Control-Roadmap.md) | Model tactics and techniques of a hypothetical internally deployed rogue AI and map capability-triggered controls | 2026 | Yes, public preprint | AI insider-threat modeling, agent red teaming, distributed kill-chain analysis, control design |
-
 | 18 | Forscie, in partnership with Above Theory | [Synthetic Insider Threat Matrix](https://www.insiderthreatmatrix.org/synthetic) | Structure AI insider-threat investigation across directives, configuration, invocation, outcomes, and opacity | Not specified; reviewed 2026-10-16 | Public framework | AI agent investigation and control review |
 
 ## Synthetic Insider Threat Matrix
