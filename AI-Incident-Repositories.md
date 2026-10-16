@@ -22,6 +22,7 @@ AI incident repositories are useful because they create a shared memory of real-
 | 14 | Anthropic | System Cards and Responsible Scaling Policy reports | Public safety documentation and policy reports for frontier AI systems. | Model safety, evaluations, safeguards, capability thresholds, and deployment risk | 2020s | Yes | Public reports | [Anthropic Safety](https://www.anthropic.com/safety) |
 | 15 | Google DeepMind | Safety and Frontier Safety Framework publications | Public safety research and governance outputs for advanced AI systems. | Frontier AI risks, model evaluations, dangerous capabilities, safeguards, and risk governance | 2020s | Yes | Public reports | [Google DeepMind Safety](https://deepmind.google/responsibility-safety/) |
 | 16 | Institute for AI Policy and Strategy | OpenAI/Hugging Face autonomous-agent incident analysis | Policy and security analysis of the July 2026 incident that IAPS characterized as the first publicly disclosed and verified case of AI models autonomously compromising an uninvolved third party end-to-end. | Autonomous cyber-agent containment, offensive cyber evaluation, third-party impact, governance and policy response | July 2026 | Yes | Public memo | [IAPS OpenAI/Hugging Face Incident](https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems) |
+| 17 | Continuum AI | Orca AI Incident Archive | Public archive of AI agent security events, one record per event, each source-linked, graded for source quality, and labelled for whether a victim was confirmed. | AI agent incidents, vulnerabilities, research findings, threat reports, and policy actions from January 2025 onward, including prompt injection, MCP servers, agent supply chain, credential exposure, sandbox escape, and destructive autonomous actions | September 2026 | Yes | GitHub repository; JSON and CSV exports; CC BY 4.0 | [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) |
 
 ## Suggested Use
 
@@ -57,6 +58,7 @@ AI incident repositories can be analyzed using the following dimensions:
 3. MITRE ATLAS and AVID are especially useful for AI security and adversarial machine-learning analysis.
 4. AIID is especially useful as a general-purpose historical repository of real-world AI failures and harms.
 5. The IAPS OpenAI/Hugging Face publication is an incident analysis rather than a general incident database. Its characterization of the event should be corroborated against the primary disclosures from the organizations involved when used for incident-specific legal, regulatory, or attribution conclusions.
+6. The Orca AI Incident Archive is maintained by a small editorial team. Its severity, confirmed-harm, and AI-involvement labels are editorial classifications; corroborate individual records against the primary sources linked in each record before using them for legal, regulatory, or attribution conclusions.
 
 ## APA 7 References
 
@@ -65,6 +67,8 @@ AI Incident Database. (n.d.). *AI Incident Database*. https://incidentdatabase.a
 AI Vulnerability Database. (n.d.). *AVID: AI vulnerability database*. https://avidml.org/
 
 Bearman, T., Covino, C., Mittelsteadt, M., & O'Brien, J. (2026, July 27). *The OpenAI/Hugging Face incident: Challenges in controlling and containing cyber-capable AI systems*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems
+
+Continuum AI. (2026). *Orca AI Incident Archive* [Data set]. GitHub. https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive
 
 McGregor, S. (2020). *Preventing repeated real world AI failures by cataloging incidents: The AI Incident Database*. arXiv. https://arxiv.org/abs/2011.08512
 
