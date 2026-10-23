@@ -40,6 +40,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | Page | Focus |
 | --- | --- |
 | [AI Security Frameworks](Frameworks/AI-Security-Frameworks.md) | NIST, OWASP, MITRE ATLAS, CSA, Google SAIF, Pillar Security SAIL, ISO, ENISA, ETSI, CISA/NCSC, OECD, and EU AI Act references |
+| [MLSecOps Practical Reference Guide](Frameworks/MLSecOps-Practical-Reference-Guide.md) | Secure AI/ML lifecycle operations, release gates, LLM/RAG and agent security, monitoring, and supply-chain considerations |
 | [AI Incident Response Standards and Frameworks](AI-Incident-Response/AI-Incident-Response-Standards-and-Frameworks.md) | Direct AI-specific incident reporting, incident information-sharing, and regulatory reporting frameworks from ETSI, CISA, OECD, and the EU AI Act |
 | [AI Safety vs AI Security](Frameworks/AI-Safety-vs-AI-Security.md) | Comparison of AI safety and AI security, including objectives, risks, controls, and complementary roles |
 | [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming methods, benchmarks, tooling, frontier-model evaluation resources, evaluation awareness, sandbagging, and alignment-faking tests |
