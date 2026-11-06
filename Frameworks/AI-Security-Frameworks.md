@@ -45,6 +45,18 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 37 | IBM | AI Risk Atlas and Risk Atlas Nexus | Taxonomy and tooling for navigating AI risks, resources, benchmarks, datasets, mitigations, and governance mappings | 2025 | Yes | AI risk taxonomy, governance mapping, compliance workflows, and mitigation planning |
 | 38 | IBM | watsonx.governance | Enterprise AI governance platform for lifecycle governance, risk management, compliance, monitoring, and model oversight | 2023 | Public / commercial platform | Operational AI governance, regulatory compliance, model monitoring, and audit evidence |
 
+## NIST AI security updates (September-November 2026)
+
+| Published | Resource |
+| --- | --- |
+| 2026-11-02 | [IR 8621](https://doi.org/10.6028/NIST.IR.8621) - final workshop report |
+| 2026-10-27 | [Agent identity design tenets](https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems) - proposed design guidance |
+| 2026-10-16 | [Incident readiness and response](https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation) - joint voluntary guidance |
+| 2026-09-29 | [Agent identity concept paper feedback](https://www.nist.gov/news-events/news/2026/09/comments-software-and-agentic-ai-identity-concept-paper) - NCCoE public-comment summary |
+| 2026-09-17 | [GLM-5.3 cyber assessment](https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities) - model capability evaluation |
+
+See [AI Agent Security](AI-Agent-Security.md) for identity controls and [AI Incident Response](../AI-Incident-Response/AI-Incident-Response-Standards-and-Frameworks.md) for response guidance. The GLM-5.3 assessment describes performance on selected cyber tasks under its evaluation setup. Use it as threat context and record the benchmark, harness, and budget when comparing results.
+
 ## ETSI AI cybersecurity standards family
 
 ETSI material should be treated as a standards family rather than a single checklist. It is useful for linking AI cybersecurity with hardware trust, platform security, privacy, transparency, vulnerability disclosure, IoT, and assurance.
