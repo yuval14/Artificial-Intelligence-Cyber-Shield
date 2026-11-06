@@ -101,6 +101,10 @@ Added 2026-10-16. Evaluate the monitor and response path as part of the system u
 
 Full citations, source links, metric denominators, and reporting requirements are in [Agent Monitoring and Control Evaluation](../AI-Agent-Security/Agent-Monitoring-and-Control-Evaluation.md). The exercises above are repository engineering recommendations. Fix the false-positive operating point, report uncertainty and residual attack success, and retain held-out cases. Reasoning traces, when available, are supplemental evidence and do not replace observable outcomes or external authorization.
 
+## OWASP LLM Exploit Generation Guide 2.0
+
+Use the [OWASP LLM Exploit Generation Guide 2.0](https://genai.owasp.org/resource/llm-exploit-generation-guide-2-0/) to design authorized tests and reproduce findings. Record the target and model version, permissions, test inputs, expected security outcome, observed outcome, and evidence. Run regression tests in isolated environments with synthetic data and controlled egress.
+
 ## APA 7 References
 
 Alaga, J., Schuett, J., & Anderljung, M. (2024). *A grading rubric for AI safety frameworks*. arXiv. https://arxiv.org/abs/2409.08751
