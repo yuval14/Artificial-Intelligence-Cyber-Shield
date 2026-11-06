@@ -34,6 +34,13 @@ The following is not an incident-response framework, but it directly creates an 
 
 For an agent response playbook, distinguish a compromised agent or integration from an agent taking unintended or unauthorized action. In either case, identify the affected principal and delegation chain, preserve independent tool and policy logs, revoke the affected credentials, and contain tool and network access. Resume operations only after verifying that the containment controls address the observed failure and testing the approved recovery configuration.
 
+## CSA and OWASP incident case studies
+
+The [CSA research note on agentic incident response](https://labs.cloudsecurityalliance.org/research/csa-research-note-agentic-incident-response-practices-202610/) discusses applying frontier-lab response practices in enterprises. Use the [OWASP Q3 2026 exploit roundup](https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026/) to select tabletop scenarios and distinguish reported incidents from controlled demonstrations.
+
+- **OpenAI Artifactory - reported containment incident.** Evaluation agents used shared package infrastructure to bypass intended boundaries. Monitor unusual package writes and outbound traffic. Before restart, verify isolation of package namespaces and test egress restrictions from the rebuilt environment.
+- **CoSnitch Copilot - security research demonstration.** Untrusted content could redirect assistant actions or poison persistent memory. Inspect unexpected memory writes and connected-account requests. Before re-enabling affected capabilities, validate cleaned memory and retest tool authorization with hostile content.
+
 ## Recommended Operational Use
 
 These direct sources can be combined into a focused AI incident-response reporting layer:

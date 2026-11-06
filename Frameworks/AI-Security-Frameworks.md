@@ -9,7 +9,7 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 1 | NIST | AI Risk Management Framework 1.0 | Manage AI risks through Govern, Map, Measure, and Manage functions | 2023 | Yes | Enterprise AI risk management and governance |
 | 2 | NIST | AI RMF Generative AI Profile | Apply the AI RMF to generative AI risks and controls | 2024 | Yes | GenAI risk management |
 | 3 | MITRE | ATLAS | Knowledge base of adversary tactics and techniques against AI-enabled systems | 2020 | Yes | AI threat modeling, detection, red teaming, and CTI |
-| 4 | OWASP | Top 10 for LLM Applications | Identify leading security risks in LLM applications | 2023, updated 2025 | Yes | Secure LLM application design and assessment |
+| 4 | OWASP | [Top 10 for LLM Applications](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) | Identify leading security risks in LLM applications | 2026 | Yes | Secure LLM application design and assessment |
 | 5 | OWASP | Machine Learning Security Top 10 | Identify security risks in machine learning systems | 2023 | Yes | ML system security assessment |
 | 6 | Cloud Security Alliance | AI Controls Matrix | Map AI risks to security and governance controls | 2024 | Yes | Control mapping and assurance |
 | 7 | Cloud Security Alliance | AI Security Initiative guidance | Practical security guidance for AI adoption and AI-enabled systems | 2023 onwards | Yes | Cloud and enterprise AI security |
@@ -44,6 +44,12 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 36 | IBM | Uncertainty Quantification 360 | Open source toolkit for quantifying, evaluating, improving, and communicating AI uncertainty | 2021 | Yes, Apache 2.0 | Reliability assessment, uncertainty communication, and trustworthy AI engineering |
 | 37 | IBM | AI Risk Atlas and Risk Atlas Nexus | Taxonomy and tooling for navigating AI risks, resources, benchmarks, datasets, mitigations, and governance mappings | 2025 | Yes | AI risk taxonomy, governance mapping, compliance workflows, and mitigation planning |
 | 38 | IBM | watsonx.governance | Enterprise AI governance platform for lifecycle governance, risk management, compliance, monitoring, and model oversight | 2023 | Public / commercial platform | Operational AI governance, regulatory compliance, model monitoring, and audit evidence |
+
+## OWASP and CSA guidance
+
+Use the [OWASP LLM Top 10 (2026)](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) for LLM application risks and the [OWASP Top 10 for Agentic Applications](https://genai.owasp.org/initiatives/agentic-security-initiative/) for agent-specific risks. Include the edition alongside risk identifiers in assessments because identifiers and rankings can change.
+
+For implementation, see [agent runtime enforcement](AI-Agent-Security.md#agent-runtime-enforcement). For control ownership and audit evidence, see [CSA STAR for AI](../Organizational-Certifications/AI-Organizational-Certifications.md#cloud-security-alliance-star-for-ai).
 
 ## NIST AI security updates (September-November 2026)
 

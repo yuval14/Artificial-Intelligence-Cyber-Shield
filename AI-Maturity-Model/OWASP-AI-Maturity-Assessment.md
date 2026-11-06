@@ -164,6 +164,10 @@ Reassess after major model changes, new data sources, new tools or plugins, auto
 | CSA AI Controls Matrix | Cloud and enterprise AI control mapping |
 | Google SAIF | Secure AI development and deployment principles |
 
+## Complementary CSA frontier readiness assessment
+
+The [CSA Frontier Ready Maturity Model](https://cloudsecurityalliance.org/artifacts/frontier-ready-assessment-framework) assesses cybersecurity readiness in the frontier AI era. Use AIMA to assess AI adoption and governance maturity, and use Frontier Ready where the objective is to assess preparedness for AI-accelerated cyber threats. Keep scores and evidence separate because the models assess different scopes.
+
 ## Executive interpretation
 
 The maturity score is not the final objective. The objective is to establish an AI capability that delivers value while remaining governable, secure, safe, resilient, auditable, and aligned with organizational risk appetite.

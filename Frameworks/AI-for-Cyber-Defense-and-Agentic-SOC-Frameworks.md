@@ -232,6 +232,10 @@ Required controls should include:
 - The [Cybersecurity Detection Engineering](https://github.com/yuval14/Cybersecurity-Detection-Engineering) repository implements detection-in-depth concepts as AIDAF, hunting scenarios, and SIEM correlations.
 - The [AI Security Tooling](https://github.com/yuval14/AI-Security-Tooling) repository may reference CLI, MCP, skills, schema-validation, cataloging, and workbook capabilities as technical tooling.
 
+## Vulnerability operations under AI-accelerated discovery
+
+CSA's [VulnOps operating model](https://cloudsecurityalliance.org/artifacts/the-vulnops-operating-model) addresses vulnerability management under higher discovery volumes. Track elapsed time from confirmed vulnerability to verified remediation, and the age of the high-priority backlog. Define the clock start, priority criteria, and verification evidence before comparing teams or reporting trends.
+
 ## References
 
 Covino, C., Kraprayoon, J., & Mittelsteadt, M. (2026, April 30). *Advancing America's cyber strategy with differential access*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/advancing-americas-cyber-strategy-with-differential-access
