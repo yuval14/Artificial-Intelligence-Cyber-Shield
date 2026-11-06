@@ -7,7 +7,7 @@ This page lists frameworks, control patterns, and security principles for AI age
 | # | Vendor / organization | Framework / resource | Goal / function | Release date | Open source / public | Primary use |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | OWASP | Agentic AI Threats and Mitigations | Identify security risks unique to agentic AI systems | 2025 | Yes | Agent threat modeling and control design |
-| 2 | OWASP | Top 10 for LLM Applications | Address prompt injection, insecure output handling, sensitive information disclosure, and excessive agency | 2023, updated 2025 | Yes | LLM agent application security |
+| 2 | OWASP | [Top 10 for LLM Applications](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) | Address prompt injection, insecure output handling, sensitive information disclosure, and excessive agency | 2026 | Yes | LLM agent application security |
 | 3 | Cloud Security Alliance | Agentic AI security and red teaming guidance | Address autonomy, identity, tool use, permissions, and multi-step risk | 2025 | Yes | Enterprise agent security and red teaming |
 | 4 | Google | Secure AI Framework and Secure Agents | Secure AI systems, including agentic workflows, supply chain, monitoring, response, and trusted agent design | 2023, expanded 2026 | Yes | Secure architecture baseline |
 | 5 | Microsoft | AI agent security guidance | Secure agent identity, tool use, data access, and human oversight | 2024 onwards | Yes | Enterprise agent deployment |
@@ -38,7 +38,13 @@ Apply the tenets alongside [PALO](PALO-Framework.md) for delegated authority and
 9. Continuously monitor agent access and anomalies.
 10. Preserve tamper-evident evidence outside the agent's control.
 
-**DevSecOps acceptance check:** Give a parent agent read-only repository access and have it delegate a review. An untrusted issue requests a push and an external upload. Verify that both actions are denied, an independent audit trail records the delegation and denials, and parent revocation invalidates the delegated access.
+**DevSecOps acceptance check:** Give a parent agent read-only repository access and have it delegate a review. An untrusted issue requests a push and an external upload. Verify that both actions are denied, an independent audit trail records the delegation and denials, and parent revocation invalidates the delegated access. Verify the tool gateway rejects the write, the egress policy rejects the upload, and the audit record includes the parent and child identities, delegated scope, policy decision, and revocation outcome.
+
+## Agent runtime enforcement
+
+The [OWASP Agent Control Standard](https://genai.owasp.org/resource/agent-control-standard-acs/) describes middleware hooks for enforcing policy on agent actions. [CSA AI Agents: Architecture and Control Plane](https://cloudsecurityalliance.org/artifacts/ai-agents-architecture-and-control-plane) provides architecture patterns and maps them to CSA and OWASP controls.
+
+Use PALO to specify delegated authority and CUSTODY to define containment. Enforce those decisions at trusted tool, credential, and egress boundaries. The [CSA Authorization of Agents](https://cloudsecurityalliance.org/artifacts/authorization-of-agents) document was a public draft as of November 6, 2026, with comments open through November 13.
 
 ## Agent-specific risk areas
 
@@ -264,7 +270,7 @@ Mittelsteadt, M., Kraprayoon, J., Staes-Polet, R., Galeev, O., Wehner, J., Covin
 
 National Institute of Standards and Technology. (2023). *Artificial intelligence risk management framework (AI RMF 1.0)*. https://doi.org/10.6028/NIST.AI.100-1
 
-Open Worldwide Application Security Project. (2025). *OWASP Top 10 for large language model applications*. https://genai.owasp.org/
+OWASP GenAI Security Project. (2026). *OWASP GenAI LLM Top 10 2026*. https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
 Svan, A., Hall, M., Kaufman, B., Austin, C., Kushe, R., & Late, A. (2026). *AgentWatch: Privacy and security evaluation for browser-based AI agents*. UC Berkeley Center for Long-Term Cybersecurity. https://cltc.berkeley.edu/2026/06/30/new-cltc-white-paper-introduces-method-of-evaluating-privacy-and-security-of-ai-agents/
 
