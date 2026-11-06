@@ -76,9 +76,19 @@ CSA STAR for AI extends the Security, Trust, Assurance, and Risk program to AI s
 
 ### AI Controls Matrix and AI-CAIQ
 
-The [AI Controls Matrix](https://cloudsecurityalliance.org/artifacts/ai-controls-matrix) provides controls for developing, deploying, and operating AI systems responsibly. CSA maps the AICM to major standards and frameworks, including ISO/IEC 42001, ISO/IEC 27001, and the NIST AI Risk Management Framework.
+The [AI Controls Matrix v1.1](https://cloudsecurityalliance.org/artifacts/ai-controls-matrix-v1-1) provides controls for developing, deploying, and operating AI systems responsibly. CSA maps the AICM to major standards and frameworks, including ISO/IEC 42001, ISO/IEC 27001, and the NIST AI Risk Management Framework.
 
 The AI-CAIQ translates AICM expectations into a structured questionnaire that organizations use to disclose and assess their AI control environment. It supports customer due diligence, supplier assurance, gap analysis, evidence collection, and STAR for AI submissions.
+
+### Shared responsibility and audit evidence
+
+Use CSA's [Agent Shared Security and Safety Responsibility Model](https://cloudsecurityalliance.org/artifacts/agent-shared-security-and-safety-responsibility-model-agent-3srm) with AICM v1.1 to assign each applicable control an implementation owner and an evidence owner. For a repository-review agent:
+
+- The model provider supplies model version and security evaluation evidence where available.
+- The agent operator owns delegation policy and provides policy decisions and revocation test results.
+- The tool owner enforces repository scopes and provides tool-side access logs and denial evidence.
+
+Record contractual variations and evidence gaps before relying on a supplier control. Use the resulting evidence in the [CERT-In audit workflow](../Frameworks/AI-Security-Frameworks.md#cert-in-ai-security-auditing-guidelines) where applicable.
 
 ## Relationship between ISO/IEC 42001 and STAR for AI
 
