@@ -1,7 +1,7 @@
 # AI Incident Response Standards and Frameworks
 
 **Author:** Yuval Sinay  
-**Last updated:** 16 August 2026
+**Last updated:** 6 November 2026
 
 ## Scope
 
@@ -26,6 +26,13 @@ The following is not an incident-response framework, but it directly creates an 
 | Authority | Requirement | Direct Relevance |
 | --- | --- | --- |
 | European Union | **Regulation (EU) 2024/1689, Article 73 - Reporting of serious incidents** | Requires providers of applicable high-risk AI systems to report serious incidents to relevant market-surveillance authorities according to the timelines and conditions defined by the AI Act. |
+
+## NIST guidance for incidents involving advanced AI agents
+
+- **November 2, 2026:** [NIST IR 8621](https://doi.org/10.6028/NIST.IR.8621) is a final workshop report. It covers attacks against AI systems and harm caused by misuse, anomalous behavior, or operational malfunction. It highlights reasoning-layer telemetry, non-human identities, authorization-scoped containment, and evidence sharing.
+- **October 16, 2026:** [Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation](https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation) is joint voluntary guidance from NIST, NSA, and CISA. It covers preparation, detection, response, recovery, and reporting during training and evaluation.
+
+For an agent response playbook, distinguish a compromised agent or integration from an agent taking unintended or unauthorized action. In either case, identify the affected principal and delegation chain, preserve independent tool and policy logs, revoke the affected credentials, and contain tool and network access. Resume operations only after verifying that the containment controls address the observed failure and testing the approved recovery configuration.
 
 ## Recommended Operational Use
 
