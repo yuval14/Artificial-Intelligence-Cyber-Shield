@@ -57,6 +57,18 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 
 See [AI Agent Security](AI-Agent-Security.md) for identity controls and [AI Incident Response](../AI-Incident-Response/AI-Incident-Response-Standards-and-Frameworks.md) for response guidance. The GLM-5.3 assessment describes performance on selected cyber tasks under its evaluation setup. Use it as threat context and record the benchmark, harness, and budget when comparing results.
 
+## CERT-In AI security auditing guidelines
+
+CERT-In's [AI Security Auditing Guidelines](https://www.cert-in.org.in/PDF/AI_Security_Auditing_Guidelines.pdf) (CISG-2026-04, November 4, 2026) define a risk-based approach to auditing AI systems across their lifecycle.
+
+| Audit step | What to assess |
+| --- | --- |
+| Scope and risk tier | Inventory AI systems and classify each by risk. |
+| Controls and evidence | Check governance, security controls, data and model provenance, and audit records. |
+| Follow-up | Use the assigned tier to determine audit depth, evidence requirements, and frequency. |
+
+Use the applicability matrix to determine which requirements apply in the Indian context.
+
 ## ETSI AI cybersecurity standards family
 
 ETSI material should be treated as a standards family rather than a single checklist. It is useful for linking AI cybersecurity with hardware trust, platform security, privacy, transparency, vulnerability disclosure, IoT, and assurance.
@@ -146,6 +158,8 @@ Use these frameworks together rather than as substitutes:
 | Assurance | Red teaming, independent evaluation, safety cases, audit evidence, continuous review |
 
 ## APA 7 references
+
+Indian Computer Emergency Response Team. (2026, November 4). *Artificial intelligence (AI) security auditing guidelines* (CISG-2026-04). https://www.cert-in.org.in/PDF/AI_Security_Auditing_Guidelines.pdf
 
 AIDEFEND Framework Initiative. (2026). *AIDEFEND: AI security defense framework*. https://aidefend.net/
 
