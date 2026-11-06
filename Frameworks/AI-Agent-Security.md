@@ -21,6 +21,25 @@ This page lists frameworks, control patterns, and security principles for AI age
 | 13 | Kexin Chu | [Layered Attack Surface Model (LASM)](Layered-Attack-Surface-Model-LASM.md) | Map agent threats by seven architectural layers and four temporal classes | 2026 | Public preprint | Cross-layer threat modeling, control placement, ABOM, and long-horizon evaluation |
 | 14 | Institute for AI Policy and Strategy | Detecting Offensive Cyber Agents: A Detection-in-Depth Approach | Add agent identifiers, agent honeypots, AI-assisted alert triage, standardized agentic alerts, and provider/cloud threat exchange | 2026 | Public research | Detection and disruption of hostile autonomous cyber agents |
 
+## NIST agent identity guidance
+
+The [October 27 design tenets](https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems) are proposed design guidance. The [September 29 NCCoE feedback summary](https://www.nist.gov/news-events/news/2026/09/comments-software-and-agentic-ai-identity-concept-paper) identifies DevSecOps as the first demonstration use case for agent identification, authentication, and authorization.
+
+Apply the tenets alongside [PALO](PALO-Framework.md) for delegated authority and oversight, and [CUSTODY](CUSTODY-Autonomous-Agent-Containment-Framework.md) for runtime containment.
+
+1. Give each agent a distinct, verifiable identity.
+2. Bind delegation to the originating principal and narrow downstream permissions.
+3. Grant task-scoped access with zero standing privilege.
+4. Issue short-lived credentials and support rapid revocation.
+5. Trigger human review at defined risk thresholds.
+6. Bind task intent and constraints in a signed mandate.
+7. Separate policy enforcement from model reasoning.
+8. Make access decisions through deterministic controls.
+9. Continuously monitor agent access and anomalies.
+10. Preserve tamper-evident evidence outside the agent's control.
+
+**DevSecOps acceptance check:** Give a parent agent read-only repository access and have it delegate a review. An untrusted issue requests a push and an external upload. Verify that both actions are denied, an independent audit trail records the delegation and denials, and parent revocation invalidates the delegated access.
+
 ## Agent-specific risk areas
 
 | Risk area | Description | Example control |
