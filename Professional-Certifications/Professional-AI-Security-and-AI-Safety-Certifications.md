@@ -39,6 +39,8 @@ The priority and technical-depth ratings below are analytical assessments, not o
 | **11** | [GIAC Offensive AI Analyst, GOAA](https://www.giac.org/certifications/offensive-ai-analyst-goaa) | GIAC | Practitioner certification | Use of AI for reconnaissance, adversary emulation, vulnerability research, attack simulation, and offensive operations | Very High | CyberLive hands-on assessment | No formal prerequisite stated; offensive-security experience is recommended | Red teamers, penetration testers, threat researchers, and adversary-emulation professionals |
 | **12** | [ISO/IEC 42001 Foundation](https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-foundation) | PECB or another recognized personnel-certification provider | Foundation certificate | Fundamentals of AI management systems, governance, risk, controls, and continual improvement | Low | Introductory training and examination | None or minimal prior knowledge | Entry-level practitioners, managers, and professionals supporting an AIMS program |
 | **13** | [AI Security for Information Security Professionals](https://hitech-school.biu.ac.il/course/ai-security) | Bar-Ilan University, School of High-Tech and Cyber | University professional-course certificate | Establishing and leading an organizational AI security program; GenAI, LLM and agent security; governance; risk; production controls; and GRC integration | Medium–High | Four-session, 20-academic-hour hybrid professional course; completion requirements apply | More than two years of information-security experience | Information-security managers, cybersecurity professionals, GRC specialists, regulators, risk managers, and organizational AI security program leaders |
+| Unranked | [Certified Offensive AI Security Professional, COASP](https://www.eccouncil.org/ai-courses/certified-offensive-ai-security-professional-coasp-north-america/) | EC-Council | Certification | Red teaming of LLMs and AI agents | High | Certification exam and practical training | See provider | Penetration testers and AI red teams |
+| Unranked | [Certified Responsible AI Governance & Ethics, CRAGE](https://aigovernance.eccouncil.org/pathway-map) | EC-Council | Certification | AI governance, ethics, audit, and compliance | Governance-focused | See provider | See provider | AI governance, risk, and compliance teams |
 | Presale | [GIAC AI Penetration Tester, GAIPT](https://www.giac.org/certifications/offensive-ai-penetration-tester-gaipt) | GIAC | Practitioner certification | Penetration testing of LLM apps, RAG, agents, and MCP servers | Advanced | CyberLive practical assessment | No formal prerequisite listed | Penetration testers and red teams |
 | Pilot | [AI Security Certification](https://www.isc2.org/new-ai-certification) | ISC2 | Certification in development | AI fundamentals, governance, data and model security, secure architecture and IAM, operations and incident response, threat testing and lifecycle management | Broad technical and governance coverage | Pilot: 160 multiple-choice questions, 3 hours, in English at Pearson Professional Centers | Four years of qualifying experience or an active eligible ISC2 credential. See details below. | Experienced cybersecurity architects, engineers, operations leads, risk managers, and strategists |
 
@@ -157,6 +159,10 @@ Before choosing a credential or professional course, assess:
 9. Delivery format, course duration, faculty, exercises, and applicability to current organizational responsibilities.
 
 ## References
+
+EC-Council. (n.d.-a). *ADG pathway map*. https://aigovernance.eccouncil.org/pathway-map
+
+EC-Council. (n.d.-b). *Certified Offensive AI Security Professional*. https://www.eccouncil.org/ai-courses/certified-offensive-ai-security-professional-coasp-north-america/
 
 GIAC. (n.d.). *GIAC AI Penetration Tester*. https://www.giac.org/certifications/offensive-ai-penetration-tester-gaipt
 
