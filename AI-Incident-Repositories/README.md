@@ -7,6 +7,8 @@ This section catalogs public repositories, trackers, and case-study collections 
 | # | Resource | Primary focus | Security use | Validation note |
 | --- | --- | --- | --- | --- |
 | 1 | [OWASP Agentic AI Security Incidents & Exploits](OWASP-Agentic-AI-Security-Incidents.md) | Security incidents, exploits, and failure patterns involving agentic AI systems | Agent threat modeling, control validation, red-team scenarios, detection and hunting use cases, and CISO briefings | The tracker is hosted on a third-party `lovable.app` domain. Validate material incidents against primary disclosures, advisories, CVE records, vendor reports, or official OWASP publications before operational use. |
+| 2 | [AI Incident Database (AIID)](https://incidentdatabase.ai/) | Reports of real-world AI incidents and harms | Discover incidents and compare failure patterns across deployments | Corroborate reported facts with primary sources. |
+| 3 | [MIT AI Incident Tracker](https://airisk.mit.edu/ai-incident-tracker) | Classifies AIID reports by risk, cause, harm type, and severity | Filter and compare reported incidents by risk and severity | Review the source reports and validate classifications before relying on them. |
 
 ## Recommended assessment fields
 
