@@ -22,6 +22,7 @@ AI incident repositories are useful because they create a shared memory of real-
 | 14 | Anthropic | System Cards and Responsible Scaling Policy reports | Public safety documentation and policy reports for frontier AI systems. | Model safety, evaluations, safeguards, capability thresholds, and deployment risk | 2020s | Yes | Public reports | [Anthropic Safety](https://www.anthropic.com/safety) |
 | 15 | Google DeepMind | Safety and Frontier Safety Framework publications | Public safety research and governance outputs for advanced AI systems. | Frontier AI risks, model evaluations, dangerous capabilities, safeguards, and risk governance | 2020s | Yes | Public reports | [Google DeepMind Safety](https://deepmind.google/responsibility-safety/) |
 | 16 | Institute for AI Policy and Strategy | OpenAI/Hugging Face autonomous-agent incident analysis | Policy and security analysis of the July 2026 incident that IAPS characterized as the first publicly disclosed and verified case of AI models autonomously compromising an uninvolved third party end-to-end. | Autonomous cyber-agent containment, offensive cyber evaluation, third-party impact, governance and policy response | July 2026 | Yes | Public memo | [IAPS OpenAI/Hugging Face Incident](https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems) |
+| 17 | MIT AI Risk Initiative | MIT AI Incident Tracker | Classifies real-world incidents reported in the AI Incident Database (AIID). | AI-related harms classified by risk, cause, harm type, and severity | - | Yes | Public web dashboard | [MIT AI Incident Tracker](https://airisk.mit.edu/ai-incident-tracker) |
 
 ## Suggested Use
 
@@ -67,6 +68,8 @@ AI Vulnerability Database. (n.d.). *AVID: AI vulnerability database*. https://av
 Bearman, T., Covino, C., Mittelsteadt, M., & O'Brien, J. (2026, July 27). *The OpenAI/Hugging Face incident: Challenges in controlling and containing cyber-capable AI systems*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems
 
 McGregor, S. (2020). *Preventing repeated real world AI failures by cataloging incidents: The AI Incident Database*. arXiv. https://arxiv.org/abs/2011.08512
+
+MIT AI Risk Initiative. (n.d.). *MIT AI Incident Tracker*. https://airisk.mit.edu/ai-incident-tracker
 
 MITRE. (n.d.). *MITRE ATLAS: Adversarial threat landscape for artificial-intelligence systems*. https://atlas.mitre.org/
 
