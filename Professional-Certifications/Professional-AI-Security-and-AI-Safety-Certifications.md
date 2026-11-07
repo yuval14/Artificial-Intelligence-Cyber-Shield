@@ -39,6 +39,13 @@ The priority and technical-depth ratings below are analytical assessments, not o
 | **11** | [GIAC Offensive AI Analyst, GOAA](https://www.giac.org/certifications/offensive-ai-analyst-goaa) | GIAC | Practitioner certification | Use of AI for reconnaissance, adversary emulation, vulnerability research, attack simulation, and offensive operations | Very High | CyberLive hands-on assessment | No formal prerequisite stated; offensive-security experience is recommended | Red teamers, penetration testers, threat researchers, and adversary-emulation professionals |
 | **12** | [ISO/IEC 42001 Foundation](https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-foundation) | PECB or another recognized personnel-certification provider | Foundation certificate | Fundamentals of AI management systems, governance, risk, controls, and continual improvement | Low | Introductory training and examination | None or minimal prior knowledge | Entry-level practitioners, managers, and professionals supporting an AIMS program |
 | **13** | [AI Security for Information Security Professionals](https://hitech-school.biu.ac.il/course/ai-security) | Bar-Ilan University, School of High-Tech and Cyber | University professional-course certificate | Establishing and leading an organizational AI security program; GenAI, LLM and agent security; governance; risk; production controls; and GRC integration | Medium–High | Four-session, 20-academic-hour hybrid professional course; completion requirements apply | More than two years of information-security experience | Information-security managers, cybersecurity professionals, GRC specialists, regulators, risk managers, and organizational AI security program leaders |
+| Pilot | [AI Security Certification](https://www.isc2.org/new-ai-certification) | ISC2 | Certification in development | AI fundamentals, governance, data and model security, secure architecture and IAM, operations and incident response, threat testing and lifecycle management | Broad technical and governance coverage | Pilot: 160 multiple-choice questions, 3 hours, in English at Pearson Professional Centers | Four years of qualifying experience or an active eligible ISC2 credential. See details below. | Experienced cybersecurity architects, engineers, operations leads, risk managers, and strategists |
+
+## ISC2 AI Security Certification pilot
+
+ISC2 is developing this certification and plans to invite approximately 3,000 volunteers to take the pilot exam. Transition to an operational certification depends on the pilot results. The entry is unranked while the program is in development.
+
+ISC2 lists four years of cumulative paid full-time experience in cybersecurity or AI-related fields, including two years in cybersecurity and one year covering at least two exam domains. An active CISSP, ISSAP, ISSEP, ISSMP, CCSP, or CSSLP may substitute for the entire experience requirement.
 
 ## Bar-Ilan University AI Security course
 
@@ -143,6 +150,8 @@ Before choosing a credential or professional course, assess:
 9. Delivery format, course duration, faculty, exercises, and applicability to current organizational responsibilities.
 
 ## References
+
+ISC2. (2026). *AI security certification*. https://www.isc2.org/new-ai-certification
 
 Bar-Ilan University, School of High-Tech and Cyber. (2026). *AI Security for information security professionals*. https://hitech-school.biu.ac.il/course/ai-security
 
