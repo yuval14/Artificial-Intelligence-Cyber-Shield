@@ -21,6 +21,17 @@ The threat-landscape coverage now incorporates five related shifts identified in
 4. **Persistent always-on agents** - cross-application access to files, browser sessions, messages, skills, and external services can concentrate identity, privacy, supply-chain, and national-security risk in one persistent agent platform.
 5. **Compressed cyber timelines** - faster vulnerability discovery, exploit generation, and automated attack execution increase pressure on detection, vulnerability management, remediation, and critical-infrastructure compensating controls.
 
+## Offensive Cyber Capability Benchmarks
+
+### Booz Allen Cyber Weapon Index (CWI)
+
+Booz Allen Hamilton's [Cyber Weapon Index](https://www.boozallen.com/insights/cyber/cyber-weapon-index.html) tracks demonstrated offensive cyber capabilities of frontier models in controlled environments. The index is the arithmetic mean of two scores:
+
+- **Vulnerability Research Score (VRS)** measures whether a model can discover vulnerabilities in compiled software without source code.
+- **Kill Chain Attainment Score (KCAS)** measures how far a model progresses autonomously from initial access toward Domain Admin control in network scenarios tested with and without credentials.
+
+Use the two component scores and the stages actually reached when comparing models. Record the benchmark release date, model version, credential scenario, and provider access conditions. Refusals and restrictions on privileged access can affect observed performance. Treat the results as evidence of capability under the tested conditions and use incident-specific evidence to assess real-world activity.
+
 ## Related Repositories
 
 - [Cybersecurity Detection Engineering](https://github.com/yuval14/Cybersecurity-Detection-Engineering)
@@ -50,6 +61,8 @@ Product- or jurisdiction-specific case studies should be used to identify genera
 Bearman, T. (2026, February 25). *Kimi Claw: Risks from Chinese-hosted 'always on' AI agents*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/kimi-claw-risks
 
 Bearman, T., Covino, C., Mittelsteadt, M., & O'Brien, J. (2026, July 27). *The OpenAI/Hugging Face incident: Challenges in controlling and containing cyber-capable AI systems*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems
+
+Booz Allen Hamilton. (n.d.). *Booz Allen Cyber Weapon Index*. Retrieved November 9, 2026, from https://www.boozallen.com/insights/cyber/cyber-weapon-index.html
 
 Covino, C. (2026, April 16). *Mythos and the evolving cyber landscape: Implications and policy priorities*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/mythos-and-the-evolving-cyber-landscape-implications-and-policy-priorities-Bu4xs
 
