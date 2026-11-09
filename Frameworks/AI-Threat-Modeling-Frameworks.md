@@ -24,6 +24,11 @@ This page lists frameworks and methods for identifying, structuring, and priorit
 | 16 | LINDDUN | Privacy threat modeling | Model privacy threats such as linkability, identifiability, and disclosure | 2010 onwards | Yes | AI privacy threat analysis |
 | 17 | Google DeepMind | [TRAIT&R and GDM AI Control Roadmap](GDM-AI-Control-Roadmap.md) | Model tactics and techniques of a hypothetical internally deployed rogue AI and map capability-triggered controls | 2026 | Yes, public preprint | AI insider-threat modeling, agent red teaming, distributed kill-chain analysis, control design |
 | 18 | Forscie, in partnership with Above Theory | [Synthetic Insider Threat Matrix](https://www.insiderthreatmatrix.org/synthetic) | Structure AI insider-threat investigation across directives, configuration, invocation, outcomes, and opacity | Not specified; reviewed 2026-10-16 | Public framework | AI agent investigation and control review |
+| 19 | Brodt et al. | [The Promptware Kill Chain](https://arxiv.org/abs/2601.09625v2) | Model multistage attacks on LLM applications that begin with prompt injection | 2026 | Public preprint | Attack path analysis and defense-in-depth planning |
+
+## The Promptware Kill Chain
+
+Brodt et al. (2026) propose seven stages for attacks on LLM applications: initial access via prompt injection, privilege escalation, reconnaissance, persistence, command and control, lateral movement, and actions on objectives. Use the model to trace how an injected instruction can lead to downstream actions and identify where preventive and detective controls can interrupt the attack. It complements the [NIST adversarial machine learning taxonomy](AI-Security-Frameworks.md#nist-ai-security-updates-september-november-2026) by organizing techniques into attack sequences.
 
 ## Synthetic Insider Threat Matrix
 
@@ -127,6 +132,8 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 | Can the agent detect, evade, manipulate, or collude with its monitoring system? | Identifies control-subversion and oversight-evasion risks |
 
 ## APA 7 references
+
+Brodt, O., Feldman, E., Schneier, B., & Nassi, B. (2026). *The promptware kill chain: How prompt injections gradually evolved into a multistep malware delivery mechanism* [Preprint]. arXiv. https://arxiv.org/abs/2601.09625v2
 
 Forscie. (n.d.). *Synthetic insider threat matrix*. Retrieved October 16, 2026, from https://www.insiderthreatmatrix.org/synthetic
 
