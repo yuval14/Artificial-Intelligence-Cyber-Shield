@@ -55,6 +55,7 @@ For implementation, see [agent runtime enforcement](AI-Agent-Security.md#agent-r
 
 | Published | Resource |
 | --- | --- |
+| 2026-11-09 | [NIST SP 2400-102 E2026](https://csrc.nist.gov/pubs/sp/2400-102/e2026/ipd) - initial public draft on adversarial machine learning, with an attack taxonomy and mitigations for agentic superintelligence systems. Public comments due December 18, 2026. |
 | 2026-11-02 | [IR 8621](https://doi.org/10.6028/NIST.IR.8621) - final workshop report |
 | 2026-10-27 | [Agent identity design tenets](https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems) - proposed design guidance |
 | 2026-10-16 | [Incident readiness and response](https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation) - joint voluntary guidance |
@@ -230,5 +231,7 @@ OWASP Foundation. (2023). *Machine learning security top 10*. https://owasp.org/
 Pillar Security. (2026). *SAIL: Secure AI lifecycle framework V2*. https://www.pillar.security/sail
 
 Richards, J., Piorkowski, D., Hind, M., Houde, S., Mojsilovic, A., & Varshney, K. R. (2020). *AI FactSheets 360*. IBM Research. https://aifs360.res.ibm.com/
+
+Vassilev, A., Oprea, A., Fordyce, A., Davies, X., & Hamin, M. (2026). *Adversarial machine learning: A taxonomy and terminology of attacks and mitigations* (NIST SP 2400-102 E2026, initial public draft). National Institute of Standards and Technology. https://csrc.nist.gov/pubs/sp/2400-102/e2026/ipd
 
 Vijay Arya, R., Bellamy, K. E., Chen, P.-Y., Dhurandhar, A., Hind, M., Hoffman, S. C., Houde, S., Liao, Q. V., Luss, R., Mojsilovic, A., Mourad, S., Pedemonte, P., Raghavendra, R., Richards, J., Sattigeri, P., Shanmugam, K., Singh, M., Varshney, K. R., Wei, D., & Zhang, Y. (2019). *One explanation does not fit all: A toolkit and taxonomy of AI explainability techniques*. arXiv. https://arxiv.org/abs/1909.03012
