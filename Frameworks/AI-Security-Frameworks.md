@@ -51,6 +51,13 @@ Use the [OWASP LLM Top 10 (2026)](https://genai.owasp.org/resource/owasp-genai-l
 
 For implementation, see [agent runtime enforcement](AI-Agent-Security.md#agent-runtime-enforcement). For control ownership and audit evidence, see [CSA STAR for AI](../Organizational-Certifications/AI-Organizational-Certifications.md#cloud-security-alliance-star-for-ai).
 
+### OWASP data and infrastructure security
+
+| Resource | Scope | Practical use |
+| --- | --- | --- |
+| [GenAI Data Security Best Practices v2 - Part 1](https://genai.owasp.org/resource/genai-data-security-best-practices-v2-part1/) (November 3, 2026) | First installment of the implementation playbook, including AI data security posture management (AI-DSPM) | Define an operating model, stage the rollout, select operational metrics, and integrate findings with security operations. |
+| [OWASP Top 10 Neocloud & AI Data Center Security Risks](https://owasp.org/projects/top-10-neocloud-and-ai-data-center-security-risks) (2026) | OWASP incubator project covering shared AI compute infrastructure, including accelerators, network fabrics, firmware, storage, and management planes | Assess provider isolation and management-plane controls during procurement and architecture reviews. |
+
 ## NIST AI security updates (September-November 2026)
 
 | Published | Resource |
@@ -227,6 +234,10 @@ Organisation for Economic Co-operation and Development. (2019). *OECD principles
 OWASP Foundation. (2025). *OWASP top 10 for large language model applications*. https://owasp.org/www-project-top-10-for-large-language-model-applications/
 
 OWASP Foundation. (2023). *Machine learning security top 10*. https://owasp.org/
+
+OWASP Foundation. (2026). *OWASP Top 10 neocloud & AI data center security risks*. https://owasp.org/projects/top-10-neocloud-and-ai-data-center-security-risks
+
+OWASP GenAI Security Project. (2026, November 3). *GenAI data security best practices v2 - Part 1*. https://genai.owasp.org/resource/genai-data-security-best-practices-v2-part1/
 
 Pillar Security. (2026). *SAIL: Secure AI lifecycle framework V2*. https://www.pillar.security/sail
 

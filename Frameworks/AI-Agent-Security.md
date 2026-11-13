@@ -46,6 +46,15 @@ The [OWASP Agent Control Standard](https://genai.owasp.org/resource/agent-contro
 
 Use PALO to specify delegated authority and CUSTODY to define containment. Enforce those decisions at trusted tool, credential, and egress boundaries. The [CSA Authorization of Agents](https://cloudsecurityalliance.org/artifacts/authorization-of-agents) document was a public draft as of November 6, 2026, with comments open through November 13.
 
+### OWASP Securing Agentic Applications V2
+
+[Securing Agentic Applications V2](https://genai.owasp.org/resource/securing-agentic-applications-v2/) (November 10, 2026) applies to single-agent, centrally orchestrated, and decentralized multi-agent deployments. The guide covers authorization at the point of action, scoped delegation, capability composition, runtime containment, and evidence for assurance.
+
+- Enforce authorization outside the model at the tool or target service. For delegated actions, bind scope to the user's permissions, the agent's capabilities, and the approved task intent. Narrow delegated authority at each hop.
+- Apply the Rule of Two when an agent combines untrusted input, sensitive access, and the ability to send data externally or change state. Remove a capability or enforce information-flow and egress boundaries between independently authorized components.
+- Verify MCP tool definitions against approved hashes. Block changed definitions pending review. Configure runtime controls that can throttle, suspend, or stop an agent and preserve incident evidence.
+- Exercise whole action sequences across tools and memory. Revalidate affected cases when prompts, orchestration, memory, or tool access changes.
+
 ## Agent-specific risk areas
 
 | Risk area | Description | Example control |
@@ -271,6 +280,8 @@ Mittelsteadt, M., Kraprayoon, J., Staes-Polet, R., Galeev, O., Wehner, J., Covin
 National Institute of Standards and Technology. (2023). *Artificial intelligence risk management framework (AI RMF 1.0)*. https://doi.org/10.6028/NIST.AI.100-1
 
 OWASP GenAI Security Project. (2026). *OWASP GenAI LLM Top 10 2026*. https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
+
+OWASP GenAI Security Project. (2026, November 10). *Securing agentic applications V2: A builder & defender's guide*. https://genai.owasp.org/resource/securing-agentic-applications-v2/
 
 Svan, A., Hall, M., Kaufman, B., Austin, C., Kushe, R., & Late, A. (2026). *AgentWatch: Privacy and security evaluation for browser-based AI agents*. UC Berkeley Center for Long-Term Cybersecurity. https://cltc.berkeley.edu/2026/06/30/new-cltc-white-paper-introduces-method-of-evaluating-privacy-and-security-of-ai-agents/
 

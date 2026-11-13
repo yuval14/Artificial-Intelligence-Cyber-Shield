@@ -57,6 +57,12 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [Professional AI Security and AI Safety Certifications](Professional-Certifications/Professional-AI-Security-and-AI-Safety-Certifications.md) | Comparison of ISACA, Cloud Security Alliance, GIAC, OffSec, IAPP, university programs, and ISO/IEC 42001 professional credentials |
 | [Organizational AI Certifications and Assurance Programs](Organizational-Certifications/AI-Organizational-Certifications.md) | ISO/IEC 42001 certification, CSA STAR for AI levels, AICM, AI-CAIQ, accreditation, and assurance verification |
 
+### Recent OWASP guidance
+
+- [Securing Agentic Applications V2](Frameworks/AI-Agent-Security.md#owasp-securing-agentic-applications-v2) - agent authorization, tool integrity, runtime enforcement, and assurance.
+- [GenAI data security and AI infrastructure guidance](Frameworks/AI-Security-Frameworks.md#owasp-data-and-infrastructure-security) - AI data security posture management and neocloud risk assessment.
+- [GenAI Red Teaming Manual and LLM exploit generation research](Frameworks/AI-Red-Team-Frameworks.md#owasp-genai-red-teaming-manual-version-10) - engagement methodology and evidence from human-guided and autonomous evaluations.
+
 ## Behavioral Assurance and Independent Evaluation
 
 | Resource | Contribution and status |

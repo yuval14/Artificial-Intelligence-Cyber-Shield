@@ -101,9 +101,13 @@ Added 2026-10-16. Evaluate the monitor and response path as part of the system u
 
 Full citations, source links, metric denominators, and reporting requirements are in [Agent Monitoring and Control Evaluation](../AI-Agent-Security/Agent-Monitoring-and-Control-Evaluation.md). The exercises above are repository engineering recommendations. Fix the false-positive operating point, report uncertainty and residual attack success, and retain held-out cases. Reasoning traces, when available, are supplemental evidence and do not replace observable outcomes or external authorization.
 
+## OWASP GenAI Red Teaming Manual Version 1.0
+
+The [OWASP GenAI Red Teaming Manual Version 1.0](https://genai.owasp.org/resource/genai-red-teaming-manual-version-1-0/) (October 20, 2026) describes an eight-phase methodology spanning preparation, testing, impact assessment, reporting, and remediation. It covers models, applications, multimodal interfaces, and agents. Use it to define engagement scope, collect reproducible evidence, and hand findings to defenders for remediation and retesting.
+
 ## OWASP LLM Exploit Generation Guide 2.0
 
-Use the [OWASP LLM Exploit Generation Guide 2.0](https://genai.owasp.org/resource/llm-exploit-generation-guide-2-0/) to design authorized tests and reproduce findings. Record the target and model version, permissions, test inputs, expected security outcome, observed outcome, and evidence. Run regression tests in isolated environments with synthetic data and controlled egress.
+The [OWASP LLM Exploit Generation Guide 2.0](https://genai.owasp.org/resource/llm-exploit-generation-guide-2-0/) (October 27, 2026) reports a comparison of human-guided and autonomous exploit generation, including success, operator effort, cost, and observable activity. Use those dimensions to design authorized evaluations. Record the target and model version, permissions, test inputs, expected security outcome, observed outcome, and evidence. Run regression tests in isolated environments with synthetic data and controlled egress.
 
 ## APA 7 References
 
@@ -122,6 +126,10 @@ National Institute of Standards and Technology. (2023). *Artificial intelligence
 Nicolae, M.-I., Sinn, M., Tran, M. N., Buesser, B., Rawat, A., Wistuba, M., Zantedeschi, V., Baracaldo, N., Chen, B., Ludwig, H., Molloy, I. M., & Edwards, B. (2018). *Adversarial robustness toolbox v1.0.0*. arXiv. https://arxiv.org/abs/1807.01069
 
 Open Worldwide Application Security Project. (2025). *OWASP Top 10 for large language model applications*. https://genai.owasp.org/
+
+OWASP GenAI Security Project. (2026, October 20). *GenAI red teaming manual* (Version 1.0). https://genai.owasp.org/resource/genai-red-teaming-manual-version-1-0/
+
+OWASP GenAI Security Project. (2026, October 27). *LLM exploit generation guide 2.0*. https://genai.owasp.org/resource/llm-exploit-generation-guide-2-0/
 
 OpenAI. (2023). *Preparedness framework*. https://openai.com/safety/preparedness/
 
