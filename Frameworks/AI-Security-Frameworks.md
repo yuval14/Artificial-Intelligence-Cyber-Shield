@@ -30,11 +30,11 @@ This page lists major AI security frameworks, taxonomies, standards, and control
 | 22 | ETSI | ETSI GR SAI 009, AI Computing Platform Security Framework | Provides a security framework for AI computing platforms | 2023 | Yes | AI platform and infrastructure security |
 | 23 | ETSI | ETSI GR SAI 010, AI-Based Security and Security of AI Ecosystem | Addresses AI used for cybersecurity and security of AI ecosystems | 2023 | Yes | AI ecosystem security architecture |
 | 24 | ETSI | ETSI GR SAI 011, Multi-Party Coordinated Vulnerability Disclosure for AI | Applies coordinated vulnerability disclosure practices to AI systems | 2024 | Yes | AI vulnerability disclosure and PSIRT workflow |
-| 25 | ETSI | ETSI TS 103 732, Security Baseline for AI Models and Systems | Establishes baseline security requirements for AI models and systems | 2024 | Yes | Technical AI security baseline |
+| 25 | ETSI | [ETSI TS 104 223 V1.1.1](https://www.etsi.org/deliver/etsi_TS/104200_104299/104223/01.01.01_60/ts_104223v010101p.pdf) | Establishes baseline security requirements for AI models and systems and formed the basis for EN 304 223 | 2025-04 | Yes | Technical AI security baseline |
 | 26 | ETSI | ETSI EN 303 645 | Baseline cybersecurity provisions for consumer IoT devices, relevant to edge AI and AI-enabled connected products | 2020, updated later | Yes | Consumer IoT and edge-AI security |
 | 27 | ETSI | ETSI TS 103 701 | Conformity assessment specification for ETSI EN 303 645 | 2021 | Yes | IoT and edge-AI security testing |
 | 28 | ETSI | ETSI TR 103 621 | Implementation guidance for consumer IoT cybersecurity | 2019 | Yes | Secure implementation guidance |
-| 29 | ETSI | ETSI 304 223 | AI cybersecurity, safety, and responsibility related guidance | Verification pending | Yes / public if published | Responsible, safe, and secure AI alignment |
+| 29 | ETSI | [ETSI EN 304 223 V2.1.1](https://www.etsi.org/deliver/etsi_en/304200_304299/304223/02.01.01_60/en_304223v020101p.pdf) | Defines lifecycle cybersecurity requirements for AI models and systems | 2025-12 | Yes | Technical security requirements for design, development, deployment, maintenance, and end of life |
 | 30 | AIDEFEND Framework Initiative | AIDEFEND, AI Security Defense Framework | Structured AI security defense knowledge base of countermeasures for AI and ML systems, mapped to major AI security frameworks | 2026 | Yes, CC BY 4.0 | AI defense architecture, control mapping, detection, containment, incident response, and recovery |
 | 31 | Pillar Security | SAIL, Secure AI Lifecycle Framework V2 | Practical lifecycle-oriented strategy for managing AI-specific and agentic AI risks across policy, discovery, posture, red teaming, runtime controls, sandboxing, and governance | 2026, updated 08 July 2026 | Yes / public | AI security roadmap, agentic risk assessment, lifecycle control mapping, RFP support, and compliance checklisting |
 | 32 | IBM | Adversarial Robustness Toolbox | Open source library for adversarial ML attacks, defenses, robustness testing, certification, and runtime detection | 2018 | Yes, MIT License | AI security testing, adversarial robustness, red teaming, and model hardening |
@@ -71,6 +71,14 @@ For implementation, see [agent runtime enforcement](AI-Agent-Security.md#agent-r
 
 See [AI Agent Security](AI-Agent-Security.md) for identity controls and [AI Incident Response](../AI-Incident-Response/AI-Incident-Response-Standards-and-Frameworks.md) for response guidance. The GLM-5.3 assessment describes performance on selected cyber tasks under its evaluation setup. Use it as threat context and record the benchmark, harness, and budget when comparing results.
 
+### NIST Cyber AI Profile and control overlays
+
+| Resource | Status | Practical use |
+| --- | --- | --- |
+| [NIST IR 8596 - Cyber AI Profile](https://csrc.nist.gov/pubs/ir/8596/iprd) | Initial preliminary draft, December 2025 | Apply the NIST Cybersecurity Framework to securing AI systems, using AI for cyber defense, and countering AI-enabled attacks. |
+| [NIST IR 8607 - Cyber AI Profile Workshop #2](https://csrc.nist.gov/pubs/ir/8607/final) | Final workshop report, August 2026 | Review stakeholder feedback on the draft profile and its implementation. |
+| [NIST SP 800-53 Control Overlays for Super Intelligence Systems (COSIS)](https://csrc.nist.gov/Projects/cosis) | Project in development, formerly COSAiS. A concept paper and discussion outline are available. | Track how SP 800-53 controls are tailored to AI use cases and assets such as training data, model weights, and configuration. |
+
 ## CERT-In AI security auditing guidelines
 
 CERT-In's [AI Security Auditing Guidelines](https://www.cert-in.org.in/PDF/AI_Security_Auditing_Guidelines.pdf) (CISG-2026-04, November 4, 2026) define a risk-based approach to auditing AI systems across their lifecycle.
@@ -97,11 +105,26 @@ ETSI material should be treated as a standards family rather than a single check
 | ETSI GR SAI 009 | AI computing platform security and secure infrastructure architecture |
 | ETSI GR SAI 010 | Security architecture for AI-enabled security and AI ecosystem protection |
 | ETSI GR SAI 011 | AI vulnerability disclosure, multi-party coordination, and PSIRT integration |
-| ETSI TS 103 732 | Baseline security requirements for AI models and AI systems |
+| [ETSI EN 304 223 V2.1.1](https://www.etsi.org/deliver/etsi_en/304200_304299/304223/02.01.01_60/en_304223v020101p.pdf) | Published lifecycle baseline for AI models and systems, based on ETSI TS 104 223 V1.1.1 |
+| [ETSI TS 104 033 V1.1.1](https://www.etsi.org/deliver/etsi_ts/104000_104099/104033/01.01.01_60/ts_104033v010101p.pdf) | Published May 2026. Assess AI computing platform security and use Annex F to map platform controls to EN 304 223. |
 | ETSI EN 303 645 | Security baseline for consumer IoT and edge-AI devices |
 | ETSI TS 103 701 | Conformity assessment for consumer IoT cybersecurity controls |
 | ETSI TR 103 621 | Implementation guidance for consumer IoT cybersecurity controls |
-| ETSI 304 223 | Candidate mapping for AI cybersecurity, safety, and responsibility; confirm exact ETSI designation before formal citation |
+
+### ETSI work items in development
+
+| Work item | Scope | Status |
+| --- | --- | --- |
+| [ETSI TS 104 328](https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?WKI_ID=79428) | Additional baseline cybersecurity requirements for agentic AI systems, building on EN 304 223 | Work item adopted October 2026 |
+| [ETSI TS 104 330](https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?WKI_ID=79399) | Application of EN 304 223 to secure code generation with generative AI and prevention of misuse | Work item adopted October 2026 |
+
+## ISO/IEC AI cybersecurity, robustness, and privacy
+
+| Resource | Status | Practical use |
+| --- | --- | --- |
+| [ISO/IEC 27090:2026](https://www.iso.org/standard/27090) | Published October 2026. Public preview, paid full text. | Identify, detect, and mitigate AI-specific threats across the lifecycle, including data poisoning and model theft. |
+| [ISO/IEC 24029-2:2023](https://www.iso.org/standard/79804.html) | Published August 2023. Public preview, paid full text. | Select and apply formal methods to assess specified robustness properties of neural networks. |
+| [ISO/IEC FDIS 27091](https://www.iso.org/standard/56582.html) | Final Draft International Standard | Track guidance for addressing privacy risks in AI systems and machine learning models. |
 
 ## AIDEFEND AI defense mapping
 
@@ -149,7 +172,7 @@ Use these frameworks together rather than as substitutes:
 
 1. Use NIST AI RMF, IBM AI Risk Atlas, and ISO/IEC 23894 for risk governance.
 2. Use OWASP, MITRE ATLAS, ETSI SAI, Google SAIF, SAIL, AIDEFEND, and IBM ART for technical security engineering.
-3. Use CSA AI Controls Matrix, ETSI TS 103 732, SAIL, AIDEFEND, IBM AI FactSheets 360, IBM watsonx.governance, and ISO/IEC 42001 for control evidence and assurance.
+3. Use CSA AI Controls Matrix, ETSI EN 304 223, SAIL, AIDEFEND, IBM AI FactSheets 360, IBM watsonx.governance, and ISO/IEC 42001 for control evidence and assurance.
 4. Use SAIL, OWASP Agentic AI guidance, MITRE ATLAS, and AIDEFEND for agentic AI lifecycle security, red teaming, runtime controls, sandboxing, and governance.
 5. Use IBM AIF360, IBM AIX360, ETSI GR SAI 007, the EU AI Act, and OECD AI Principles for transparency, fairness, responsibility, and public-interest alignment.
 6. Use CISA, NCSC, ETSI secure lifecycle guidance, and IBM governance tooling for secure implementation and ongoing oversight.
@@ -207,7 +230,11 @@ European Telecommunications Standards Institute. (2023). *ETSI GR SAI 010: Secur
 
 European Telecommunications Standards Institute. (2024). *ETSI GR SAI 011: Securing artificial intelligence: Multi-party coordinated vulnerability disclosure for AI*. https://www.etsi.org/
 
-European Telecommunications Standards Institute. (2024). *ETSI TS 103 732: Securing artificial intelligence: Security baseline for AI models and systems*. https://www.etsi.org/
+European Telecommunications Standards Institute. (2025, April). *Securing artificial intelligence (SAI): Baseline cyber security requirements for AI models and systems* (ETSI TS 104 223 V1.1.1). https://www.etsi.org/deliver/etsi_TS/104200_104299/104223/01.01.01_60/ts_104223v010101p.pdf
+
+European Telecommunications Standards Institute. (2025, December). *Securing artificial intelligence (SAI): Baseline cyber security requirements for AI models and systems* (ETSI EN 304 223 V2.1.1). https://www.etsi.org/deliver/etsi_en/304200_304299/304223/02.01.01_60/en_304223v020101p.pdf
+
+European Telecommunications Standards Institute. (2026, May). *Securing artificial intelligence (SAI): Security requirements for an artificial intelligence computing platform* (ETSI TS 104 033 V1.1.1). https://www.etsi.org/deliver/etsi_ts/104000_104099/104033/01.01.01_60/ts_104033v010101p.pdf
 
 European Union. (2024). *Artificial Intelligence Act*. https://artificialintelligenceact.eu/
 
@@ -219,7 +246,15 @@ IBM. (2023). *watsonx.governance*. https://www.ibm.com/products/watsonx-governan
 
 International Organization for Standardization. (2023). *ISO/IEC 23894:2023 Artificial intelligence: Guidance on risk management*. https://www.iso.org/
 
+International Organization for Standardization. (2023). *Artificial intelligence (AI): Assessment of the robustness of neural networks. Part 2: Methodology for the use of formal methods* (ISO/IEC 24029-2:2023). https://www.iso.org/standard/79804.html
+
 International Organization for Standardization. (2023). *ISO/IEC 42001:2023 Artificial intelligence: Management system*. https://www.iso.org/
+
+International Organization for Standardization. (2026). *Cybersecurity: Artificial intelligence (AI): Addressing security threats and compromises to AI systems* (ISO/IEC 27090:2026). https://www.iso.org/standard/27090
+
+Megas, K., Cuthill, B., Dotter, M., Garris, M., Khemani, I., Patrick, B., Schiro, N., Snyder, J. N., & Zarei, M. (2025). *Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile): NIST Community Profile* (NIST IR 8596, initial preliminary draft). National Institute of Standards and Technology. https://csrc.nist.gov/pubs/ir/8596/iprd
+
+Megas, K., Cuthill, B., Sames, C., & Snyder, J. (2026). *Workshop summary report for "Cyber AI Profile" hybrid workshop #2* (NIST IR 8607). National Institute of Standards and Technology. https://csrc.nist.gov/pubs/ir/8607/final
 
 MITRE. (2020). *MITRE ATLAS: Adversarial threat landscape for artificial-intelligence systems*. https://atlas.mitre.org/
 

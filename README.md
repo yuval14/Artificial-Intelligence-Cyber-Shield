@@ -63,6 +63,12 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 - [GenAI data security and AI infrastructure guidance](Frameworks/AI-Security-Frameworks.md#owasp-data-and-infrastructure-security) - AI data security posture management and neocloud risk assessment.
 - [GenAI Red Teaming Manual and LLM exploit generation research](Frameworks/AI-Red-Team-Frameworks.md#owasp-genai-red-teaming-manual-version-10) - engagement methodology and evidence from human-guided and autonomous evaluations.
 
+### AI cybersecurity standards and guidance
+
+- [ETSI AI cybersecurity standards](Frameworks/AI-Security-Frameworks.md#etsi-ai-cybersecurity-standards-family) - lifecycle and computing-platform requirements, plus work items for agentic AI and secure code generation.
+- [NIST Cyber AI Profile and control overlays](Frameworks/AI-Security-Frameworks.md#nist-cyber-ai-profile-and-control-overlays) - cybersecurity risk management for AI and work on tailoring SP 800-53 controls.
+- [ISO/IEC AI cybersecurity, robustness, and privacy](Frameworks/AI-Security-Frameworks.md#isoiec-ai-cybersecurity-robustness-and-privacy) - AI-specific threats, formal robustness assessment, and draft privacy guidance.
+
 ## Behavioral Assurance and Independent Evaluation
 
 | Resource | Contribution and status |
