@@ -69,6 +69,12 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 - [NIST Cyber AI Profile and control overlays](Frameworks/AI-Security-Frameworks.md#nist-cyber-ai-profile-and-control-overlays) - cybersecurity risk management for AI and work on tailoring SP 800-53 controls.
 - [ISO/IEC AI cybersecurity, robustness, and privacy](Frameworks/AI-Security-Frameworks.md#isoiec-ai-cybersecurity-robustness-and-privacy) - AI-specific threats, formal robustness assessment, and draft privacy guidance.
 
+### Operational guidance for securing AI
+
+- [Securing AI testing environments](Frameworks/AI-Red-Team-Frameworks.md#securing-ai-testing-environments) - containment controls for evaluations of cyber-capable agents.
+- [Agent harnesses](Frameworks/AI-Agent-Security.md#harness-engineering-for-secure-ai-agents) and [coding assistant assessments](Frameworks/AI-Agent-Security.md#security-assessment-of-agentic-coding-assistants) - runtime enforcement and threat-based testing for agentic systems.
+- [Open-weight model deployment](Frameworks/MLSecOps-Practical-Reference-Guide.md#secure-deployment-of-open-weight-ai-models), [AI data supply chains](Frameworks/MLSecOps-Practical-Reference-Guide.md#ai-data-supply-chain-security), and [AI integration in OT](System-Hardening/System-Hardening-Against-AI-Threats.md#ai-integration-in-operational-technology) - controls for model adoption, data integrity, and physical process safety.
+
 ## Behavioral Assurance and Independent Evaluation
 
 | Resource | Contribution and status |

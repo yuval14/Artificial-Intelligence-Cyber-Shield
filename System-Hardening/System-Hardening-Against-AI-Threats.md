@@ -45,6 +45,10 @@ The objective is not to make an AI agent fully trusted. The objective is to make
 | Cross-agent compromise | One agent reads another agent's memory, workspace, tokens, or output | Separate identities, namespaces, labels, storage volumes, queues, and network policies per agent |
 | Audit evasion | The agent alters or deletes evidence of its activity | Remote immutable logging, append-only storage, signed events, separation of duties |
 
+### AI integration in operational technology
+
+The joint [Principles for the Secure Integration of Artificial Intelligence in Operational Technology](https://www.cyber.gov.au/publication/principles-for-the-secure-integration-of-artificial-intelligence-in-operational-technology) address the safety and operational consequences of connecting AI to physical processes. Assess the effects of erroneous outputs and unauthorized actions before integration, retain human oversight, and preserve a way to operate safely if the AI capability becomes unavailable or must be disabled.
+
 ## 3. Reference architecture
 
 ```mermaid
@@ -522,6 +526,8 @@ The desired security stack is:
 > **Mandatory Access Control + sandboxed execution + Zero Trust networking + scoped identity + tool-policy enforcement + human oversight.**
 
 ## 14. References
+
+Australian Signals Directorate. (2025, December 4). *Principles for the secure integration of artificial intelligence in operational technology* [Joint guidance]. https://www.cyber.gov.au/publication/principles-for-the-secure-integration-of-artificial-intelligence-in-operational-technology
 
 Kubernetes. (2026). *Network policies*. https://kubernetes.io/docs/concepts/services-networking/network-policies/
 

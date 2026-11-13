@@ -100,6 +100,8 @@ Harness Engineering is the design of the supporting system around an AI model: i
 
 The model generates proposals and decisions probabilistically. The harness determines what information the agent receives, which actions it may attempt, how those actions are validated, where they execute, and whether they are approved, blocked, corrected, or rolled back. Critical security requirements should therefore be enforced through architecture and deterministic controls rather than relying only on prompts.
 
+The Australian Signals Directorate's [Agentic AI Harnesses](https://www.cyber.gov.au/publication/agentic-ai-harnesses) guidance describes the harness as the layer that connects the model to tools, memory, and data and enforces execution privileges. For rollout, define approved use cases and data classes, scope access to each task, and validate controls before expanding deployment.
+
 ### Secure harness components
 
 | Harness component | Security purpose | Example controls |
@@ -223,6 +225,10 @@ AgentWatch is a UC Berkeley CLTC evaluation method for browser-based AI agents. 
 | Prompt injection | Tests whether the agent ignores or flags hidden or adversarial instructions embedded in content or metadata. |
 | Browser sandbox isolation | Tests whether the agent respects browser, site, session, and context boundaries. |
 
+## Security assessment of agentic coding assistants
+
+The Cyber Security Agency of Singapore's [Security Assessment Handbook for Agentic AI Coding Assistants](https://www.csa.gov.sg/resources/publications/security-assessment-handbook-for-agentic-ai-coding-assistants/) covers IDE and CLI workflows. It traces attack paths across trust boundaries, maps tactics and techniques to resources including MITRE ATLAS, and prioritizes mitigations by criticality. Use it to scope tests for unauthorized command execution, disclosure of sensitive data, and misuse of development tools or permissions.
+
 ## Agent security checklist
 
 | Question | Why it matters | Evidence to collect |
@@ -250,6 +256,10 @@ AgentWatch is a UC Berkeley CLTC evaluation method for browser-based AI agents. 
 | 4 | High-assurance agent | Independent red team, formal risk acceptance, continuous evaluation, runtime enforcement, post-incident forensics, independent containment, target-bound egress |
 
 ## APA 7 references
+
+Australian Signals Directorate. (2026, September 11). *Agentic AI harnesses*. https://www.cyber.gov.au/publication/agentic-ai-harnesses
+
+Cyber Security Agency of Singapore. (2026, October 15). *Security assessment handbook for agentic AI coding assistants*. https://www.csa.gov.sg/resources/publications/security-assessment-handbook-for-agentic-ai-coding-assistants/
 
 Böckeler, B. (2026, April 2). *Harness engineering for coding agent users*. Martin Fowler. https://martinfowler.com/articles/harness-engineering.html
 

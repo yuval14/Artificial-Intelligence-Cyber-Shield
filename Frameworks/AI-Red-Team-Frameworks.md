@@ -109,9 +109,15 @@ The [OWASP GenAI Red Teaming Manual Version 1.0](https://genai.owasp.org/resourc
 
 The [OWASP LLM Exploit Generation Guide 2.0](https://genai.owasp.org/resource/llm-exploit-generation-guide-2-0/) (October 27, 2026) reports a comparison of human-guided and autonomous exploit generation, including success, operator effort, cost, and observable activity. Use those dimensions to design authorized evaluations. Record the target and model version, permissions, test inputs, expected security outcome, observed outcome, and evidence. Run regression tests in isolated environments with synthetic data and controlled egress.
 
+## Securing AI testing environments
+
+The Australian Signals Directorate's [Securing AI Testing Environments](https://www.cyber.gov.au/publication/securing-ai-testing-environments) addresses higher-risk cyber capability evaluations involving models or agents with access to code execution, tools, credentials, or networks. Define the authorized test boundary and restrict network and tool access. Use short-lived, revocable credentials, monitor activity independently of the agent, and test emergency isolation and shutdown before running the evaluation.
+
 ## APA 7 References
 
 Alaga, J., Schuett, J., & Anderljung, M. (2024). *A grading rubric for AI safety frameworks*. arXiv. https://arxiv.org/abs/2409.08751
+
+Australian Signals Directorate. (2026, November 12). *Securing AI testing environments*. https://www.cyber.gov.au/publication/securing-ai-testing-environments
 
 Derczynski, L., Galinkin, E., Martin, J., Majumdar, S., & Inie, N. (2024). *garak: A framework for security probing large language models*. arXiv. https://arxiv.org/abs/2406.11036
 
