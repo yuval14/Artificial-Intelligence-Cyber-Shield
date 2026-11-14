@@ -25,6 +25,13 @@ This page lists frameworks and methods for identifying, structuring, and priorit
 | 17 | Google DeepMind | [TRAIT&R and GDM AI Control Roadmap](GDM-AI-Control-Roadmap.md) | Model tactics and techniques of a hypothetical internally deployed rogue AI and map capability-triggered controls | 2026 | Yes, public preprint | AI insider-threat modeling, agent red teaming, distributed kill-chain analysis, control design |
 | 18 | Forscie, in partnership with Above Theory | [Synthetic Insider Threat Matrix](https://www.insiderthreatmatrix.org/synthetic) | Structure AI insider-threat investigation across directives, configuration, invocation, outcomes, and opacity | Not specified; reviewed 2026-10-16 | Public framework | AI agent investigation and control review |
 | 19 | Brodt et al. | [The Promptware Kill Chain](https://arxiv.org/abs/2601.09625v2) | Model multistage attacks on LLM applications that begin with prompt injection | 2026 | Public preprint | Attack path analysis and defense-in-depth planning |
+| 20 | F-Secure | [AI Harms Taxonomy](#f-secure-ai-harms-taxonomy) | Map AI-enabled consumer harms to the system layers where defenses can intervene | 2026 | Public taxonomy | Consumer-facing chatbot and agent threat modeling, control ownership, and abuse-case testing |
+
+## F-Secure AI Harms Taxonomy
+
+F-Secure's [AI Harms Taxonomy](https://www.f-secure.com/en/partners/illuminate-research/ai-harms-taxonomy), developed by Megan Squire, maps 26 consumer harms to 19 intermediary layers and 24 defenses. It covers harm from chatbots, agents, and threat actors affecting consumers, as well as attacks targeting agents and chatbots. Each harm is traced through the relevant layers, such as a memory store or an agent runtime, to identify where a defense can be applied and who can implement it.
+
+For a consumer-facing agent, use the taxonomy to trace a scenario such as indirect prompt injection through the components it reaches. Record the consumer impact, the layer where each control acts, its owner, and a test that exercises the control. Carry the source's evidence label into the threat model to distinguish real-world observations, research demonstrations, and theoretical scenarios. F-Secure describes the taxonomy as a work in progress.
 
 ## The Promptware Kill Chain
 
@@ -134,6 +141,8 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 ## APA 7 references
 
 Brodt, O., Feldman, E., Schneier, B., & Nassi, B. (2026). *The promptware kill chain: How prompt injections gradually evolved into a multistep malware delivery mechanism* [Preprint]. arXiv. https://arxiv.org/abs/2601.09625v2
+
+F-Secure. (n.d.). *AI harms taxonomy*. Retrieved November 14, 2026, from https://www.f-secure.com/en/partners/illuminate-research/ai-harms-taxonomy
 
 Forscie. (n.d.). *Synthetic insider threat matrix*. Retrieved October 16, 2026, from https://www.insiderthreatmatrix.org/synthetic
 
