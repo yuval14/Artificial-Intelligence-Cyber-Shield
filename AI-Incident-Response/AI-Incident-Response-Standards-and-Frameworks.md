@@ -5,7 +5,7 @@
 
 ## Scope
 
-This page includes only standards, frameworks, playbooks, and regulatory reporting mechanisms that address incident response, incident handling, incident reporting, or structured incident information exchange specifically for artificial intelligence systems.
+This page covers standards, frameworks, playbooks, behavioral taxonomies, and regulatory reporting mechanisms that address incident response, incident handling, incident reporting, or structured incident information exchange specifically for artificial intelligence systems.
 
 General cybersecurity incident-response standards and general AI security or risk-management frameworks are intentionally excluded unless the referenced document is directly focused on AI incidents.
 
@@ -28,13 +28,21 @@ Version 0.1 applies to models and agents in development, evaluation, and deploym
 - **Rate impact separately.** Record actual impact and evidence-supported potential impact on the same five-level scale, from Low to Critical. Consider confidentiality, integrity, availability, and the ability of human overseers to monitor and intervene. Account for safeguards that remained effective and the time responders had to intervene when rating potential impact.
 - **Apply during triage.** Document the action, the authorization boundary, the safeguards that failed or held, and the evidence behind each rating. Use the classification to inform existing response, escalation, and notification procedures.
 
+## Behavioral indicators and model misalignment reporting
+
+| Organization | Resource | Use in incident response |
+| --- | --- | --- |
+| Guidelight AI Standards | [Misaligned AI behaviors that indicate loss-of-control risk](https://guidelight.ai/blog/categories-of-misaligned-ai-behaviors) | Use its ten behavioral categories to label observations during monitoring and investigation. Examples include deception, interference with oversight, unauthorized activity, and coordinated misbehavior. Apply the control-incident criteria and impact ratings during triage. |
+| OpenAI | [Our framework for reporting model misalignment](https://openai.com/index/model-misalignment-reporting-framework/) | Use the published criteria and case reports as examples of deciding which observations warrant investigation and public disclosure. A noteworthy observation can warrant disclosure even when it falls below the AI control incident threshold. |
+
 ## Regulatory AI Incident Reporting
 
-The following is not an incident-response framework, but it directly creates an AI-specific serious-incident reporting obligation and should therefore be integrated into AI incident-response procedures where applicable.
+These requirements and resources support regulatory reporting workflows for serious AI incidents.
 
 | Authority | Requirement | Direct Relevance |
 | --- | --- | --- |
 | European Union | **Regulation (EU) 2024/1689, Article 73 - Reporting of serious incidents** | Requires providers of applicable high-risk AI systems to report serious incidents to relevant market-surveillance authorities according to the timelines and conditions defined by the AI Act. |
+| European Union | **Regulation (EU) 2024/1689, Article 55 - [Serious incident reporting template for general-purpose AI models with systemic risk](https://digital-strategy.ec.europa.eu/en/library/ai-act-commission-publishes-reporting-template-serious-incidents-involving-general-purpose-ai)** | Provides official Word and PDF reporting forms for providers of general-purpose AI models with systemic risk to document serious incidents for the AI Office and, where appropriate, national competent authorities. |
 
 ## NIST guidance for incidents involving advanced AI agents
 
@@ -83,6 +91,8 @@ These resources may support preparation, detection, investigation, containment, 
 
 Cybersecurity and Infrastructure Security Agency. (2025, January 14). *JCDC AI cybersecurity collaboration playbook*. U.S. Department of Homeland Security. https://www.cisa.gov/resources-tools/resources/ai-cybersecurity-collaboration-playbook
 
+European Commission. (2025, November 4). *AI Act: Commission publishes a reporting template for serious incidents involving general-purpose AI models with systemic risk*. https://digital-strategy.ec.europa.eu/en/library/ai-act-commission-publishes-reporting-template-serious-incidents-involving-general-purpose-ai
+
 European Parliament & Council of the European Union. (2024). *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)*, Article 73. *Official Journal of the European Union*. https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 
 European Telecommunications Standards Institute. (2026a). *ETSI TS 104 158-1 V1.1.1: Securing Artificial Intelligence (SAI); AI Incident Reporting; Part 1: AI Common Incident Expression (AICIE) Global Framework*. ETSI.
@@ -90,6 +100,10 @@ European Telecommunications Standards Institute. (2026a). *ETSI TS 104 158-1 V1.
 European Telecommunications Standards Institute. (2026b). *ETSI TS 104 158-2 V1.1.1: Securing Artificial Intelligence (SAI); AI Incident Reporting; Part 2: AI Common Incident Expression (AICIE) Common Container*. ETSI.
 
 European Telecommunications Standards Institute. (2026). *ETSI TS 104 158-3: Securing Artificial Intelligence (SAI); AI Incident Reporting; Part 3: AI Common Incident Expression (AICIE) Security Container* [Work item]. ETSI.
+
+Guidelight AI Standards. (2026, November 11). *Misaligned AI behaviors that indicate loss-of-control risk*. https://guidelight.ai/blog/categories-of-misaligned-ai-behaviors
+
+OpenAI. (2026, September 16). *Our framework for reporting model misalignment*. https://openai.com/index/model-misalignment-reporting-framework/
 
 OpenAI. (2026, November 16). *A proposed framework for classifying AI control incidents*. https://openai.com/index/classifying-ai-control-incidents/
 
