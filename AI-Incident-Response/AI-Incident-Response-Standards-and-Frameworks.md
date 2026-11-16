@@ -1,7 +1,7 @@
 # AI Incident Response Standards and Frameworks
 
 **Author:** Yuval Sinay  
-**Last updated:** 6 November 2026
+**Last updated:** 17 November 2026
 
 ## Scope
 
@@ -18,6 +18,15 @@ General cybersecurity incident-response standards and general AI security or ris
 | ETSI | **ETSI TS 104 158-3, Securing Artificial Intelligence (SAI); AI Incident Reporting; Part 3: AI Common Incident Expression (AICIE) Security Container** | Technical Specification | Defines a record structure for sharing AI security information, including information related to adversarial threats. | In development / ETSI work programme |
 | CISA | **JCDC AI Cybersecurity Collaboration Playbook** | Operational Playbook | Provides voluntary processes for sharing information about cybersecurity incidents and vulnerabilities associated with AI systems and for coordinating operational collaboration among government, industry, and international partners. | Published, January 2025 |
 | OECD | **Towards a Common Reporting Framework for AI Incidents** | International Reporting Framework | Provides a common framework and global benchmark for reporting AI incidents across jurisdictions and sectors, using a structured set of reporting criteria. | Published, February 2025 |
+| OpenAI, in collaboration with MITRE | **[Classifying AI Control Incidents and Their Severity: A Draft Framework](https://cdn.openai.com/pdf/classifying-ai-control-incidents-and-their-severity-a-draft-framework.pdf)** | Incident Classification and Severity Framework | Defines when unauthorized actions by models or agents qualify as control incidents and rates actual and potential impact separately. | Draft v0.1, November 2026 |
+
+## OpenAI and MITRE draft framework for AI control incidents
+
+Version 0.1 applies to models and agents in development, evaluation, and deployment. An action qualifies as an AI control incident when the model or agent takes a step that neither an authorized user nor a human attacker directed, exceeds its authorized scope, and either causes an observable adverse consequence or materially compromises a control.
+
+- **Classify the event.** Distinguish a control finding, a blocked attempt, a near miss, a suspected incident, and a confirmed incident. Treat a blocked attempt as a near miss when evidence shows that a final-stage intervention prevented an adverse consequence or a meaningful control compromise.
+- **Rate impact separately.** Record actual impact and evidence-supported potential impact on the same five-level scale, from Low to Critical. Consider confidentiality, integrity, availability, and the ability of human overseers to monitor and intervene. Account for safeguards that remained effective and the time responders had to intervene when rating potential impact.
+- **Apply during triage.** Document the action, the authorization boundary, the safeguards that failed or held, and the evidence behind each rating. Use the classification to inform existing response, escalation, and notification procedures.
 
 ## Regulatory AI Incident Reporting
 
@@ -81,5 +90,7 @@ European Telecommunications Standards Institute. (2026a). *ETSI TS 104 158-1 V1.
 European Telecommunications Standards Institute. (2026b). *ETSI TS 104 158-2 V1.1.1: Securing Artificial Intelligence (SAI); AI Incident Reporting; Part 2: AI Common Incident Expression (AICIE) Common Container*. ETSI.
 
 European Telecommunications Standards Institute. (2026). *ETSI TS 104 158-3: Securing Artificial Intelligence (SAI); AI Incident Reporting; Part 3: AI Common Incident Expression (AICIE) Security Container* [Work item]. ETSI.
+
+OpenAI. (2026, November 16). *A proposed framework for classifying AI control incidents*. https://openai.com/index/classifying-ai-control-incidents/
 
 Organisation for Economic Co-operation and Development. (2025). *Towards a common reporting framework for AI incidents*. OECD.AI. https://oecd.ai/en/ai-publications/towards-a-common-reporting-framework-for-ai-incidents
