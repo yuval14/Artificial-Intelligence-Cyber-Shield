@@ -20,6 +20,7 @@ This page lists frameworks, control patterns, and security principles for AI age
 | 12 | Research community | ASTRA, WASP, AI-Infra-Guard, and related agent benchmarks | Evaluate agent steerability, prompt-injection resilience, web-agent security, and multi-layer agent attacks | 2025 onwards | Yes / public research | Agentic AI security evaluation |
 | 13 | Kexin Chu | [Layered Attack Surface Model (LASM)](Layered-Attack-Surface-Model-LASM.md) | Map agent threats by seven architectural layers and four temporal classes | 2026 | Public preprint | Cross-layer threat modeling, control placement, ABOM, and long-horizon evaluation |
 | 14 | Institute for AI Policy and Strategy | Detecting Offensive Cyber Agents: A Detection-in-Depth Approach | Add agent identifiers, agent honeypots, AI-assisted alert triage, standardized agentic alerts, and provider/cloud threat exchange | 2026 | Public research | Detection and disruption of hostile autonomous cyber agents |
+| 15 | AAF reference implementation | [Accountable Agents Framework](https://github.com/dazzaji/AAF_OSFI) | Cryptographic agent identity, principal binding, transaction approval, revocation and accountability | 2026 | Apache-2.0 experimental pilot | Agent IAM and transaction accountability |
 
 ## NIST agent identity guidance
 
@@ -39,6 +40,10 @@ Apply the tenets alongside [PALO](PALO-Framework.md) for delegated authority and
 10. Preserve tamper-evident evidence outside the agent's control.
 
 **DevSecOps acceptance check:** Give a parent agent read-only repository access and have it delegate a review. An untrusted issue requests a push and an external upload. Verify that both actions are denied, an independent audit trail records the delegation and denials, and parent revocation invalidates the delegated access. Verify the tool gateway rejects the write, the egress policy rejects the upload, and the audit record includes the parent and child identities, delegated scope, policy decision, and revocation outcome.
+
+## Accountable Agents Framework (AAF)
+
+The [AAF_OSFI pilot](https://github.com/dazzaji/AAF_OSFI) demonstrates signed short-lived agent IDs, proof of possession, passkey approval of exact transactions, revocation, identity escrow and signed decision receipts. It does not implement delegation or key rotation and uses low-assurance email proofing. See [AI Agent Identity, Authorization and Accountability](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md) for architecture, controls and limitations.
 
 ## Agent runtime enforcement
 
@@ -78,6 +83,8 @@ Use PALO to specify delegated authority and CUSTODY to define containment. Enfor
 | Agent identity spoofing or mismatch | Claimed agent identity does not match the actual workload or attestation | Verifiable agent identity, workload binding, revocation, step-up verification |
 
 ## Agent security reference architecture
+
+Include a trusted identity issuer, distinct agent keys, counterparty validation, action-bound authorization, revocation checks and protected accountability evidence. See [agent IAM architecture](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md#reference-architecture).
 
 | Layer | Security objective | Minimum controls |
 | --- | --- | --- |
@@ -231,6 +238,8 @@ The Cyber Security Agency of Singapore's [Security Assessment Handbook for Agent
 
 ## Agent security checklist
 
+- [ ] Verify principal binding, agent proof of possession, action-bound authorization, replay resistance, revocation propagation and protected audit receipts.
+
 | Question | Why it matters | Evidence to collect |
 | --- | --- | --- |
 | What tools can the agent call? | Tool access defines the real blast radius of the agent | Tool inventory, permission scopes, tool risk rating |
@@ -256,6 +265,8 @@ The Cyber Security Agency of Singapore's [Security Assessment Handbook for Agent
 | 4 | High-assurance agent | Independent red team, formal risk acceptance, continuous evaluation, runtime enforcement, post-incident forensics, independent containment, target-bound egress |
 
 ## APA 7 references
+
+dazzaji. (2026). *Accountable Agents Framework reference implementation* [Computer software]. GitHub. https://github.com/dazzaji/AAF_OSFI
 
 Australian Signals Directorate. (2026, September 11). *Agentic AI harnesses*. https://www.cyber.gov.au/publication/agentic-ai-harnesses
 
