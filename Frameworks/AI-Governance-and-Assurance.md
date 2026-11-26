@@ -127,6 +127,10 @@ See [CETaS Behavioural Assurance](CETaS-Behavioural-Assurance-of-Agentic-AI.md),
 | Incident response | Playbooks for AI incidents, vulnerability disclosure, rollback, evidence, and communication | AI incident playbook, PSIRT process, forensic package |
 | Continuous assurance | Ongoing monitoring, drift detection, re-evaluation, and independent review | Monitoring dashboard, periodic review, audit report |
 
+## Agent IAM assurance mapping
+
+Use the [agent IAM comparison and control mapping](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md#layered-adoption-and-control-mapping) to distinguish workload attestation, delegated authority, runtime enforcement, signed payment mandates and accountability evidence. Draft or vendor guidance is not a certification basis.
+
 ## Assurance evidence package
 
 For agent accountability, collect evidence of principal binding, explicit authorization, human transaction approval, revocation enforcement, signed decision receipts and controlled identity disclosure. The experimental [AAF reference implementation](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md) illustrates these mechanisms, but does not establish legal accountability or certification.
