@@ -129,6 +129,8 @@ See [CETaS Behavioural Assurance](CETaS-Behavioural-Assurance-of-Agentic-AI.md),
 
 ## Assurance evidence package
 
+For agent accountability, collect evidence of principal binding, explicit authorization, human transaction approval, revocation enforcement, signed decision receipts and controlled identity disclosure. The experimental [AAF reference implementation](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md) illustrates these mechanisms, but does not establish legal accountability or certification.
+
 | Evidence artifact | Purpose |
 | --- | --- |
 | AI system card | Summarizes system purpose, users, data, models, tools, risks, limitations, and controls |
@@ -170,6 +172,8 @@ AI governance is not only policy. It must produce enforceable technical and oper
 | Incident handling | AI incident playbooks, coordinated vulnerability disclosure, post-incident review |
 
 ## References
+
+dazzaji. (2026). *Accountable Agents Framework reference implementation* [Computer software]. GitHub. https://github.com/dazzaji/AAF_OSFI
 
 Apollo Research. (2026, September 30). *Principles for embedded evaluations*. https://www.apolloresearch.ai/blog/principles-for-embedded-evaluations
 
