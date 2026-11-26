@@ -236,7 +236,28 @@ Required controls should include:
 
 CSA's [VulnOps operating model](https://cloudsecurityalliance.org/artifacts/the-vulnops-operating-model) addresses vulnerability management under higher discovery volumes. Track elapsed time from confirmed vulnerability to verified remediation, and the age of the high-priority backlog. Define the clock start, priority criteria, and verification evidence before comparing teams or reporting trends.
 
+## 10. RACE-SOC - Risk-constrained evaluation of multi-agent SOCs
+
+RACE-SOC (Risk-Constrained Auditable Coordination Evaluation for LLM-Based Multi-Agent Security Operations) is a research framework for evaluating the quality, safety, coordination, and resource cost of LLM-based SOC configurations.
+
+- Measures critical alert retention, false-positive reduction, action correctness, evidence support, unsupported claims, unsafe outputs, disagreement, and false consensus.
+- Compares single-agent and multi-agent configurations using deterministic evaluation rather than relying exclusively on an LLM judge.
+- Uses scenarios derived from AIT-ADS, LANL, CSIC2010, UNSW-NB15, and CICIDS2017.
+- Supports risk-adjusted configuration selection and token-cost analysis.
+
+**Security interpretation:** Treat this framework as a complementary evaluation baseline, not as proof of adversarial resilience. Extend evaluation with indirect prompt injection through telemetry, cross-agent compromise propagation, unauthorized tool use, recursive resource consumption, operational impact, containment, and recovery. These are proposed extensions, not validated RACE-SOC capabilities.
+
+**Research resources**
+
+- [Peer-reviewed paper](https://www.techscience.com/cmc/v90n1/70075/html)
+- [Research artifact on GitHub](https://github.com/estigeralynhbettin-eng/RACE-SOC-CMC-artifact)
+- [Research artifact on Zenodo](https://doi.org/10.5281/zenodo.21264368)
+
+Independent reproduction of the reported results and artifact-version compatibility have not been verified by this repository.
+
 ## References
+
+Lv, Y., & Wang, C. (2027). RACE-SOC: Risk-constrained auditable coordination evaluation for LLM-based multi-agent security operations. *Computers, Materials & Continua, 90*(1). https://doi.org/10.32604/cmc.2026.088835
 
 Covino, C., Kraprayoon, J., & Mittelsteadt, M. (2026, April 30). *Advancing America's cyber strategy with differential access*. Institute for AI Policy and Strategy. https://www.iaps.ai/research/advancing-americas-cyber-strategy-with-differential-access
 
