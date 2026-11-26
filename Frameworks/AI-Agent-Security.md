@@ -45,6 +45,10 @@ Apply the tenets alongside [PALO](PALO-Framework.md) for delegated authority and
 
 The [AAF_OSFI pilot](https://github.com/dazzaji/AAF_OSFI) demonstrates signed short-lived agent IDs, proof of possession, passkey approval of exact transactions, revocation, identity escrow and signed decision receipts. It does not implement delegation or key rotation and uses low-assurance email proofing. See [AI Agent Identity, Authorization and Accountability](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md) for architecture, controls and limitations.
 
+## Agent IAM and authorization landscape
+
+The [comparative agent IAM catalog](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md#comparative-landscape) distinguishes active WIMSE AIMS guidance, OpenA2A AAP and OAuth integration drafts, historical expired proposals, OpenID and Cisco architectural guidance, SPIFFE/SPIRE workload identity, OWASP ACS runtime controls, and AP2 transaction mandates. Use the [layered adoption matrix](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md#layered-adoption-and-control-mapping) to select complementary controls rather than treating them as interchangeable standards.
+
 ## Agent runtime enforcement
 
 The [OWASP Agent Control Standard](https://genai.owasp.org/resource/agent-control-standard-acs/) describes middleware hooks for enforcing policy on agent actions. [CSA AI Agents: Architecture and Control Plane](https://cloudsecurityalliance.org/artifacts/ai-agents-architecture-and-control-plane) provides architecture patterns and maps them to CSA and OWASP controls.
