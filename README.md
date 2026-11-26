@@ -46,6 +46,7 @@ The main goal is to connect AI governance, AI safety, AI threat modeling, red te
 | [AI Red Team Frameworks](Frameworks/AI-Red-Team-Frameworks.md) | AI red teaming methods, benchmarks, tooling, frontier-model evaluation resources, evaluation awareness, sandbagging, and alignment-faking tests |
 | [AI Threat Modeling Frameworks](Frameworks/AI-Threat-Modeling-Frameworks.md) | AI STRIDE, MITRE ATLAS, OWASP, PASTA, LINDDUN, and AI-specific threat modeling layers |
 | [AI Agent Security](Frameworks/AI-Agent-Security.md) | Agent identity, tool use, memory, RAG, autonomy, MCP-style integrations, containment, hostile external agents, HACCAs, and Agent Rule of One |
+| [AI Agent Identity, Authorization and Accountability](AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md) | AAF reference implementation, cryptographic identity, principal binding, transaction approval, revocation and audit evidence |
 | [AI Integrity](Frameworks/AI-Integrity.md) | Backdoors, secret loyalties, model and artifact tampering, prompt/policy integrity, harness integrity, behavioral verification, and rollback |
 | [AI for Cyber Defense and Agentic SOC Frameworks](Frameworks/AI-for-Cyber-Defense-and-Agentic-SOC-Frameworks.md) | ATHF, ADEF, IAPS detection-in-depth, agentic SOC security, and differential access to cyber-capable models |
 | [CUSTODY Autonomous Agent Containment Framework](Frameworks/CUSTODY-Autonomous-Agent-Containment-Framework.md) | Agent authority, reach, runtime containment, egress, stop controls, and July 2026 autonomous-agent incident mapping |
