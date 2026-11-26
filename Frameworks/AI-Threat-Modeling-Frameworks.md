@@ -128,6 +128,8 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 
 Model agent impersonation, key theft, replay, confused-deputy behavior, stale revocation status, issuer compromise and unauthorized identity disclosure. Map these threats to proof of possession, action-bound authorization, nonce and audience validation, independent runtime enforcement and protected audit evidence. See [AI Agent Identity, Authorization and Accountability](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md) for an AAF-based reference and its limitations.
 
+For cross-domain delegation and payment flows, also test scope amplification, lost principal context, credential exposure to the model, mandate tampering, and stale revocation across relying parties. See the [layered agent IAM control mapping](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md#layered-adoption-and-control-mapping).
+
 ## Threat modeling questions
 
 | Question | Why it matters |
