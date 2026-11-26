@@ -124,6 +124,10 @@ AI STRIDE adapts the classic STRIDE model to AI systems. It is useful because ma
 5. Map mitigations to controls, owners, evidence, and test cases.
 6. Validate controls through AI red teaming, security testing, abuse monitoring, and incident exercises.
 
+## Agent identity and authorization threats
+
+Model agent impersonation, key theft, replay, confused-deputy behavior, stale revocation status, issuer compromise and unauthorized identity disclosure. Map these threats to proof of possession, action-bound authorization, nonce and audience validation, independent runtime enforcement and protected audit evidence. See [AI Agent Identity, Authorization and Accountability](../AI-Agent-Security/AI-Agent-Identity-Authorization-and-Accountability.md) for an AAF-based reference and its limitations.
+
 ## Threat modeling questions
 
 | Question | Why it matters |
